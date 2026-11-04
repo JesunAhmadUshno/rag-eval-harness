@@ -1,0 +1,291 @@
+[
+ {
+  "gold_answer": "The Northlight Library opens at 8 am and closes at 9 pm on weekdays.",
+  "gold_facts": [
+   "opens at 8 am and closes at 9 pm on weekdays"
+  ],
+  "id": "b01-hours-weekday",
+  "question": "What time does the library open and close on weekdays?",
+  "case_class": "regression"
+ },
+ {
+  "gold_answer": "On Saturdays the library opens at 9 am and closes at 6 pm.",
+  "gold_facts": [
+   "opens at 9 am and closes at 6 pm"
+  ],
+  "id": "b02-hours-saturday",
+  "question": "When does the library open on Saturdays?",
+  "case_class": "regression"
+ },
+ {
+  "gold_answer": "Printing costs ten cents per page for black and white pages.",
+  "gold_facts": [
+   "printing costs ten cents per page"
+  ],
+  "id": "b03-printing-bw",
+  "question": "How much does black and white printing cost per page?",
+  "case_class": "regression"
+ },
+ {
+  "gold_answer": "Colour printing costs forty cents per page.",
+  "gold_facts": [
+   "colour printing costs forty cents per page"
+  ],
+  "id": "b04-printing-colour",
+  "question": "How much does colour printing cost?",
+  "case_class": "regression"
+ },
+ {
+  "gold_answer": "The study rooms hold up to six people.",
+  "gold_facts": [
+   "study rooms hold up to six people"
+  ],
+  "id": "b05-rooms-capacity",
+  "question": "How many people do the study rooms hold?",
+  "case_class": "regression"
+ },
+ {
+  "gold_answer": "Study rooms can be booked for up to two hours per day.",
+  "gold_facts": [
+   "booked for up to two hours per day"
+  ],
+  "id": "b06-rooms-booking",
+  "question": "For how long can study rooms be booked each day?",
+  "case_class": "regression"
+ },
+ {
+  "gold_answer": "Membership is free for city residents with photo identification.",
+  "gold_facts": [
+   "membership is free for city residents"
+  ],
+  "id": "b07-membership-free",
+  "question": "Is membership free for city residents?",
+  "case_class": "regression"
+ },
+ {
+  "gold_answer": "Membership includes borrowing up to ten books at a time.",
+  "gold_facts": [
+   "borrowing up to ten books at a time"
+  ],
+  "id": "b08-membership-books",
+  "question": "How many books can members borrow at a time under membership?",
+  "case_class": "regression"
+ },
+ {
+  "gold_answer": "Members can borrow a book for three weeks.",
+  "gold_facts": [
+   "borrow a book for three weeks"
+  ],
+  "id": "b09-loans-period",
+  "question": "How long can I borrow a book for?",
+  "case_class": "regression"
+ },
+ {
+  "gold_answer": "Late returns cost fifty cents per day per book.",
+  "gold_facts": [
+   "late returns cost fifty cents per day per book"
+  ],
+  "id": "b10-loans-late",
+  "question": "What do late returns cost?",
+  "case_class": "regression"
+ },
+ {
+  "gold_answer": "Story time for children runs every Saturday morning at ten.",
+  "gold_facts": [
+   "story time runs every Saturday morning at ten"
+  ],
+  "id": "b11-storytime-when",
+  "question": "When does story time for children run?",
+  "case_class": "b11"
+ },
+ {
+  "gold_answer": "The library wifi network is called Northlight Guest.",
+  "gold_facts": [
+   "wifi network is called Northlight Guest"
+  ],
+  "id": "b12-wifi-network",
+  "question": "How do I connect to the library wifi network?",
+  "case_class": "regression"
+ },
+ {
+  "gold_answer": "The wifi password changes every Monday and is posted at the front desk.",
+  "gold_facts": [
+   "wifi password changes every Monday",
+   "posted at the front desk"
+  ],
+  "id": "b13-wifi-password",
+  "question": "Where is the wifi password posted?",
+  "case_class": "regression"
+ },
+ {
+  "gold_answer": "Library cards expire after two years.",
+  "gold_facts": [
+   "library cards expire after two years"
+  ],
+  "id": "b14-renewal-expiry",
+  "question": "When do library cards expire?",
+  "case_class": "regression"
+ },
+ {
+  "gold_answer": "The library hosts a book club on the first Tuesday of every month.",
+  "gold_facts": [
+   "book club on the first Tuesday of every month"
+  ],
+  "id": "b15-events-bookclub",
+  "question": "When does the book club meet at the library?",
+  "case_class": "regression"
+ },
+ {
+  "gold_answer": "The library entrance has a wheelchair ramp and automatic doors.",
+  "gold_facts": [
+   "entrance has a wheelchair ramp and automatic doors"
+  ],
+  "id": "b16-accessibility-ramp",
+  "question": "Does the library entrance have wheelchair access?",
+  "case_class": "regression"
+ },
+ {
+  "gold_answer": "Large print books are shelved on the ground floor near the entrance.",
+  "gold_facts": [
+   "large print books are shelved on the ground floor"
+  ],
+  "id": "b17-accessibility-largeprint",
+  "question": "Where are large print books shelved?",
+  "case_class": "regression"
+ },
+ {
+  "gold_answer": "Volunteers help shelve books for two hours each week.",
+  "gold_facts": [
+   "volunteers help shelve books for two hours each week"
+  ],
+  "id": "b18-volunteering-hours",
+  "question": "How many hours do volunteers help shelve books each week?",
+  "case_class": "regression"
+ },
+ {
+  "gold_answer": "Volunteers must be sixteen years or older.",
+  "gold_facts": [
+   "volunteers must be sixteen years or older"
+  ],
+  "id": "b19-volunteering-age",
+  "question": "How old must volunteers be?",
+  "case_class": "regression"
+ },
+ {
+  "gold_answer": "Research appointments last thirty minutes and can be booked online.",
+  "gold_facts": [
+   "research appointments last thirty minutes"
+  ],
+  "id": "b20-research-appointment",
+  "question": "How long do research appointments last?",
+  "case_class": "regression"
+ },
+ {
+  "id": "d01-yoga-start",
+  "question": "When does the yoga class start for beginners?",
+  "gold_answer": "The beginners yoga class starts at seven on Tuesday mornings in the hall.",
+  "gold_facts": [
+   "beginners yoga class starts at seven on Tuesday mornings"
+  ],
+  "case_class": "b11"
+ },
+ {
+  "id": "d02-chess-where",
+  "question": "Where does the chess club play on Fridays?",
+  "gold_answer": "The chess club plays friendly games in the reading room on Friday evenings.",
+  "gold_facts": [
+   "chess club plays friendly games in the reading room"
+  ],
+  "case_class": "b11"
+ },
+ {
+  "id": "d03-pottery-open",
+  "question": "When does the pottery exhibition open to visitors?",
+  "gold_answer": "The pottery exhibition opens to visitors on the first Saturday of March in the gallery hall.",
+  "gold_facts": [
+   "pottery exhibition opens to visitors on the first Saturday of March"
+  ],
+  "case_class": "b11"
+ },
+ {
+  "id": "d04-garden-leads",
+  "question": "Who leads the community garden tours on Sundays?",
+  "gold_answer": "Priya Nair leads the community garden tour every Sunday morning.",
+  "gold_facts": [
+   "Priya Nair leads the community garden tour every Sunday morning"
+  ],
+  "case_class": "b11"
+ },
+ {
+  "id": "d05-bikes-park",
+  "question": "Where can visitors park their bicycles?",
+  "gold_answer": "Visitors park their bicycles in the rack beside the side entrance of the building.",
+  "gold_facts": [
+   "park their bicycles in the rack beside the side entrance"
+  ],
+  "case_class": "b11"
+ },
+ {
+  "id": "d06-delivery-visits",
+  "question": "How often does the home delivery van visit members?",
+  "gold_answer": "The home delivery van visits members every Thursday afternoon with their books.",
+  "gold_facts": [
+   "home delivery van visits members every Thursday afternoon"
+  ],
+  "case_class": "b11"
+ },
+ {
+  "id": "d07-french-practice",
+  "question": "When does the French conversation group practice speaking?",
+  "gold_answer": "The French conversation group practices speaking every Wednesday evening at six.",
+  "gold_facts": [
+   "French conversation group practices speaking every Wednesday evening at six"
+  ],
+  "case_class": "b11"
+ },
+ {
+  "id": "d08-repair-charges",
+  "question": "What does the book repair service charge for a torn cover?",
+  "gold_answer": "The book repair service charges ten dollars to fix a torn cover.",
+  "gold_facts": [
+   "book repair service charges ten dollars to fix a torn cover"
+  ],
+  "case_class": "b11"
+ },
+ {
+  "id": "d09-taichi-meet",
+  "question": "When does the tai chi class meet on Mondays?",
+  "gold_answer": "The tai chi class meets in the rose garden every Monday morning at eight.",
+  "gold_facts": [
+   "tai chi class meets in the rose garden every Monday morning at eight"
+  ],
+  "case_class": "b11"
+ },
+ {
+  "id": "d10-seed-borrow",
+  "question": "How many seeds can gardeners borrow from the seed library each spring?",
+  "gold_answer": "A gardener borrows up to twenty seed packets from the seed library each spring.",
+  "gold_facts": [
+   "borrows up to twenty seed packets from the seed library each spring"
+  ],
+  "case_class": "b11"
+ },
+ {
+  "id": "d11-interlibrary-take",
+  "question": "How long does an interlibrary loan take to arrive?",
+  "gold_answer": "An interlibrary loan takes three weeks to arrive from another library branch.",
+  "gold_facts": [
+   "interlibrary loan takes three weeks to arrive"
+  ],
+  "case_class": "b11"
+ },
+ {
+  "id": "d12-movie-screen",
+  "question": "Which film does the movie club screen this Friday?",
+  "gold_answer": "The movie club screens the film Ocean Song this Friday evening.",
+  "gold_facts": [
+   "movie club screens the film Ocean Song this Friday evening"
+  ],
+  "case_class": "b11"
+ }
+]

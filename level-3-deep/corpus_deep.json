@@ -1,0 +1,218 @@
+[
+ {
+  "id": "hours",
+  "sentences": [
+   "The Northlight Library opens at 8 am and closes at 9 pm on weekdays.",
+   "On Saturdays the library opens at 9 am and closes at 6 pm.",
+   "The library is closed on Sundays and public holidays."
+  ],
+  "title": "Opening hours"
+ },
+ {
+  "id": "printing",
+  "sentences": [
+   "Printing costs ten cents per page for black and white pages.",
+   "Colour printing costs forty cents per page.",
+   "Members receive twenty free black and white pages every month."
+  ],
+  "title": "Printing"
+ },
+ {
+  "id": "rooms",
+  "sentences": [
+   "The study rooms hold up to six people.",
+   "Study rooms can be booked for up to two hours per day.",
+   "A study room booking needs a library membership card."
+  ],
+  "title": "Study rooms"
+ },
+ {
+  "id": "membership",
+  "sentences": [
+   "Membership is free for city residents with photo identification.",
+   "Membership includes borrowing up to ten books at a time.",
+   "Members get free access to the computer lab on the second floor."
+  ],
+  "title": "Membership"
+ },
+ {
+  "id": "loans",
+  "sentences": [
+   "Members can borrow a book for three weeks.",
+   "A borrowed book can be renewed twice if nobody has reserved it.",
+   "Late returns cost fifty cents per day per book."
+  ],
+  "title": "Loans"
+ },
+ {
+  "id": "storytime",
+  "sentences": [
+   "Story time for children runs every Saturday morning at ten.",
+   "Story time sessions last forty five minutes.",
+   "Parents stay with their children during story time."
+  ],
+  "title": "Story time"
+ },
+ {
+  "id": "wifi",
+  "sentences": [
+   "The library wifi network is called Northlight Guest.",
+   "The wifi password changes every Monday and is posted at the front desk.",
+   "Wifi access is free for all visitors."
+  ],
+  "title": "Wifi"
+ },
+ {
+  "id": "renewal",
+  "sentences": [
+   "Library cards expire after two years.",
+   "Card renewal is free at the front desk with photo identification.",
+   "An expired card cannot borrow books until it is renewed."
+  ],
+  "title": "Card renewal"
+ },
+ {
+  "id": "events",
+  "sentences": [
+   "The library hosts a book club on the first Tuesday of every month.",
+   "Author talks take place in the main hall on Friday evenings.",
+   "Coding workshops for teenagers run on Wednesday afternoons."
+  ],
+  "title": "Events"
+ },
+ {
+  "id": "accessibility",
+  "sentences": [
+   "The library entrance has a wheelchair ramp and automatic doors.",
+   "Large print books are shelved on the ground floor near the entrance.",
+   "A hearing loop is fitted in the main hall for events."
+  ],
+  "title": "Accessibility"
+ },
+ {
+  "id": "volunteering",
+  "sentences": [
+   "Volunteers help shelve books for two hours each week.",
+   "Volunteer applications open in September and January.",
+   "Volunteers must be sixteen years or older."
+  ],
+  "title": "Volunteering"
+ },
+ {
+  "id": "research",
+  "sentences": [
+   "Librarians offer free research help at the reference desk.",
+   "Research appointments last thirty minutes and can be booked online.",
+   "The reference collection includes local history archives and newspapers."
+  ],
+  "title": "Research help"
+ },
+ {
+  "id": "yoga",
+  "title": "Yoga classes",
+  "sentences": [
+   "The beginners yoga class starts at seven on Tuesday mornings in the hall.",
+   "Beginners yoga class lasts ninety minutes.",
+   "Yoga mats are stored in the hall cupboard."
+  ]
+ },
+ {
+  "id": "chess",
+  "title": "Chess club",
+  "sentences": [
+   "The chess club plays friendly games in the reading room on Friday evenings.",
+   "Chess club players gather on Friday evenings for registration.",
+   "Chess sets are kept in the games cupboard."
+  ]
+ },
+ {
+  "id": "pottery",
+  "title": "Pottery exhibition",
+  "sentences": [
+   "The pottery exhibition opens to visitors on the first Saturday of March in the gallery hall.",
+   "Pottery exhibition visitors tickets are sold online.",
+   "Pottery classes meet in the basement studio."
+  ]
+ },
+ {
+  "id": "garden",
+  "title": "Community garden",
+  "sentences": [
+   "Priya Nair leads the community garden tour every Sunday morning.",
+   "Community garden tours need sturdy shoes on Sundays.",
+   "Garden tools are stored in the green shed."
+  ]
+ },
+ {
+  "id": "bikes",
+  "title": "Bicycles",
+  "sentences": [
+   "Visitors park their bicycles in the rack beside the side entrance of the building.",
+   "Visitors who park bicycles must register at the front desk.",
+   "Bicycle racks are emptied every Sunday night."
+  ]
+ },
+ {
+  "id": "delivery",
+  "title": "Home delivery",
+  "sentences": [
+   "The home delivery van visits members every Thursday afternoon with their books.",
+   "Home delivery van members register at the front desk.",
+   "Home delivery requests close at noon on Mondays."
+  ]
+ },
+ {
+  "id": "french",
+  "title": "French conversation",
+  "sentences": [
+   "The French conversation group practices speaking every Wednesday evening at six.",
+   "French conversation group speaking notes are posted online.",
+   "French conversation textbooks sit on the second shelf."
+  ]
+ },
+ {
+  "id": "repair",
+  "title": "Book repair",
+  "sentences": [
+   "The book repair service charges ten dollars to fix a torn cover.",
+   "The torn cover book repair service is popular with readers.",
+   "Book repair glue dries overnight in the workshop."
+  ]
+ },
+ {
+  "id": "taichi",
+  "title": "Tai chi",
+  "sentences": [
+   "The tai chi class meets in the rose garden every Monday morning at eight.",
+   "Tai chi class on Mondays is gentle and slow.",
+   "Tai chi students bring their own water bottles."
+  ]
+ },
+ {
+  "id": "seed",
+  "title": "Seed library",
+  "sentences": [
+   "A gardener borrows up to twenty seed packets from the seed library each spring.",
+   "Gardeners visit the seed library every spring.",
+   "Seed library donations are welcome in autumn."
+  ]
+ },
+ {
+  "id": "interlibrary",
+  "title": "Interlibrary loans",
+  "sentences": [
+   "An interlibrary loan takes three weeks to arrive from another library branch.",
+   "An interlibrary loan can arrive late in winter.",
+   "Interlibrary loan fees are waived for members."
+  ]
+ },
+ {
+  "id": "movie",
+  "title": "Movie club",
+  "sentences": [
+   "The movie club screens the film Ocean Song this Friday evening.",
+   "Movie club film fans meet on Friday.",
+   "Movie club membership renews in January."
+  ]
+ }
+]

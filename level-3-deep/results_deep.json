@@ -1,0 +1,125 @@
+{
+ "n": 32,
+ "without": {
+  "n": 32,
+  "passed": 23,
+  "pass_rate": 0.71875,
+  "mean_faithfulness": 1.0,
+  "mean_context_recall": 1.0,
+  "mean_answer_relevance": 0.7644826680672269
+ },
+ "with": {
+  "n": 32,
+  "passed": 32,
+  "pass_rate": 1.0,
+  "mean_faithfulness": 1.0,
+  "mean_context_recall": 1.0,
+  "mean_answer_relevance": 1.0
+ },
+ "b11": {
+  "n": 13,
+  "ids": [
+   "b11-storytime-when",
+   "d01-yoga-start",
+   "d02-chess-where",
+   "d03-pottery-open",
+   "d04-garden-leads",
+   "d05-bikes-park",
+   "d06-delivery-visits",
+   "d07-french-practice",
+   "d08-repair-charges",
+   "d09-taichi-meet",
+   "d10-seed-borrow",
+   "d11-interlibrary-take",
+   "d12-movie-screen"
+  ],
+  "passed_without": 5,
+  "passed_with": 13
+ },
+ "judge": {
+  "calls_made": 15,
+  "calls_skipped": 17,
+  "total_cost": 15,
+  "judged": 15,
+  "judged_passed": 15
+ },
+ "taxonomy": {
+  "rag_counts": {
+   "wrong_passage_on_top": 9
+  },
+  "rag_failed": 9,
+  "agent_counts": {
+   "loop_trap": 4,
+   "tool_misuse": 4,
+   "silent_wrong_answer": 4,
+   "excess_steps": 4
+  },
+  "agent_failed": 16,
+  "total_failed": 25,
+  "total_labelled": 25
+ },
+ "rag_failed_with": 0,
+ "agent_tasks": 20,
+ "agent_summaries": {
+  "careful": {
+   "success_rate": 1.0,
+   "mean_steps": 2.0,
+   "mean_cost": 3.0
+  },
+  "loopy": {
+   "success_rate": 0.0,
+   "mean_steps": 12.0,
+   "mean_cost": 11.0
+  },
+  "wrong_tool": {
+   "success_rate": 0.0,
+   "mean_steps": 3.0,
+   "mean_cost": 4.0
+  },
+  "silent": {
+   "success_rate": 0.0,
+   "mean_steps": 2.0,
+   "mean_cost": 3.0
+  },
+  "sloppy": {
+   "success_rate": 0.0,
+   "mean_steps": 8.0,
+   "mean_cost": 9.0
+  }
+ },
+ "with_passed_ids": [
+  "b01-hours-weekday",
+  "b02-hours-saturday",
+  "b03-printing-bw",
+  "b04-printing-colour",
+  "b05-rooms-capacity",
+  "b06-rooms-booking",
+  "b07-membership-free",
+  "b08-membership-books",
+  "b09-loans-period",
+  "b10-loans-late",
+  "b11-storytime-when",
+  "b12-wifi-network",
+  "b13-wifi-password",
+  "b14-renewal-expiry",
+  "b15-events-bookclub",
+  "b16-accessibility-ramp",
+  "b17-accessibility-largeprint",
+  "b18-volunteering-hours",
+  "b19-volunteering-age",
+  "b20-research-appointment",
+  "d01-yoga-start",
+  "d02-chess-where",
+  "d03-pottery-open",
+  "d04-garden-leads",
+  "d05-bikes-park",
+  "d06-delivery-visits",
+  "d07-french-practice",
+  "d08-repair-charges",
+  "d09-taichi-meet",
+  "d10-seed-borrow",
+  "d11-interlibrary-take",
+  "d12-movie-screen"
+ ],
+ "with_failed_ids": []
+}
