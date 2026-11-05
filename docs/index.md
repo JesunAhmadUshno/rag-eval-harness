@@ -1,5 +1,9 @@
 # rag-eval-harness
 
+SUPERSEDED 2026-11-04: the live dashboard is now the React app in
+web/, deployed to https://jesunahmadushno.github.io/rag-eval-harness/
+through the Pages workflow. This page is kept as the v1.0 text record.
+
 A dependency-free evaluation harness for retrieval-augmented generation, built in three levels with measured results at each level.
 
 - Learn: a lexical evaluator over an 8-case golden set. Pass rate 0.625 by design (3 cases built to fail, each named correctly).
