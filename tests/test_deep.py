@@ -12,13 +12,13 @@ sys.path.insert(0, os.path.join(ROOT, "level-3-deep"))
 sys.path.insert(0, os.path.join(ROOT, "level-2-build"))
 sys.path.insert(0, os.path.join(ROOT, "level-1-learn"))
 
-from pipeline import load_corpus  # noqa: E402
-from reranker import rerank, stem  # noqa: E402
-from pipeline_deep import DeepRagPipeline, evaluate_cases  # noqa: E402
-from taxonomy import build_taxonomy  # noqa: E402
-from regression_gate import check_regression, load_baseline  # noqa: E402
 from dashboard import build_dashboard  # noqa: E402
+from pipeline import load_corpus  # noqa: E402
+from pipeline_deep import DeepRagPipeline, evaluate_cases  # noqa: E402
 from rag_eval import context_recall  # noqa: E402
+from regression_gate import check_regression, load_baseline  # noqa: E402
+from reranker import rerank, stem  # noqa: E402
+from taxonomy import build_taxonomy  # noqa: E402
 
 
 def load_json(rel):

@@ -12,9 +12,9 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "level-2-build"))
 sys.path.insert(0, os.path.join(ROOT, "level-1-learn"))
 
-from pipeline import BM25Index, RagPipeline, load_corpus  # noqa: E402
-from judge import BudgetedJudge, LexicalJudge  # noqa: E402
 from agent_scoring import score_agent  # noqa: E402
+from judge import BudgetedJudge, LexicalJudge  # noqa: E402
+from pipeline import BM25Index, RagPipeline, load_corpus  # noqa: E402
 from rag_eval import context_recall  # noqa: E402
 
 
