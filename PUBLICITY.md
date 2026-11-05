@@ -55,3 +55,18 @@ Jev claim_check on the five v1.2 public claims: model jev-1.13.0,
 | Repo | Model metrics record (model-metrics/README.md, calibration) | 955 (accuracy 295, research 190, gap fit 190, clarity 145, reach format 135) | In the v1.2 PR |
 | GitHub release | v1.2 | n/a | Tagged after merge if CI and CodeQL are green |
 | LinkedIn, X, Facebook, Instagram, Threads, video | Social fan-out for v1.2 | n/a | HELD: standing platform gates; drafts only, nothing posted |
+
+## Fan-out completion: release notes file (2026-11-05)
+
+The one fan-out file gap named in the Sprint 1 closeout audit (no
+fanout/release-notes.md; release notes lived only on the GitHub
+releases) is closed by fanout/release-notes.md, covering v0.1,
+v0.5, v1.0, v1.1, and v1.2 with their measured results and release
+links. Every number reuses a figure already Jev-gated in its own
+level cycle, so no new claim gate ran.
+
+- Publicity grade for the release notes piece: 955 of 1,000
+  (accuracy 290, research 190, gap fit 195, clarity 145, reach
+  format 135), above the 900 ship line.
+- Social channels: HELD, as in every section above. The loop
+  prepares drafts and never posts.
