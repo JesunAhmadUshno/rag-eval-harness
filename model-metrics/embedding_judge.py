@@ -21,6 +21,9 @@ Scores:
   fixed constants in this file, set below the level a short paraphrase
   reaches with this model and above the level unrelated text reaches.
   They are calibration choices, documented here, not learned parameters.
+  The v1.2 agreement check against gold-derived proxy labels is in
+  calibrate_judge.py and calibration.json (write-up in this folder's
+  README); it checked the constants and left them unchanged.
 
 The embedder is injected, so tests run with a fake embedder and never
 download a model. If Model2Vec or the model is unavailable,

@@ -153,3 +153,16 @@ Known failure modes of the reranker itself:
 - The judge is still the local lexical proxy from Build, not an
   LLM. The budget machinery is real; the semantic judgment is not.
 - The run executed on the Muse VM, not the assigned BlackBoxV2 node.
+
+## Addendum, v1.2 (2026-11-04): span extraction joins this level
+
+span_extract.py cuts the answer down from the whole top sentence to
+a short span inside it, behind DeepRagPipeline answer_mode="span".
+The default stays "sentence", so everything measured above keeps the
+behaviour it was measured with, and the regression gate is untouched.
+The method (candidate windows scored by novelty, question type,
+anchoring, a subject prior, and length pressure) and its named error
+classes are documented in the module. On the v1.2 real samples it is
+the largest measured gain in the project: SQuAD lexical passes 22 to
+108 of 500 and HotpotQA 1 to 9 of 200, reranked, sentence against
+span on the same cases. Full record: real-data/README.md.

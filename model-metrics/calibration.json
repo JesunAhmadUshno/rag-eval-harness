@@ -1,0 +1,367 @@
+{
+ "generated": "2026-11-04",
+ "source": "real-data/results_real.json (v1.2 run)",
+ "proxy_label": "gold answer text contained in the system answer, or lexical answer relevance >= 0.50. A proxy built from gold labels, not human annotation.",
+ "shipped_thresholds": {
+  "similarity": 0.3,
+  "support": 0.25
+ },
+ "datasets": {
+  "squad": {
+   "without_rerank": {
+    "n": 500,
+    "proxy_correct": 317,
+    "judge_vs_proxy": {
+     "n": 500,
+     "agreement": 0.786,
+     "cohen_kappa": 0.5607,
+     "both_pass": 242,
+     "judge_only": 32,
+     "other_only": 75,
+     "both_fail": 151
+    },
+    "judge_vs_lexical": {
+     "n": 500,
+     "agreement": 0.5,
+     "cohen_kappa": 0.0799,
+     "both_pass": 24,
+     "judge_only": 250,
+     "other_only": 0,
+     "both_fail": 226
+    },
+    "threshold_sweep": {
+     "0.2": {
+      "judge_passed": 365,
+      "agreement_with_proxy": 0.84
+     },
+     "0.25": {
+      "judge_passed": 326,
+      "agreement_with_proxy": 0.814
+     },
+     "0.3": {
+      "judge_passed": 274,
+      "agreement_with_proxy": 0.786
+     },
+     "0.35": {
+      "judge_passed": 241,
+      "agreement_with_proxy": 0.748
+     },
+     "0.4": {
+      "judge_passed": 207,
+      "agreement_with_proxy": 0.708
+     }
+    }
+   },
+   "with_rerank": {
+    "n": 500,
+    "proxy_correct": 320,
+    "judge_vs_proxy": {
+     "n": 500,
+     "agreement": 0.79,
+     "cohen_kappa": 0.5649,
+     "both_pass": 248,
+     "judge_only": 33,
+     "other_only": 72,
+     "both_fail": 147
+    },
+    "judge_vs_lexical": {
+     "n": 500,
+     "agreement": 0.482,
+     "cohen_kappa": 0.0693,
+     "both_pass": 22,
+     "judge_only": 259,
+     "other_only": 0,
+     "both_fail": 219
+    },
+    "threshold_sweep": {
+     "0.2": {
+      "judge_passed": 363,
+      "agreement_with_proxy": 0.85
+     },
+     "0.25": {
+      "judge_passed": 326,
+      "agreement_with_proxy": 0.82
+     },
+     "0.3": {
+      "judge_passed": 281,
+      "agreement_with_proxy": 0.79
+     },
+     "0.35": {
+      "judge_passed": 243,
+      "agreement_with_proxy": 0.758
+     },
+     "0.4": {
+      "judge_passed": 208,
+      "agreement_with_proxy": 0.716
+     }
+    }
+   },
+   "span_without_rerank": {
+    "n": 500,
+    "proxy_correct": 114,
+    "judge_vs_proxy": {
+     "n": 500,
+     "agreement": 0.898,
+     "cohen_kappa": 0.7111,
+     "both_pass": 89,
+     "judge_only": 26,
+     "other_only": 25,
+     "both_fail": 360
+    },
+    "judge_vs_lexical": {
+     "n": 500,
+     "agreement": 0.896,
+     "cohen_kappa": 0.7046,
+     "both_pass": 88,
+     "judge_only": 27,
+     "other_only": 25,
+     "both_fail": 360
+    },
+    "threshold_sweep": {
+     "0.2": {
+      "judge_passed": 137,
+      "agreement_with_proxy": 0.858
+     },
+     "0.25": {
+      "judge_passed": 126,
+      "agreement_with_proxy": 0.876
+     },
+     "0.3": {
+      "judge_passed": 115,
+      "agreement_with_proxy": 0.898
+     },
+     "0.35": {
+      "judge_passed": 109,
+      "agreement_with_proxy": 0.91
+     },
+     "0.4": {
+      "judge_passed": 103,
+      "agreement_with_proxy": 0.918
+     }
+    }
+   },
+   "span_with_rerank": {
+    "n": 500,
+    "proxy_correct": 109,
+    "judge_vs_proxy": {
+     "n": 500,
+     "agreement": 0.902,
+     "cohen_kappa": 0.7154,
+     "both_pass": 86,
+     "judge_only": 26,
+     "other_only": 23,
+     "both_fail": 365
+    },
+    "judge_vs_lexical": {
+     "n": 500,
+     "agreement": 0.9,
+     "cohen_kappa": 0.7087,
+     "both_pass": 85,
+     "judge_only": 27,
+     "other_only": 23,
+     "both_fail": 365
+    },
+    "threshold_sweep": {
+     "0.2": {
+      "judge_passed": 132,
+      "agreement_with_proxy": 0.866
+     },
+     "0.25": {
+      "judge_passed": 120,
+      "agreement_with_proxy": 0.886
+     },
+     "0.3": {
+      "judge_passed": 112,
+      "agreement_with_proxy": 0.902
+     },
+     "0.35": {
+      "judge_passed": 107,
+      "agreement_with_proxy": 0.912
+     },
+     "0.4": {
+      "judge_passed": 102,
+      "agreement_with_proxy": 0.922
+     }
+    }
+   }
+  },
+  "hotpotqa": {
+   "without_rerank": {
+    "n": 200,
+    "proxy_correct": 40,
+    "judge_vs_proxy": {
+     "n": 200,
+     "agreement": 0.835,
+     "cohen_kappa": 0.5692,
+     "both_pass": 34,
+     "judge_only": 27,
+     "other_only": 6,
+     "both_fail": 133
+    },
+    "judge_vs_lexical": {
+     "n": 200,
+     "agreement": 0.7,
+     "cohen_kappa": 0.0226,
+     "both_pass": 1,
+     "judge_only": 60,
+     "other_only": 0,
+     "both_fail": 139
+    },
+    "threshold_sweep": {
+     "0.2": {
+      "judge_passed": 88,
+      "agreement_with_proxy": 0.76
+     },
+     "0.25": {
+      "judge_passed": 71,
+      "agreement_with_proxy": 0.835
+     },
+     "0.3": {
+      "judge_passed": 61,
+      "agreement_with_proxy": 0.835
+     },
+     "0.35": {
+      "judge_passed": 52,
+      "agreement_with_proxy": 0.85
+     },
+     "0.4": {
+      "judge_passed": 41,
+      "agreement_with_proxy": 0.855
+     }
+    }
+   },
+   "with_rerank": {
+    "n": 200,
+    "proxy_correct": 48,
+    "judge_vs_proxy": {
+     "n": 200,
+     "agreement": 0.82,
+     "cohen_kappa": 0.5735,
+     "both_pass": 41,
+     "judge_only": 29,
+     "other_only": 7,
+     "both_fail": 123
+    },
+    "judge_vs_lexical": {
+     "n": 200,
+     "agreement": 0.655,
+     "cohen_kappa": 0.0185,
+     "both_pass": 1,
+     "judge_only": 69,
+     "other_only": 0,
+     "both_fail": 130
+    },
+    "threshold_sweep": {
+     "0.2": {
+      "judge_passed": 96,
+      "agreement_with_proxy": 0.75
+     },
+     "0.25": {
+      "judge_passed": 85,
+      "agreement_with_proxy": 0.805
+     },
+     "0.3": {
+      "judge_passed": 70,
+      "agreement_with_proxy": 0.82
+     },
+     "0.35": {
+      "judge_passed": 59,
+      "agreement_with_proxy": 0.845
+     },
+     "0.4": {
+      "judge_passed": 43,
+      "agreement_with_proxy": 0.835
+     }
+    }
+   },
+   "span_without_rerank": {
+    "n": 200,
+    "proxy_correct": 20,
+    "judge_vs_proxy": {
+     "n": 200,
+     "agreement": 0.93,
+     "cohen_kappa": 0.6818,
+     "both_pass": 18,
+     "judge_only": 12,
+     "other_only": 2,
+     "both_fail": 168
+    },
+    "judge_vs_lexical": {
+     "n": 200,
+     "agreement": 0.865,
+     "cohen_kappa": 0.2264,
+     "both_pass": 5,
+     "judge_only": 25,
+     "other_only": 2,
+     "both_fail": 168
+    },
+    "threshold_sweep": {
+     "0.2": {
+      "judge_passed": 41,
+      "agreement_with_proxy": 0.875
+     },
+     "0.25": {
+      "judge_passed": 31,
+      "agreement_with_proxy": 0.925
+     },
+     "0.3": {
+      "judge_passed": 30,
+      "agreement_with_proxy": 0.93
+     },
+     "0.35": {
+      "judge_passed": 26,
+      "agreement_with_proxy": 0.94
+     },
+     "0.4": {
+      "judge_passed": 25,
+      "agreement_with_proxy": 0.945
+     }
+    }
+   },
+   "span_with_rerank": {
+    "n": 200,
+    "proxy_correct": 26,
+    "judge_vs_proxy": {
+     "n": 200,
+     "agreement": 0.925,
+     "cohen_kappa": 0.7266,
+     "both_pass": 25,
+     "judge_only": 14,
+     "other_only": 1,
+     "both_fail": 160
+    },
+    "judge_vs_lexical": {
+     "n": 200,
+     "agreement": 0.84,
+     "cohen_kappa": 0.2807,
+     "both_pass": 8,
+     "judge_only": 31,
+     "other_only": 1,
+     "both_fail": 160
+    },
+    "threshold_sweep": {
+     "0.2": {
+      "judge_passed": 50,
+      "agreement_with_proxy": 0.87
+     },
+     "0.25": {
+      "judge_passed": 39,
+      "agreement_with_proxy": 0.925
+     },
+     "0.3": {
+      "judge_passed": 39,
+      "agreement_with_proxy": 0.925
+     },
+     "0.35": {
+      "judge_passed": 35,
+      "agreement_with_proxy": 0.935
+     },
+     "0.4": {
+      "judge_passed": 33,
+      "agreement_with_proxy": 0.945
+     }
+    }
+   }
+  }
+ }
+}
