@@ -36,3 +36,7 @@ jobs:
         run: python level-3-deep/run_deep.py
       - name: level 3 regression gate
         run: python level-3-deep/regression_gate.py
+      - name: model judge tests (fake embedder, no download)
+        run: python -m unittest discover -s tests -p "test_model*.py" -v
+      - name: real data tests (committed samples, no network)
+        run: python -m unittest discover -s tests -p "test_real*.py" -v

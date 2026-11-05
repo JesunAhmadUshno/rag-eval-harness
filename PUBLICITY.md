@@ -24,3 +24,18 @@ Pack per files/github-actions-polish-standard-2026-11-04.md of the batch: CI mat
 
 - Pages: docs/index.md is in this PR. Enabling Pages on the repo is a post-merge step (the source must exist on main first); its live URL or the failure is recorded in the batch ledger, not claimed here.
 - PyPI publishing: HELD. It needs a PyPI token, a new credential, which is Jesun's tap only.
+
+## v1.1 research upgrade (2026-11-04)
+
+Project grade: 8,000 of 10,000 (deductions named in DOSSIER.md).
+Jev claim_check on the five public claims: model jev-1.13.0, 1,607
+input tokens, all five REVIEW, none blocked (spec and results in the
+goal hidden_files, jev-p06-v11-claim-*.json).
+
+| Channel | Piece | Publicity grade (of 1,000) | Outcome |
+| --- | --- | --- | --- |
+| GitHub Pages | React results lab (web/), replacing the single-page docs | 960 (accuracy 290, research 195, gap fit 190, clarity 145, reach format 140) | Live after the v1.1 PR merges and the Pages workflow deploys; verified by HTTP check in the batch ledger |
+| Repo | Real data record (real-data/README.md, DATASETS.md) | 955 | In the v1.1 PR |
+| Repo | Model metrics record (model-metrics/README.md) | 940 | In the v1.1 PR |
+| GitHub release | v1.1 | n/a | Tagged after merge if CI and CodeQL are green |
+| LinkedIn, X, Facebook, Instagram, Threads, video | Social fan-out for v1.1 | n/a | HELD: standing platform gates; the loop prepares drafts only and does not post |
