@@ -1,0 +1,902 @@
+[
+ {
+  "id": "squad-56be4db0acb8001400a502ec",
+  "dataset": "squad",
+  "question": "Which NFL team represented the AFC at Super Bowl 50?",
+  "gold_answer": "Denver Broncos",
+  "gold_facts": [
+   "Denver Broncos"
+  ]
+ },
+ {
+  "id": "squad-56bea9923aeaaa14008c91bb",
+  "dataset": "squad",
+  "question": "What day was the Super Bowl played on?",
+  "gold_answer": "February 7, 2016",
+  "gold_facts": [
+   "February 7, 2016"
+  ]
+ },
+ {
+  "id": "squad-56bf10f43aeaaa14008c9501",
+  "dataset": "squad",
+  "question": "What month, day and year did Super Bowl 50 take place? ",
+  "gold_answer": "February 7, 2016",
+  "gold_facts": [
+   "February 7, 2016"
+  ]
+ },
+ {
+  "id": "squad-56be4e1facb8001400a502f6",
+  "dataset": "squad",
+  "question": "Which Carolina Panthers player was named Most Valuable Player?",
+  "gold_answer": "Cam Newton",
+  "gold_facts": [
+   "Cam Newton"
+  ]
+ },
+ {
+  "id": "squad-56bf159b3aeaaa14008c9507",
+  "dataset": "squad",
+  "question": "What was the win/loss ratio in 2015 for the Carolina Panthers during their regular season?",
+  "gold_answer": "15\u20131",
+  "gold_facts": [
+   "15\u20131"
+  ]
+ },
+ {
+  "id": "squad-56d6017d1c85041400946ec1",
+  "dataset": "squad",
+  "question": "Who did Denver beat in the 2015 AFC Championship game?",
+  "gold_answer": "New England Patriots",
+  "gold_facts": [
+   "New England Patriots"
+  ]
+ },
+ {
+  "id": "squad-56beab833aeaaa14008c91d4",
+  "dataset": "squad",
+  "question": "Who was limited by Denver's defense?",
+  "gold_answer": "Newton was limited by Denver's defense",
+  "gold_facts": [
+   "Newton was limited by Denver's defense"
+  ]
+ },
+ {
+  "id": "squad-56d204ade7d4791d00902604",
+  "dataset": "squad",
+  "question": "How many tackles did Von Miller get during the game?",
+  "gold_answer": "5",
+  "gold_facts": [
+   "5"
+  ]
+ },
+ {
+  "id": "squad-56be5333acb8001400a5030a",
+  "dataset": "squad",
+  "question": "Which network broadcasted Super Bowl 50 in the U.S.?",
+  "gold_answer": "CBS",
+  "gold_facts": [
+   "CBS"
+  ]
+ },
+ {
+  "id": "squad-56bf1ae93aeaaa14008c951b",
+  "dataset": "squad",
+  "question": "Which network broadcasted the 50th Super Bowl game? ",
+  "gold_answer": "CBS",
+  "gold_facts": [
+   "CBS"
+  ]
+ },
+ {
+  "id": "squad-56d602631c85041400946edb",
+  "dataset": "squad",
+  "question": "Who were special guests for the Super Bowl halftime show?",
+  "gold_answer": "Beyonc\u00e9 and Bruno Mars",
+  "gold_facts": [
+   "Beyonc\u00e9 and Bruno Mars"
+  ]
+ },
+ {
+  "id": "squad-56beafca3aeaaa14008c9208",
+  "dataset": "squad",
+  "question": "When did he make the quoted remarks about Super Bowl 50?",
+  "gold_answer": "early 2012",
+  "gold_facts": [
+   "early 2012"
+  ]
+ },
+ {
+  "id": "squad-56beb03c3aeaaa14008c920b",
+  "dataset": "squad",
+  "question": "What venue in Miami was a candidate for the site of Super Bowl 50?",
+  "gold_answer": "Sun Life Stadium",
+  "gold_facts": [
+   "Sun Life Stadium"
+  ]
+ },
+ {
+  "id": "squad-56d6ee6e0d65d21400198258",
+  "dataset": "squad",
+  "question": "What is the name of the stadium in San Francisco Bay Area?",
+  "gold_answer": "Levi's Stadium.",
+  "gold_facts": [
+   "Levi's Stadium."
+  ]
+ },
+ {
+  "id": "squad-56beb0f43aeaaa14008c921c",
+  "dataset": "squad",
+  "question": "When were the finalists announced?",
+  "gold_answer": "October 16, 2012",
+  "gold_facts": [
+   "October 16, 2012"
+  ]
+ },
+ {
+  "id": "squad-56d98f0ddc89441400fdb558",
+  "dataset": "squad",
+  "question": "What date were the top two stadium choices for Super Bowl 50 announced?",
+  "gold_answer": "October 16, 2012",
+  "gold_facts": [
+   "October 16, 2012"
+  ]
+ },
+ {
+  "id": "squad-56beb2153aeaaa14008c9225",
+  "dataset": "squad",
+  "question": "Where did the spring meetings of the NFL owners take place?",
+  "gold_answer": "Boston",
+  "gold_facts": [
+   "Boston"
+  ]
+ },
+ {
+  "id": "squad-56d6f0770d65d21400198268",
+  "dataset": "squad",
+  "question": "When was San Francisco voted to be the location for Super Bowl 50?",
+  "gold_answer": "May 21, 2013",
+  "gold_facts": [
+   "May 21, 2013"
+  ]
+ },
+ {
+  "id": "squad-56beb2a03aeaaa14008c9230",
+  "dataset": "squad",
+  "question": "How many NFL teams have gone 15-1 in one season?",
+  "gold_answer": "six",
+  "gold_facts": [
+   "six"
+  ]
+ },
+ {
+  "id": "squad-56d6f1190d65d21400198274",
+  "dataset": "squad",
+  "question": "Prior to Super Bowl 50, when were the Broncos last there?",
+  "gold_answer": "Super Bowl XLVIII",
+  "gold_facts": [
+   "Super Bowl XLVIII"
+  ]
+ },
+ {
+  "id": "squad-56beb3083aeaaa14008c923e",
+  "dataset": "squad",
+  "question": "Who had the best record in the NFC?",
+  "gold_answer": "Carolina Panthers",
+  "gold_facts": [
+   "Carolina Panthers"
+  ]
+ },
+ {
+  "id": "squad-56d6f2000d65d2140019827e",
+  "dataset": "squad",
+  "question": "When did the NFL start their 16 game seasons?",
+  "gold_answer": "1978",
+  "gold_facts": [
+   "1978"
+  ]
+ },
+ {
+  "id": "squad-56beb3a03aeaaa14008c924b",
+  "dataset": "squad",
+  "question": "Who started at tight end for the Panthers?",
+  "gold_answer": "Greg Olsen",
+  "gold_facts": [
+   "Greg Olsen"
+  ]
+ },
+ {
+  "id": "squad-56d6f2960d65d2140019828a",
+  "dataset": "squad",
+  "question": "How many touchdowns did Jonathan Stewart have in 13 games?",
+  "gold_answer": "six",
+  "gold_facts": [
+   "six"
+  ]
+ },
+ {
+  "id": "squad-56beb4343aeaaa14008c925f",
+  "dataset": "squad",
+  "question": "Who registered the most sacks on the team this season?",
+  "gold_answer": "Kawann Short",
+  "gold_facts": [
+   "Kawann Short"
+  ]
+ },
+ {
+  "id": "squad-56beb4e43aeaaa14008c9265",
+  "dataset": "squad",
+  "question": "Who is the head coach of the Broncos?",
+  "gold_answer": "Gary Kubiak",
+  "gold_facts": [
+   "Gary Kubiak"
+  ]
+ },
+ {
+  "id": "squad-56d6f4030d65d2140019829a",
+  "dataset": "squad",
+  "question": "When John Fox left as head coach for the Broncos, who replaced him?",
+  "gold_answer": "Gary Kubiak",
+  "gold_facts": [
+   "Gary Kubiak"
+  ]
+ },
+ {
+  "id": "squad-56beb57b3aeaaa14008c9279",
+  "dataset": "squad",
+  "question": "What was Peyton Manning's passer rating for the season?",
+  "gold_answer": "67.9",
+  "gold_facts": [
+   "67.9"
+  ]
+ },
+ {
+  "id": "squad-56d6fe0b0d65d214001982a4",
+  "dataset": "squad",
+  "question": "What was Manning's passer rating at the end of the season?",
+  "gold_answer": "67.9",
+  "gold_facts": [
+   "67.9"
+  ]
+ },
+ {
+  "id": "squad-56beb6533aeaaa14008c928e",
+  "dataset": "squad",
+  "question": "How many sacks did Derek Wolfe register?",
+  "gold_answer": "5\u00bd",
+  "gold_facts": [
+   "5\u00bd"
+  ]
+ },
+ {
+  "id": "squad-56d99da8dc89441400fdb5fd",
+  "dataset": "squad",
+  "question": "Who forced four fumbles for the Broncos in the 2015 season?",
+  "gold_answer": "Von Miller",
+  "gold_facts": [
+   "Von Miller"
+  ]
+ },
+ {
+  "id": "squad-56bf34293aeaaa14008c955b",
+  "dataset": "squad",
+  "question": "How many yards did the Carolina Panthers gain in the 487 in the NFC Championship Game?",
+  "gold_answer": "487",
+  "gold_facts": [
+   "487"
+  ]
+ },
+ {
+  "id": "squad-56beb7953aeaaa14008c92ad",
+  "dataset": "squad",
+  "question": "Who won Super Bowl XLIX?",
+  "gold_answer": "New England Patriots",
+  "gold_facts": [
+   "New England Patriots"
+  ]
+ },
+ {
+  "id": "squad-56d7018a0d65d214001982c5",
+  "dataset": "squad",
+  "question": "Who did the Broncos defeat in the AFC Championship game?",
+  "gold_answer": "New England Patriots",
+  "gold_facts": [
+   "New England Patriots"
+  ]
+ },
+ {
+  "id": "squad-56bf3a223aeaaa14008c9577",
+  "dataset": "squad",
+  "question": "How many years has Thomas Davis played in the NFL?",
+  "gold_answer": "11",
+  "gold_facts": [
+   "11"
+  ]
+ },
+ {
+  "id": "squad-56beb86b3aeaaa14008c92c1",
+  "dataset": "squad",
+  "question": "Who did John Elway play for in Super Bowl XXXIII?",
+  "gold_answer": "Broncos",
+  "gold_facts": [
+   "Broncos"
+  ]
+ },
+ {
+  "id": "squad-56d9a0eadc89441400fdb63e",
+  "dataset": "squad",
+  "question": "Who was the first quarterback to take two teams to more than one Super Bowl?",
+  "gold_answer": "Peyton Manning",
+  "gold_facts": [
+   "Peyton Manning"
+  ]
+ },
+ {
+  "id": "squad-56bf41013aeaaa14008c959d",
+  "dataset": "squad",
+  "question": "How old was Newton during Super Bowl 50?",
+  "gold_answer": "26",
+  "gold_facts": [
+   "26"
+  ]
+ },
+ {
+  "id": "squad-56beb97c3aeaaa14008c92dd",
+  "dataset": "squad",
+  "question": "What position did Rivera play in Super Bowl XX?",
+  "gold_answer": "linebacker",
+  "gold_facts": [
+   "linebacker"
+  ]
+ },
+ {
+  "id": "squad-56beba103aeaaa14008c92e8",
+  "dataset": "squad",
+  "question": "What team did Justin Tucker play for?",
+  "gold_answer": "Baltimore Ravens",
+  "gold_facts": [
+   "Baltimore Ravens"
+  ]
+ },
+ {
+  "id": "squad-56d9a419dc89441400fdb679",
+  "dataset": "squad",
+  "question": "What field type is usually chosen for Super Bowl games?",
+  "gold_answer": "natural grass",
+  "gold_facts": [
+   "natural grass"
+  ]
+ },
+ {
+  "id": "squad-56d70ccc0d65d2140019831d",
+  "dataset": "squad",
+  "question": "What jersey did the Broncos wear for Super Bowl 50?",
+  "gold_answer": "road white jerseys",
+  "gold_facts": [
+   "road white jerseys"
+  ]
+ },
+ {
+  "id": "squad-56bf49993aeaaa14008c95b5",
+  "dataset": "squad",
+  "question": "What hotel did the Panthers stay in during Super Bowl 50? ",
+  "gold_answer": "San Jose Marriott",
+  "gold_facts": [
+   "San Jose Marriott"
+  ]
+ },
+ {
+  "id": "squad-56d9a6b4dc89441400fdb6a2",
+  "dataset": "squad",
+  "question": "Where did the Broncos practice for the Super Bowl?",
+  "gold_answer": "Stanford University",
+  "gold_facts": [
+   "Stanford University"
+  ]
+ },
+ {
+  "id": "squad-56bf4e1b3aeaaa14008c95c1",
+  "dataset": "squad",
+  "question": "What color are the numbers in the Super Bowl 50 logo? ",
+  "gold_answer": "gold",
+  "gold_facts": [
+   "gold"
+  ]
+ },
+ {
+  "id": "squad-56bebc383aeaaa14008c9321",
+  "dataset": "squad",
+  "question": "What yard marker on the field was painted gold?",
+  "gold_answer": "50",
+  "gold_facts": [
+   "50"
+  ]
+ },
+ {
+  "id": "squad-56bebcbe3aeaaa14008c9328",
+  "dataset": "squad",
+  "question": "Who is the city supervisor of San Francisco?",
+  "gold_answer": "Jane Kim",
+  "gold_facts": [
+   "Jane Kim"
+  ]
+ },
+ {
+  "id": "squad-56d9b389dc89441400fdb6ed",
+  "dataset": "squad",
+  "question": "How many people are likely to visit Justin Herman Plaza during the week of the Super Bowl?",
+  "gold_answer": "More than 1 million",
+  "gold_facts": [
+   "More than 1 million"
+  ]
+ },
+ {
+  "id": "squad-56d714cd0d65d21400198356",
+  "dataset": "squad",
+  "question": "Where was a beer, wine and food festival held at prior to the Super Bowl?",
+  "gold_answer": "Bellomy Field",
+  "gold_facts": [
+   "Bellomy Field"
+  ]
+ },
+ {
+  "id": "squad-56bf57043aeaaa14008c95d9",
+  "dataset": "squad",
+  "question": "As a norm, what day of the week is the traditional Media Day held prior to a Super Bowl?",
+  "gold_answer": "Tuesday",
+  "gold_facts": [
+   "Tuesday"
+  ]
+ },
+ {
+  "id": "squad-56d9b4ebdc89441400fdb709",
+  "dataset": "squad",
+  "question": "What was media day called for Super Bowl 50?",
+  "gold_answer": "Super Bowl Opening Night.",
+  "gold_facts": [
+   "Super Bowl Opening Night."
+  ]
+ },
+ {
+  "id": "squad-56bf59523aeaaa14008c95e4",
+  "dataset": "squad",
+  "question": "How much money did the committee raise?",
+  "gold_answer": "over $40 million",
+  "gold_facts": [
+   "over $40 million"
+  ]
+ },
+ {
+  "id": "squad-56d71d150d65d2140019836f",
+  "dataset": "squad",
+  "question": "How many will the host committee dedicate to local charities?",
+  "gold_answer": "25 percent",
+  "gold_facts": [
+   "25 percent"
+  ]
+ },
+ {
+  "id": "squad-56bf5b933aeaaa14008c95ef",
+  "dataset": "squad",
+  "question": "What will the number \"50\" be plated with? ",
+  "gold_answer": "18-karat gold-plated",
+  "gold_facts": [
+   "18-karat gold-plated"
+  ]
+ },
+ {
+  "id": "squad-56bf5e7b3aeaaa14008c95f8",
+  "dataset": "squad",
+  "question": "Where was Tracy Wolfson announcing from during the Super Bowl 50 game?",
+  "gold_answer": "sidelines",
+  "gold_facts": [
+   "sidelines"
+  ]
+ },
+ {
+  "id": "squad-56d9b7dcdc89441400fdb744",
+  "dataset": "squad",
+  "question": "What was put on pylons for Super Bowl 50?",
+  "gold_answer": "cameras",
+  "gold_facts": [
+   "cameras"
+  ]
+ },
+ {
+  "id": "squad-56d9ba95dc89441400fdb757",
+  "dataset": "squad",
+  "question": "Who were the ESPN Deportes commentators for Super Bowl 50?",
+  "gold_answer": "Alvaro Martin and Raul Allegre",
+  "gold_facts": [
+   "Alvaro Martin and Raul Allegre"
+  ]
+ },
+ {
+  "id": "squad-56bf6e7a3aeaaa14008c9622",
+  "dataset": "squad",
+  "question": "What app did viewers use to watch the game on their smartphones? ",
+  "gold_answer": "NFL Mobile service",
+  "gold_facts": [
+   "NFL Mobile service"
+  ]
+ },
+ {
+  "id": "squad-56d720c70d65d21400198396",
+  "dataset": "squad",
+  "question": "What CBS show followed the Super Bowl?",
+  "gold_answer": "The Late Show with Stephen Colbert",
+  "gold_facts": [
+   "The Late Show with Stephen Colbert"
+  ]
+ },
+ {
+  "id": "squad-56bf717d3aeaaa14008c9639",
+  "dataset": "squad",
+  "question": "Which video gaming company debuted their ad for the first time during Super Bowl 50?",
+  "gold_answer": "Nintendo",
+  "gold_facts": [
+   "Nintendo"
+  ]
+ },
+ {
+  "id": "squad-56bec38b3aeaaa14008c939a",
+  "dataset": "squad",
+  "question": "Besides Death Wish Coffee, how many other competitors participated in the contest?",
+  "gold_answer": "nine",
+  "gold_facts": [
+   "nine"
+  ]
+ },
+ {
+  "id": "squad-56bec4343aeaaa14008c93ab",
+  "dataset": "squad",
+  "question": "Along with 10 Cloverfield Lane, what Paramount trailer appeared during the Super Bowl?",
+  "gold_answer": "Teenage Mutant Ninja Turtles: Out of the Shadows",
+  "gold_facts": [
+   "Teenage Mutant Ninja Turtles: Out of the Shadows"
+  ]
+ },
+ {
+  "id": "squad-56bec4a33aeaaa14008c93b2",
+  "dataset": "squad",
+  "question": "Who did play-by-play on Westwood One?",
+  "gold_answer": "Kevin Harlan",
+  "gold_facts": [
+   "Kevin Harlan"
+  ]
+ },
+ {
+  "id": "squad-56d9c049dc89441400fdb78f",
+  "dataset": "squad",
+  "question": "Who were the Westwood one color analysts?",
+  "gold_answer": "Boomer Esiason and Dan Fouts",
+  "gold_facts": [
+   "Boomer Esiason and Dan Fouts"
+  ]
+ },
+ {
+  "id": "squad-56d724620d65d214001983bf",
+  "dataset": "squad",
+  "question": "Who handled the color commentary for Denver's radio stations?",
+  "gold_answer": "Ed McCaffrey",
+  "gold_facts": [
+   "Ed McCaffrey"
+  ]
+ },
+ {
+  "id": "squad-56bec6573aeaaa14008c93e9",
+  "dataset": "squad",
+  "question": "Who was the Most Valuable Player of Super Bowl II?",
+  "gold_answer": "Bart Starr",
+  "gold_facts": [
+   "Bart Starr"
+  ]
+ },
+ {
+  "id": "squad-56d9c3a6dc89441400fdb7b6",
+  "dataset": "squad",
+  "question": "Who was the MVP of Super Bowl I and II?",
+  "gold_answer": "Bart Starr",
+  "gold_facts": [
+   "Bart Starr"
+  ]
+ },
+ {
+  "id": "squad-56d7253b0d65d214001983d4",
+  "dataset": "squad",
+  "question": "Who did the National Anthem at Super Bowl 50?",
+  "gold_answer": "Lady Gaga",
+  "gold_facts": [
+   "Lady Gaga"
+  ]
+ },
+ {
+  "id": "squad-56d725790d65d214001983d8",
+  "dataset": "squad",
+  "question": "Who lead the halftime show of Super Bowl 50?",
+  "gold_answer": "Coldplay.",
+  "gold_facts": [
+   "Coldplay."
+  ]
+ },
+ {
+  "id": "squad-56bec7a63aeaaa14008c941a",
+  "dataset": "squad",
+  "question": "Who kicked a field goal for Denver?",
+  "gold_answer": "Brandon McManus",
+  "gold_facts": [
+   "Brandon McManus"
+  ]
+ },
+ {
+  "id": "squad-56d9c5e7dc89441400fdb7dc",
+  "dataset": "squad",
+  "question": "What did Carolina face in the opening drive that they had not faced the entire postseason?",
+  "gold_answer": "a deficit.",
+  "gold_facts": [
+   "a deficit."
+  ]
+ },
+ {
+  "id": "squad-56d728e00d65d21400198420",
+  "dataset": "squad",
+  "question": "What year was the last time a fumble return touchdown like this occurred?",
+  "gold_answer": "1993",
+  "gold_facts": [
+   "1993"
+  ]
+ },
+ {
+  "id": "squad-56d729180d65d21400198426",
+  "dataset": "squad",
+  "question": "How many passing yards did Cam Newton get for his 4 of 4 passes?",
+  "gold_answer": "51",
+  "gold_facts": [
+   "51"
+  ]
+ },
+ {
+  "id": "squad-56bec9133aeaaa14008c9448",
+  "dataset": "squad",
+  "question": "Who was sacked as the first half clock expired?",
+  "gold_answer": "Newton",
+  "gold_facts": [
+   "Newton"
+  ]
+ },
+ {
+  "id": "squad-56d9c79edc89441400fdb808",
+  "dataset": "squad",
+  "question": "Who sacked Newton with 11 seconds left in the first half?",
+  "gold_answer": "DeMarcus Ware",
+  "gold_facts": [
+   "DeMarcus Ware"
+  ]
+ },
+ {
+  "id": "squad-56d9c92bdc89441400fdb80e",
+  "dataset": "squad",
+  "question": "Who did Newton get a pass to in the Panther starting plays of Super Bowl 50?",
+  "gold_answer": "Ted Ginn Jr.",
+  "gold_facts": [
+   "Ted Ginn Jr."
+  ]
+ },
+ {
+  "id": "squad-56d7261e0d65d214001983e2",
+  "dataset": "squad",
+  "question": "Where was the ball recovered?",
+  "gold_answer": "50-yard line.",
+  "gold_facts": [
+   "50-yard line."
+  ]
+ },
+ {
+  "id": "squad-56beca913aeaaa14008c9471",
+  "dataset": "squad",
+  "question": "Who was the receiver on the successful 2-point conversion?",
+  "gold_answer": "Bennie Fowler",
+  "gold_facts": [
+   "Bennie Fowler"
+  ]
+ },
+ {
+  "id": "squad-56d9cb47dc89441400fdb836",
+  "dataset": "squad",
+  "question": "What is the last name of the player who scored a 2-yard touchdown in the fourth quarter?",
+  "gold_answer": "Anderson",
+  "gold_facts": [
+   "Anderson"
+  ]
+ },
+ {
+  "id": "squad-56d7270c0d65d214001983f8",
+  "dataset": "squad",
+  "question": "Which player played even though he broke his arm two weeks prior to the Super Bowl?",
+  "gold_answer": "Thomas Davis",
+  "gold_facts": [
+   "Thomas Davis"
+  ]
+ },
+ {
+  "id": "squad-56becb823aeaaa14008c948f",
+  "dataset": "squad",
+  "question": "Who is the only quarterback to win a Super Bowl with two teams?",
+  "gold_answer": "Manning",
+  "gold_facts": [
+   "Manning"
+  ]
+ },
+ {
+  "id": "squad-5733a5f54776f41900660f45",
+  "dataset": "squad",
+  "question": "What was Maria Curie the first female recipient of?",
+  "gold_answer": "Nobel Prize",
+  "gold_facts": [
+   "Nobel Prize"
+  ]
+ },
+ {
+  "id": "squad-57337ddc4776f41900660bbb",
+  "dataset": "squad",
+  "question": "How far from Warsaw does the Vistula river's environment change noticeably? ",
+  "gold_answer": "15 kilometres",
+  "gold_facts": [
+   "15 kilometres"
+  ]
+ },
+ {
+  "id": "squad-57339555d058e614000b5df4",
+  "dataset": "squad",
+  "question": "What is the second academic school of technology in Poland?",
+  "gold_answer": "Warsaw University of Technology",
+  "gold_facts": [
+   "Warsaw University of Technology"
+  ]
+ },
+ {
+  "id": "squad-573399b54776f41900660e64",
+  "dataset": "squad",
+  "question": "What suffered considerably for Warsaw when it had an Eastern Bloc economy?",
+  "gold_answer": "infrastructure",
+  "gold_facts": [
+   "infrastructure"
+  ]
+ },
+ {
+  "id": "squad-57339ad74776f41900660e87",
+  "dataset": "squad",
+  "question": "What does Warsaw host many of?",
+  "gold_answer": "events and festivals",
+  "gold_facts": [
+   "events and festivals"
+  ]
+ },
+ {
+  "id": "squad-57339dd94776f41900660ecd",
+  "dataset": "squad",
+  "question": "How man people gather along the banks of the Vistula for the Wianki festival?",
+  "gold_answer": "thousands",
+  "gold_facts": [
+   "thousands"
+  ]
+ },
+ {
+  "id": "squad-5733a1854776f41900660f0b",
+  "dataset": "squad",
+  "question": "What museum preserves the memory of the crime?",
+  "gold_answer": "Katy\u0144",
+  "gold_facts": [
+   "Katy\u0144"
+  ]
+ },
+ {
+  "id": "squad-5733a32bd058e614000b5f33",
+  "dataset": "squad",
+  "question": "When did Polonia Warsaw win the country's championship prior to 2000?",
+  "gold_answer": "1946",
+  "gold_facts": [
+   "1946"
+  ]
+ },
+ {
+  "id": "squad-5733a560d058e614000b5f78",
+  "dataset": "squad",
+  "question": "Where did two of Triton's daughters set out on a journey through?",
+  "gold_answer": "depths of the oceans and seas",
+  "gold_facts": [
+   "depths of the oceans and seas"
+  ]
+ },
+ {
+  "id": "squad-573312fcd058e614000b56e7",
+  "dataset": "squad",
+  "question": "When was Warsaw ranked as the 32nd most liveable city in the world?",
+  "gold_answer": "2012",
+  "gold_facts": [
+   "2012"
+  ]
+ },
+ {
+  "id": "squad-573314e3d058e614000b56f1",
+  "dataset": "squad",
+  "question": "What is another notable university in Warsaw after the University of Warsaw?",
+  "gold_answer": "Polish Academy of Sciences",
+  "gold_facts": [
+   "Polish Academy of Sciences"
+  ]
+ },
+ {
+  "id": "squad-57332562d058e614000b5731",
+  "dataset": "squad",
+  "question": "Who was Boleslaw II of Masovia?",
+  "gold_answer": "The Prince of P\u0142ock",
+  "gold_facts": [
+   "The Prince of P\u0142ock"
+  ]
+ },
+ {
+  "id": "squad-57332a734776f41900660727",
+  "dataset": "squad",
+  "question": "What kingdom annexed Warsaw in 1796?",
+  "gold_answer": "Prussia",
+  "gold_facts": [
+   "Prussia"
+  ]
+ },
+ {
+  "id": "squad-57332c1e4776f4190066073b",
+  "dataset": "squad",
+  "question": "Who was Warsaw under the administration of when it came under the rule of the General Goverment?",
+  "gold_answer": "a German Nazi colonial administration",
+  "gold_facts": [
+   "a German Nazi colonial administration"
+  ]
+ },
+ {
+  "id": "squad-57332f81d058e614000b5777",
+  "dataset": "squad",
+  "question": "What type of housing was erected in Warsaw as part of the Bricks for Warsaw process?",
+  "gold_answer": "prefabricated",
+  "gold_facts": [
+   "prefabricated"
+  ]
+ },
+ {
+  "id": "squad-5733314e4776f4190066076b",
+  "dataset": "squad",
+  "question": "How many miles east of Berlin is Warsaw?",
+  "gold_answer": "325",
+  "gold_facts": [
+   "325"
+  ]
+ },
+ {
+  "id": "squad-57335ddbd058e614000b5930",
+  "dataset": "squad",
+  "question": "What does the highest level of the Vistula plateau contain?",
+  "gold_answer": "former flooded terraces",
+  "gold_facts": [
+   "former flooded terraces"
+  ]
+ },
+ {
+  "id": "squad-573361404776f4190066093d",
+  "dataset": "squad",
+  "question": "When was St. John's Cathedral constructed?",
+  "gold_answer": "14th century",
+  "gold_facts": [
+   "14th century"
+  ]
+ },
+ {
+  "id": "squad-5733638fd058e614000b59e9",
+  "dataset": "squad",
+  "question": "Why aren't the examples of bouregois architecture visible today?",
+  "gold_answer": "not restored by the communist authorities",
+  "gold_facts": [
+   "not restored by the communist authorities"
+  ]
+ }
+]
