@@ -182,3 +182,38 @@ footer.site {
   padding: 22px 0 40px;
 }
 ul.tight li { margin: 5px 0; }
+
+.drill-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 12px 0 4px;
+}
+.drill-controls label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 13px;
+  color: var(--muted);
+}
+.drill-controls select, .drill-controls input {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text);
+  padding: 8px;
+  font: 14px/1.45 var(--sans);
+}
+.drill-scroll { overflow-x: auto; }
+table.data.drill { font-size: 13px; min-width: 900px; }
+table.data.drill td.mono { font-family: var(--mono); font-size: 12px; }
+.drill-more {
+  background: var(--panel-2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text-h);
+  padding: 8px 14px;
+  font: 14px/1.45 var(--sans);
+  cursor: pointer;
+  margin-top: 6px;
+}

@@ -5,6 +5,12 @@ optionally reranks them with reranker.rerank before the extractive
 answer step takes the top passage. use_rerank=False reproduces the
 Build behaviour exactly, which is how the before and after numbers in
 the Deep README are measured on the same golden set.
+
+answer_mode="span" (v1.2) cuts the answer down to a short span inside
+the top passage with span_extract.extract_span, because real gold
+answers are spans, not sentences. The default stays "sentence", so
+the Deep golden set, the regression gate, and every v1.0 and v1.1
+number keep the exact behaviour they were measured with.
 """
 
 import os
@@ -19,20 +25,29 @@ sys.path.insert(0, HERE)
 from pipeline import RagPipeline  # noqa: E402
 from rag_eval import score_case  # noqa: E402
 from reranker import rerank  # noqa: E402
+from span_extract import extract_span  # noqa: E402
 
 
 class DeepRagPipeline(RagPipeline):
-    def __init__(self, corpus, top_k=5, use_rerank=True):
+    def __init__(self, corpus, top_k=5, use_rerank=True, answer_mode="sentence"):
         super().__init__(corpus, top_k=top_k)
         self.use_rerank = use_rerank
+        if answer_mode not in ("sentence", "span"):
+            raise ValueError(f"unknown answer_mode: {answer_mode}")
+        self.answer_mode = answer_mode
 
     def answer(self, question):
         hits = self.index.search_passages(question, top_k=self.top_k)
         if self.use_rerank:
             hits = rerank(question, hits)
         contexts = [text for text, _ in hits]
+        top = contexts[0] if contexts else ""
+        answer = top
+        if self.answer_mode == "span" and top:
+            answer = extract_span(question, top)
         return {
-            "answer": contexts[0] if contexts else "",
+            "answer": answer,
+            "source_sentence": top,
             "contexts": contexts,
             "scores": [score for _, score in hits],
         }
