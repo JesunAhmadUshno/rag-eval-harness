@@ -2,13 +2,20 @@
 
 Method, stated plainly so the numbers can be checked:
 - Retrieval and answering use the project's own pipeline: BM25 over
-  sentences with an extractive top-passage answer (level-2-build), run
-  with and without the stemmed-overlap reranker (level-3-deep).
+  sentences (level-2-build) with the stemmed-overlap reranker
+  (level-3-deep) on or off. The answer step runs in two modes: the
+  whole top sentence ("sentence", the v1.0 and v1.1 behaviour) and a
+  short span cut from that sentence ("span", v1.2, span_extract.py).
+  Four variants per dataset: without_rerank, with_rerank,
+  span_without_rerank, span_with_rerank.
 - Scoring uses the Level 1 lexical metrics (level-1-learn/rag_eval.py)
   and the embedding judge (model-metrics/embedding_judge.py) when the
   model is available. If the model cannot load, the lexical run still
   completes and the model section is recorded as not run, with the
   reason, never as zeros presented as scores.
+- Each run also records top1_contains_gold: how often the top passage
+  holds the gold answer text. It is the direct measure of what
+  retrieval plus reranking put in front of the answer step.
 - Results are reported per dataset, separate from every synthetic set.
   Nothing in this file mixes real and synthetic numbers.
 
@@ -18,6 +25,7 @@ Run with a Python that has model2vec installed for the model section:
 
 import json
 import os
+import re
 import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -30,14 +38,31 @@ sys.path.insert(0, os.path.join(ROOT, "model-metrics"))
 from pipeline_deep import DeepRagPipeline  # noqa: E402
 from rag_eval import score_case  # noqa: E402
 
+NORM_RE = re.compile(r"[^a-z0-9]+")
+
+VARIANTS = [
+    ("without_rerank", False, "sentence"),
+    ("with_rerank", True, "sentence"),
+    ("span_without_rerank", False, "span"),
+    ("span_with_rerank", True, "span"),
+]
+
 
 def load_json(name):
     with open(os.path.join(HERE, "samples", name), encoding="utf-8") as fh:
         return json.load(fh)
 
 
-def run_dataset(cases, corpus, use_rerank):
-    pipe = DeepRagPipeline(corpus, top_k=5, use_rerank=use_rerank)
+def contains_gold(text, gold):
+    norm_text = " " + NORM_RE.sub(" ", text.lower()).strip() + " "
+    norm_gold = " " + NORM_RE.sub(" ", gold.lower()).strip() + " "
+    return norm_gold in norm_text
+
+
+def run_dataset(cases, corpus, use_rerank, answer_mode):
+    pipe = DeepRagPipeline(
+        corpus, top_k=5, use_rerank=use_rerank, answer_mode=answer_mode
+    )
     per_case = []
     for case in cases:
         out = pipe.answer(case["question"])
@@ -51,6 +76,10 @@ def run_dataset(cases, corpus, use_rerank):
             }
         )
         scored["system_answer"] = out["answer"]
+        scored["source_sentence"] = out["source_sentence"]
+        scored["top1_contains_gold"] = contains_gold(
+            out["source_sentence"], case["gold_answer"]
+        )
         scored["question"] = case["question"]
         scored["gold_answer"] = case["gold_answer"]
         scored["contexts"] = out["contexts"]
@@ -62,6 +91,8 @@ def run_dataset(cases, corpus, use_rerank):
             label_counts[label] = label_counts.get(label, 0) + 1
     return {
         "n": n,
+        "answer_mode": answer_mode,
+        "use_rerank": use_rerank,
         "passed": sum(1 for r in per_case if r["passed"]),
         "pass_rate": round(sum(1 for r in per_case if r["passed"]) / n, 4)
         if n
@@ -81,6 +112,7 @@ def run_dataset(cases, corpus, use_rerank):
         )
         if n
         else 0.0,
+        "top1_contains_gold": sum(1 for r in per_case if r["top1_contains_gold"]),
         "label_counts": label_counts,
         "results": per_case,
     }
@@ -133,15 +165,15 @@ def main():
     ]:
         cases = load_json(cases_name)
         corpus = load_json(corpus_name)
-        datasets[key] = {
-            "without_rerank": run_dataset(cases, corpus, use_rerank=False),
-            "with_rerank": run_dataset(cases, corpus, use_rerank=True),
-        }
-        for variant, run in datasets[key].items():
+        datasets[key] = {}
+        for variant_name, use_rerank, answer_mode in VARIANTS:
+            run = run_dataset(cases, corpus, use_rerank, answer_mode)
+            datasets[key][variant_name] = run
             print(
-                f"{key} {variant}: {run['passed']}/{run['n']} passed "
+                f"{key} {variant_name}: {run['passed']}/{run['n']} passed "
                 f"({run['pass_rate']}), recall {run['mean_context_recall']}, "
-                f"relevance {run['mean_answer_relevance']}"
+                f"relevance {run['mean_answer_relevance']}, "
+                f"top1-gold {run['top1_contains_gold']}"
             )
     model_section = add_model_scores(datasets)
     print("model judge:", model_section)
@@ -149,10 +181,13 @@ def main():
         "generated": "2026-11-04",
         "data_kind": "real public datasets (see DATASETS.md); not synthetic",
         "method": (
-            "BM25 retrieval plus extractive top-passage answer "
-            "(level-2-build pipeline), with and without the level-3 "
-            "stemmed-overlap reranker; Level 1 lexical metrics; "
-            "embedding judge from model-metrics when available."
+            "BM25 retrieval (level-2-build pipeline) with and without "
+            "the level-3 stemmed-overlap reranker; answer step in "
+            "sentence mode and in span mode (level-3 span extraction, "
+            "v1.2); Level 1 lexical metrics; embedding judge from "
+            "model-metrics when available. Samples: SQuAD 500 cases "
+            "(every 10th of the first 5,000 validation rows), HotpotQA "
+            "200 cases (first 200 validation rows); see DATASETS.md."
         ),
         "model_judge": model_section,
         "datasets": datasets,

@@ -7,7 +7,9 @@ Every number on the dashboard comes from a file in this repo:
   table (2026-11-04), because the Build runner prints to stdout only.
 - Deep summary: level-3-deep/results_deep.json.
 - Real data: real-data/results_real.json plus the sample case files
-  (joined by id for the simulator's gold facts).
+  (joined by id for the simulator's gold facts). The per-case drill
+  down rows come from the two reranked variants (sentence and span),
+  trimmed for page size; the full records stay in results_real.json.
 No number is typed in by hand except the Build row, whose source is
 named in the JSON itself.
 """
@@ -45,6 +47,7 @@ def main():
             questions[case["id"]] = case["question"]
 
     real_summary = {}
+    real_cases = []
     sim_cases = []
     for dataset, variants in real["datasets"].items():
         real_summary[dataset] = {}
@@ -58,6 +61,7 @@ def main():
                     "mean_faithfulness",
                     "mean_context_recall",
                     "mean_answer_relevance",
+                    "top1_contains_gold",
                     "label_counts",
                 )
             }
@@ -65,6 +69,24 @@ def main():
                 real_summary[dataset][variant]["model_summary"] = run[
                     "model_summary"
                 ]
+        for variant in ("with_rerank", "span_with_rerank"):
+            for result in variants[variant]["results"]:
+                real_cases.append(
+                    {
+                        "dataset": dataset,
+                        "variant": variant,
+                        "id": result["id"],
+                        "question": result["question"][:140],
+                        "gold_answer": result["gold_answer"],
+                        "answer": result["system_answer"][:200],
+                        "passed": result["passed"],
+                        "model_judge_pass": result.get("model_judge_pass"),
+                        "labels": result["labels"],
+                        "answer_relevance": round(
+                            result["answer_relevance"], 3
+                        ),
+                    }
+                )
         for result in variants["with_rerank"]["results"][:4]:
             sim_cases.append(
                 {
@@ -113,6 +135,7 @@ def main():
             "judge": deep["judge"],
         },
         "real": real_summary,
+        "real_cases": real_cases,
         "model_judge": real["model_judge"],
         "sim_cases": sim_cases,
     }

@@ -1,22 +1,31 @@
-"""Fetch small real-data samples from the Hugging Face datasets server.
+"""Fetch real-data samples from the Hugging Face datasets server.
 
-Stdlib only. Downloads at most a few hundred rows per dataset and writes
-normalized case and corpus files under samples/. The committed samples
-in this repo were produced by this script on 2026-11-04; re-running it
-re-fetches the same deterministic first rows of each validation split.
+Stdlib only. Downloads at most a few thousand rows per dataset and
+writes normalized case and corpus files under samples/. The committed
+samples in this repo were produced by this script; re-running it
+re-fetches the same deterministic rows of each validation split.
 
 Datasets (license verified from the Hugging Face dataset metadata on
 2026-11-04, see DATASETS.md):
-- SQuAD (rajpurkar/squad), CC BY-SA 4.0, validation split. The split is
-  ordered by article, so the sample takes every 10th row of the first
-  1,000 rows: 100 cases spread across about 25 articles.
+- SQuAD (rajpurkar/squad), CC BY-SA 4.0, validation split. The split
+  is ordered by article, so the sample takes every 10th row of the
+  first 5,000 rows: 500 cases spread across the articles in that
+  range. (v1.1 took every 10th row of the first 1,000; those 100 cases
+  are the first 100 of this sample, so v1.1 and v1.2 numbers stay
+  comparable on the shared subset.)
 - HotpotQA (hotpotqa/hotpot_qa, distractor config), CC BY-SA 4.0,
-  validation split, first 60 rows.
+  validation split, first 200 rows. (v1.1 took the first 60; they are
+  the first 60 of this sample.)
 
-Normalization: a corpus is a list of documents {id, sentences}. A case is
-{id, dataset, question, gold_answer, gold_facts}. For SQuAD the gold fact
-is the gold answer span. For HotpotQA the gold facts are the supporting
-fact sentences named by the dataset.
+Sampling method, recorded per the v1.2 sample-size step: deterministic
+prefix sampling of the validation split as served by the datasets
+server, with the stride above for SQuAD. No shuffling, no filtering by
+outcome; every selected row becomes a case.
+
+Normalization: a corpus is a list of documents {id, sentences}. A case
+is {id, dataset, question, gold_answer, gold_facts}. For SQuAD the gold
+fact is the gold answer span. For HotpotQA the gold facts are the
+supporting fact sentences named by the dataset.
 """
 
 import json
@@ -24,12 +33,9 @@ import os
 import re
 import urllib.request
 
-ROWS_URL = (
-    "https://datasets-server.huggingface.co/rows"
-    "?dataset={dataset}&config={config}&split=validation&offset=0&length={n}"
-)
-
 SENTENCE_SPLIT = re.compile(r"(?<=[.!?])\s+(?=[A-Z0-9\"'])")
+
+PAGE = 100  # the datasets server caps one rows request at 100 rows
 
 
 def split_sentences(text):
@@ -38,10 +44,24 @@ def split_sentences(text):
 
 
 def fetch_rows(dataset, config, n):
-    url = ROWS_URL.format(dataset=dataset.replace("/", "%2F"), config=config, n=n)
-    with urllib.request.urlopen(url, timeout=60) as fh:
-        payload = json.load(fh)
-    return [entry["row"] for entry in payload["rows"]]
+    """Fetch the first n validation rows, paginating by 100."""
+    rows = []
+    offset = 0
+    while len(rows) < n:
+        length = min(PAGE, n - len(rows))
+        url = (
+            "https://datasets-server.huggingface.co/rows"
+            "?dataset={}&config={}&split=validation"
+            "&offset={}&length={}"
+        ).format(dataset.replace("/", "%2F"), config, offset, length)
+        with urllib.request.urlopen(url, timeout=60) as fh:
+            payload = json.load(fh)
+        batch = [entry["row"] for entry in payload["rows"]]
+        if not batch:
+            break
+        rows.extend(batch)
+        offset += len(batch)
+    return rows
 
 
 def build_squad(rows):
@@ -110,28 +130,27 @@ def main():
     samples = os.path.join(here, "samples")
     os.makedirs(samples, exist_ok=True)
 
-    squad_rows = []
-    for offset in range(0, 1000, 100):
-        url = (
-            "https://datasets-server.huggingface.co/rows"
-            "?dataset=rajpurkar%2Fsquad&config=plain_text&split=validation"
-            f"&offset={offset}&length=100"
-        )
-        with urllib.request.urlopen(url, timeout=60) as fh:
-            payload = json.load(fh)
-        squad_rows.extend(entry["row"] for entry in payload["rows"])
-    squad_rows = squad_rows[::10]
-    assert len(squad_rows) == 100, len(squad_rows)
+    squad_rows = fetch_rows("rajpurkar/squad", "plain_text", 5000)[::10]
+    assert len(squad_rows) == 500, len(squad_rows)
     squad_cases, squad_corpus = build_squad(squad_rows)
     write_json(os.path.join(samples, "squad_cases.json"), squad_cases)
     write_json(os.path.join(samples, "squad_corpus.json"), squad_corpus)
-    print(f"squad: {len(squad_cases)} cases, {len(squad_corpus)} documents")
+    n_passages = sum(len(d["sentences"]) for d in squad_corpus)
+    print(
+        f"squad: {len(squad_cases)} cases, {len(squad_corpus)} documents, "
+        f"{n_passages} passages"
+    )
 
-    hotpot_rows = fetch_rows("hotpotqa/hotpot_qa", "distractor", 60)
+    hotpot_rows = fetch_rows("hotpotqa/hotpot_qa", "distractor", 200)
+    assert len(hotpot_rows) == 200, len(hotpot_rows)
     hotpot_cases, hotpot_corpus = build_hotpot(hotpot_rows)
     write_json(os.path.join(samples, "hotpot_cases.json"), hotpot_cases)
     write_json(os.path.join(samples, "hotpot_corpus.json"), hotpot_corpus)
-    print(f"hotpotqa: {len(hotpot_cases)} cases, {len(hotpot_corpus)} documents")
+    n_passages = sum(len(d["sentences"]) for d in hotpot_corpus)
+    print(
+        f"hotpotqa: {len(hotpot_cases)} cases, {len(hotpot_corpus)} documents, "
+        f"{n_passages} passages"
+    )
 
 
 if __name__ == "__main__":

@@ -39,3 +39,19 @@ goal hidden_files, jev-p06-v11-claim-*.json).
 | Repo | Model metrics record (model-metrics/README.md) | 940 | In the v1.1 PR |
 | GitHub release | v1.1 | n/a | Tagged after merge if CI and CodeQL are green |
 | LinkedIn, X, Facebook, Instagram, Threads, video | Social fan-out for v1.1 | n/a | HELD: standing platform gates; the loop prepares drafts only and does not post |
+
+## v1.2 span and scale (2026-11-04)
+
+Project grade: 9,050 of 10,000 (up from 8,000 at v1.1; the deduction
+movement is itemized in DOSSIER.md).
+Jev claim_check on the five v1.2 public claims: model jev-1.13.0,
+2,084 input tokens, all five REVIEW (0.19 to 0.72), none blocked
+(spec and results in the goal hidden_files, jev-p06-v12-claim-*.json).
+
+| Channel | Piece | Publicity grade (of 1,000) | Outcome |
+| --- | --- | --- | --- |
+| Repo | Real data record (real-data/README.md, DATASETS.md, rerank experiment) | 970 (accuracy 295, research 195, gap fit 195, clarity 145, reach format 140) | In the v1.2 PR |
+| GitHub Pages | React results lab (web/), v1.2 update with per-case drill down | 965 (accuracy 290, research 195, gap fit 195, clarity 145, reach format 140) | Live after the v1.2 PR merges and the Pages workflow deploys; verified by HTTP check in the batch ledger |
+| Repo | Model metrics record (model-metrics/README.md, calibration) | 955 (accuracy 295, research 190, gap fit 190, clarity 145, reach format 135) | In the v1.2 PR |
+| GitHub release | v1.2 | n/a | Tagged after merge if CI and CodeQL are green |
+| LinkedIn, X, Facebook, Instagram, Threads, video | Social fan-out for v1.2 | n/a | HELD: standing platform gates; drafts only, nothing posted |

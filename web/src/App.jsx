@@ -16,7 +16,7 @@ function Header() {
     <header className="site-header">
       <div className="wrap">
         <a className="brand" href="#top">
-          rag-eval-harness <span>v1.1</span>
+          rag-eval-harness <span>v1.2</span>
         </a>
         <nav className="main-nav">
           <a href="#overview">Overview</a>
@@ -36,6 +36,7 @@ function Header() {
 function Overview() {
   const deep = data.deep
   const squad = data.real.squad.with_rerank
+  const squadSpan = data.real.squad.span_with_rerank
   return (
     <section className="hero" id="overview">
       <h1>Measure a RAG system. Do not admire it.</h1>
@@ -45,7 +46,9 @@ function Overview() {
         extraction, and scores every answer three ways: lexical metrics
         you can check by hand, a failure taxonomy that names what went
         wrong, and an embedding judge that runs a real model on CPU.
-        Every number on this page comes from a result file in the repo.
+        Since v1.2 the answer step can cut the top sentence down to a
+        short span, the way the real gold answers are written. Every
+        number on this page comes from a result file in the repo.
       </p>
       <div className="stat-grid">
         <div className="stat-card">
@@ -66,21 +69,21 @@ function Overview() {
         </div>
         <div className="stat-card">
           <div className="stat-value">
-            {squad.model_summary.model_judge_passed} of {squad.n}
+            {squad.passed} to {squadSpan.passed} of {squadSpan.n}
           </div>
           <div className="stat-label">
-            Real SQuAD cases passed by the embedding judge, against 1 of{' '}
-            {squad.n} by the lexical pass rule. The gap is the measured
-            size of the metric mismatch (full sentence answers, short
-            span golds).
+            Real SQuAD cases passed by the lexical rule, sentence
+            answers against span answers (v1.2). Same cases, same
+            retrieval; only the answer step changed.
             <span className="tag real">REAL DATA</span>
           </div>
         </div>
         <div className="stat-card">
-          <div className="stat-value">52 tests</div>
+          <div className="stat-value">65 tests</div>
           <div className="stat-label">
-            Unit tests across Learn, Build, Deep, the embedding judge,
-            and the real data path. CI runs them on Python 3.11 and 3.12.
+            Unit tests across Learn, Build, Deep, span extraction, the
+            embedding judge, and the real data path. CI runs them on
+            Python 3.11 and 3.12.
           </div>
         </div>
       </div>
@@ -145,28 +148,29 @@ function ResultsLab() {
             key={name}
             title={`${name === 'squad' ? 'SQuAD' : 'HotpotQA'} sample, ${variants.with_rerank.n} cases`}
             rows={[
-              { label: 'Lexical pass, no rerank', value: variants.without_rerank.pass_rate, color: '#8b949e' },
-              { label: 'Lexical pass, rerank', value: variants.with_rerank.pass_rate, color: '#f85149' },
-              { label: 'Context recall', value: variants.with_rerank.mean_context_recall, color: '#4cc2ff' },
-              { label: 'Answer relevance (F1)', value: variants.with_rerank.mean_answer_relevance, color: '#d29922' },
-              { label: 'Model judge pass', value: variants.with_rerank.model_summary.model_judge_pass_rate, color: '#3fb950' },
+              { label: 'Lexical pass, sentence answers', value: variants.with_rerank.pass_rate, color: '#8b949e' },
+              { label: 'Lexical pass, span answers (v1.2)', value: variants.span_with_rerank.pass_rate, color: '#3fb950' },
+              { label: 'Model judge pass, sentence answers', value: variants.with_rerank.model_summary.model_judge_pass_rate, color: '#8b949e' },
+              { label: 'Model judge pass, span answers', value: variants.span_with_rerank.model_summary.model_judge_pass_rate, color: '#3fb950' },
+              { label: 'Context recall', value: variants.span_with_rerank.mean_context_recall, color: '#4cc2ff' },
+              { label: 'Top passage holds the gold answer', value: variants.span_with_rerank.top1_contains_gold / variants.span_with_rerank.n, color: '#d29922' },
             ]}
           />
         ))}
         <div className="chart-card">
-          <h4>Failure labels on real runs (reranked)</h4>
+          <h4>Failure labels on real runs (reranked, span answers)</h4>
           {Object.entries(real).map(([name, variants]) => (
             <div key={name}>
               <p style={{ margin: '8px 0 2px', color: 'var(--muted)' }}>
                 {name === 'squad' ? 'SQuAD' : 'HotpotQA'}
               </p>
-              {Object.entries(variants.with_rerank.label_counts).map(
+              {Object.entries(variants.span_with_rerank.label_counts).map(
                 ([label, count]) => (
                   <Bar
                     key={label}
                     label={label}
                     value={count}
-                    max={variants.with_rerank.n}
+                    max={variants.span_with_rerank.n}
                     color="#f85149"
                   />
                 )
@@ -176,42 +180,213 @@ function ResultsLab() {
         </div>
       </div>
 
+      <CaseDrillDown />
+
       <div className="card">
         <h3>What the analysis says</h3>
         <ul className="tight">
           <li>
-            Retrieval is the stronger half. On real SQuAD questions the
-            gold fact is in the top 5 passages 83 percent of the time.
-            Multi-hop HotpotQA recall is 52 percent, because a case needs
-            two facts and the top 5 often holds only one.
+            Span extraction landed in v1.2, and it is the biggest single
+            gain this project has measured on real data. On the same 500
+            SQuAD cases with the same retrieval, lexical passes go from
+            22 to 108 with the reranker (24 to 113 without). On HotpotQA
+            they go from 1 to 9. The answer step was the weak half; it
+            is still the weak half, but by much less.
           </li>
           <li>
-            The answer step is the weak half. The pipeline answers with a
-            whole sentence while gold answers are short spans, so token
-            F1 is low even when the sentence is right. The embedding
-            judge passes about half the SQuAD cases. The difference
-            between the two judges is a measurement, not an excuse.
+            Retrieval is now the binding constraint on HotpotQA: context
+            recall is 0.518, because a case needs two facts and the top
+            5 often holds only one. On SQuAD the gold answer text sits
+            in the top passage in 319 of 500 cases, while only 108 pass,
+            so SQuAD still loses most of its ground between the right
+            sentence and the right span.
           </li>
           <li>
-            The reranker does not transfer. It took the synthetic b11
-            class from 5 of 13 to 13 of 13, and on real data it changes
-            almost nothing. A fix proven only on synthetic data is a
-            hypothesis. This run is the test, and the result is recorded
-            either way.
+            The reranker still does not transfer cleanly, and v1.2
+            tested fixes instead of guessing. A hybrid scoring change
+            helped SQuAD and hurt HotpotQA; pooling 10 passages moved
+            recall slightly and gold containment barely. No change
+            helped both datasets, so no change shipped. The measured
+            detail is in the repo (real-data, rerank experiment).
           </li>
           <li>
-            Faithfulness reads 1.000 everywhere. That is by construction:
-            an extractive answer is copied from the context. It is not
-            claimed as a quality win anywhere in this project.
+            The two judges disagree less in span mode. Against a proxy
+            label built from the gold answers, the embedding judge
+            agrees 0.90 of the time on SQuAD span runs (Cohen's kappa
+            0.72), against 0.79 in sentence mode. Its thresholds remain
+            documented constants, checked by a sweep in this release,
+            not fitted parameters.
           </li>
           <li>
-            Named next fix: span extraction, answering with the short
-            span instead of the whole sentence. It is item 1 of the
-            v1.2 backlog in the repo ROADMAP.
+            Faithfulness reads 1.000 in both modes. That is by
+            construction: a sentence answer is copied from the context,
+            and a span answer is a substring of it, so every answer
+            token is supported by definition. It is not claimed as a
+            quality win anywhere in this project.
+          </li>
+          <li>
+            One comparison warning: v1.1 numbers were measured on
+            smaller samples whose retrieval corpus was also smaller.
+            The v1.2 samples are bigger and the corpus grew with them,
+            which makes retrieval harder. Cross-version comparisons
+            that ignore the corpus change are not valid, and this page
+            does not make them.
           </li>
         </ul>
       </div>
     </section>
+  )
+}
+
+const DRILL_LABELS = [
+  'hallucination',
+  'retrieval_miss',
+  'wrong_or_incomplete_answer',
+]
+
+function CaseDrillDown() {
+  const [dataset, setDataset] = useState('all')
+  const [variant, setVariant] = useState('span_with_rerank')
+  const [verdict, setVerdict] = useState('all')
+  const [label, setLabel] = useState('all')
+  const [query, setQuery] = useState('')
+  const [expanded, setExpanded] = useState(false)
+
+  const rows = useMemo(() => {
+    const q = query.trim().toLowerCase()
+    return data.real_cases.filter((r) => {
+      if (r.variant !== variant) return false
+      if (dataset !== 'all' && r.dataset !== dataset) return false
+      if (label !== 'all' && !r.labels.includes(label)) return false
+      if (verdict === 'lexical_pass' && !r.passed) return false
+      if (verdict === 'lexical_fail' && r.passed) return false
+      if (verdict === 'judge_pass' && !r.model_judge_pass) return false
+      if (verdict === 'judge_fail' && r.model_judge_pass) return false
+      if (verdict === 'both_pass' && !(r.passed && r.model_judge_pass)) return false
+      if (verdict === 'both_fail' && (r.passed || r.model_judge_pass)) return false
+      if (
+        q &&
+        !r.id.toLowerCase().includes(q) &&
+        !r.question.toLowerCase().includes(q)
+      )
+        return false
+      return true
+    })
+  }, [dataset, variant, verdict, label, query])
+
+  const shown = expanded ? rows : rows.slice(0, 250)
+
+  return (
+    <div className="card">
+      <h3>Per-case drill down, real runs</h3>
+      <p style={{ color: 'var(--muted)', fontSize: 14 }}>
+        Every case behind the charts above, from the recorded result
+        files. Filter by dataset, answer step, verdict, or failure
+        label. The full records, including contexts, are in{' '}
+        <code>real-data/results_real.json</code> in the repo.
+      </p>
+      <div className="drill-controls">
+        <label>
+          Dataset
+          <select value={dataset} onChange={(e) => setDataset(e.target.value)}>
+            <option value="all">All</option>
+            <option value="squad">SQuAD</option>
+            <option value="hotpotqa">HotpotQA</option>
+          </select>
+        </label>
+        <label>
+          Answer step
+          <select value={variant} onChange={(e) => setVariant(e.target.value)}>
+            <option value="span_with_rerank">Span answers (v1.2)</option>
+            <option value="with_rerank">Sentence answers (v1.1)</option>
+          </select>
+        </label>
+        <label>
+          Verdict
+          <select value={verdict} onChange={(e) => setVerdict(e.target.value)}>
+            <option value="all">All</option>
+            <option value="lexical_pass">Lexical pass</option>
+            <option value="lexical_fail">Lexical fail</option>
+            <option value="judge_pass">Model judge pass</option>
+            <option value="judge_fail">Model judge fail</option>
+            <option value="both_pass">Both pass</option>
+            <option value="both_fail">Both fail</option>
+          </select>
+        </label>
+        <label>
+          Failure label
+          <select value={label} onChange={(e) => setLabel(e.target.value)}>
+            <option value="all">All</option>
+            {DRILL_LABELS.map((l) => (
+              <option key={l} value={l}>{l}</option>
+            ))}
+          </select>
+        </label>
+        <label>
+          Search
+          <input
+            type="text"
+            value={query}
+            placeholder="case id or question text"
+            onChange={(e) => setQuery(e.target.value)}
+          />
+        </label>
+      </div>
+      <p style={{ color: 'var(--muted)', fontSize: 13 }}>
+        {rows.length} cases match. Showing {shown.length}.
+      </p>
+      <div className="drill-scroll">
+        <table className="data drill">
+          <thead>
+            <tr>
+              <th>Case</th>
+              <th>Question</th>
+              <th>Gold answer</th>
+              <th>System answer</th>
+              <th>F1</th>
+              <th>Lexical</th>
+              <th>Judge</th>
+              <th>Labels</th>
+            </tr>
+          </thead>
+          <tbody>
+            {shown.map((r) => (
+              <tr key={`${r.variant}-${r.id}`}>
+                <td className="mono">{r.id}</td>
+                <td>{r.question}</td>
+                <td>{r.gold_answer}</td>
+                <td>{r.answer}</td>
+                <td>{r.answer_relevance.toFixed(2)}</td>
+                <td>
+                  {r.passed ? (
+                    <span className="pass">PASS</span>
+                  ) : (
+                    <span className="fail">FAIL</span>
+                  )}
+                </td>
+                <td>
+                  {r.model_judge_pass ? (
+                    <span className="pass">PASS</span>
+                  ) : (
+                    <span className="fail">FAIL</span>
+                  )}
+                </td>
+                <td>
+                  {r.labels.map((l) => (
+                    <span key={l} className="label-chip">{l}</span>
+                  ))}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      {!expanded && rows.length > 250 && (
+        <button className="drill-more" onClick={() => setExpanded(true)}>
+          Show all {rows.length} cases
+        </button>
+      )}
+    </div>
   )
 }
 
@@ -357,8 +532,8 @@ function DataSection() {
             </td>
             <td>CC BY-SA 4.0</td>
             <td>
-              100 validation cases (every 10th of the first 1,000 rows),
-              72 context documents, 323 passages. Full set: 10,570
+              500 validation cases (every 10th of the first 5,000 rows),
+              467 context documents, 2,248 passages. Full set: 10,570
               validation questions.
             </td>
           </tr>
@@ -372,8 +547,9 @@ function DataSection() {
             </td>
             <td>CC BY-SA 4.0</td>
             <td>
-              60 validation cases, 591 context documents, 2,572 passages.
-              Full set: 7,405 validation questions.
+              200 validation cases (the first 200 rows), 1,991 context
+              documents, 8,274 passages. Full set: 7,405 validation
+              questions.
             </td>
           </tr>
           <tr>
@@ -510,8 +686,10 @@ python level-2-build/run_build.py    # end to end pipeline run
 python level-3-deep/run_deep.py      # Deep run with the reranker
 python level-3-deep/regression_gate.py
 pip install model2vec                # only for the model judge
-python real-data/run_real_eval.py    # real SQuAD and HotpotQA runs
-python -m unittest discover -s tests # 52 tests`}</pre>
+python real-data/run_real_eval.py    # real runs, sentence and span modes
+python real-data/rerank_experiment.py # the v1.2 reranker transfer test
+python model-metrics/calibrate_judge.py # judge agreement check
+python -m unittest discover -s tests # 65 tests`}</pre>
         <p>
           The core harness is Python standard library only. Model2Vec is
           the single optional dependency, used only by the embedding
@@ -564,13 +742,16 @@ python -m unittest discover -s tests # 52 tests`}</pre>
       <div className="card">
         <h3>Roadmap</h3>
         <p>
-          v1.2 backlog, in order: span extraction for short answers;
-          a generative answer step behind the same metrics; dense
-          retrieval next to BM25; a learned reranker compared on the
-          same sets; real agent evaluation once the agent project
-          exists. Full text: <code>ROADMAP.md</code> in the repo. The
-          regression gate (pass rate at or above 0.900 on the Deep
-          baseline) must stay green through every change.
+          Span extraction shipped in v1.2. What remains, in order: a
+          generative answer step behind the same metrics; dense
+          retrieval next to BM25, aimed at HotpotQA recall; a learned
+          reranker, which must now beat the measured baselines in the
+          v1.2 rerank experiment; an LLM judge with a human agreement
+          study (needs a credential decision); real agent evaluation
+          once the agent project exists. Full text:{' '}
+          <code>ROADMAP.md</code> in the repo. The regression gate
+          (pass rate at or above 0.900 on the Deep baseline) must stay
+          green through every change.
         </p>
       </div>
     </section>
@@ -594,6 +775,10 @@ function Prototypes() {
     {
       name: 'v1.1, the research upgrade',
       body: 'Real public datasets (SQuAD and HotpotQA samples, license checked), a model inside the evaluation path (an embedding judge on CPU), and this React lab: results, a live simulation, data provenance, references, full documentation, and the prototype history. The same honesty rules, on evidence that can prove the project wrong.',
+    },
+    {
+      name: 'v1.2, span answers and scale',
+      body: 'Span extraction for the answer step, the single biggest measured gain on real data (SQuAD lexical passes 22 to 108 on the same cases). Real samples grew fivefold and threefold, with a per-case drill down in this lab. The reranker got a fair transfer test with candidate fixes, and no fix shipped, because none helped both datasets. The embedding judge got an agreement check against gold-derived labels (kappa 0.72 on span runs).',
     },
   ]
   return (
@@ -630,7 +815,7 @@ export default function App() {
       </main>
       <footer className="site">
         <div className="wrap">
-          rag-eval-harness v1.1. Code Apache-2.0, tutorials CC BY 4.0.
+          rag-eval-harness v1.2. Code Apache-2.0, tutorials CC BY 4.0.
           Real data samples under CC BY-SA 4.0 with attribution in the
           repo. Every number on this page traces to a result file in{' '}
           <a href={REPO}>the repository</a>. Synthetic results are
