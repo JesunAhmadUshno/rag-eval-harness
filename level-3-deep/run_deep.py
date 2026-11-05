@@ -16,12 +16,12 @@ sys.path.insert(0, HERE)
 sys.path.insert(0, os.path.join(ROOT, "level-2-build"))
 sys.path.insert(0, os.path.join(ROOT, "level-1-learn"))
 
-from pipeline import load_corpus  # noqa: E402
-from judge import BudgetedJudge, LexicalJudge  # noqa: E402
-from pipeline_deep import evaluate_cases  # noqa: E402
 from agent_deep import score_agent_deep  # noqa: E402
-from taxonomy import build_taxonomy  # noqa: E402
 from dashboard import write_dashboard  # noqa: E402
+from judge import BudgetedJudge, LexicalJudge  # noqa: E402
+from pipeline import load_corpus  # noqa: E402
+from pipeline_deep import evaluate_cases  # noqa: E402
+from taxonomy import build_taxonomy  # noqa: E402
 
 DEMO_TASKS = [
     {"id": "a1", "prompt": "hours", "gold_answer": "opens at 8 am",

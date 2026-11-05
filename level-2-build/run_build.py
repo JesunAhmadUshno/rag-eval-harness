@@ -13,9 +13,9 @@ ROOT = os.path.dirname(HERE)
 sys.path.insert(0, HERE)
 sys.path.insert(0, os.path.join(ROOT, "level-1-learn"))
 
-from pipeline import RagPipeline, load_corpus  # noqa: E402
-from judge import BudgetedJudge, LexicalJudge  # noqa: E402
 from agent_scoring import score_agent  # noqa: E402
+from judge import BudgetedJudge, LexicalJudge  # noqa: E402
+from pipeline import RagPipeline, load_corpus  # noqa: E402
 from rag_eval import score_case  # noqa: E402
 
 
