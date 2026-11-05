@@ -6,8 +6,16 @@ lean, and the fetch script can rebuild the exact same samples.
 
 | Dataset | Source | License | Full size | Sample used here |
 | --- | --- | --- | --- | --- |
-| SQuAD v1.1 (rajpurkar/squad) | https://huggingface.co/datasets/rajpurkar/squad | CC BY-SA 4.0 (license tag in the Hugging Face dataset metadata, checked 2026-11-04) | 87,599 train and 10,570 validation questions | 100 validation cases (every 10th row of the first 1,000, because the split is ordered by article), 72 unique context documents, 323 passages |
-| HotpotQA (hotpotqa/hotpot_qa, distractor config) | https://huggingface.co/datasets/hotpotqa/hotpot_qa | CC BY-SA 4.0 (license tag in the Hugging Face dataset metadata, checked 2026-11-04) | 90,447 train and 7,405 validation questions | 60 validation cases (first 60 rows), 591 context documents, 2,572 passages |
+| SQuAD v1.1 (rajpurkar/squad) | https://huggingface.co/datasets/rajpurkar/squad | CC BY-SA 4.0 (license tag in the Hugging Face dataset metadata, checked 2026-11-04) | 87,599 train and 10,570 validation questions | 500 validation cases (every 10th row of the first 5,000, because the split is ordered by article), 467 unique context documents, 2,248 passages |
+| HotpotQA (hotpotqa/hotpot_qa, distractor config) | https://huggingface.co/datasets/hotpotqa/hotpot_qa | CC BY-SA 4.0 (license tag in the Hugging Face dataset metadata, checked 2026-11-04) | 90,447 train and 7,405 validation questions | 200 validation cases (first 200 rows), 1,991 context documents, 8,274 passages |
+
+Sampling history and method: v1.1 used 100 SQuAD cases (every 10th of
+the first 1,000 rows) and 60 HotpotQA cases (first 60 rows). The v1.2
+samples extend the same deterministic prefix method, and the v1.1
+cases are exactly the first 100 and first 60 of the v1.2 samples. One
+consequence is stated wherever it matters: the retrieval corpus is
+the union of the sample's documents, so the v1.2 corpus is larger and
+retrieval over it is harder than it was over the v1.1 corpus.
 
 Attribution: SQuAD was built by the Stanford NLP group from Wikipedia
 articles. HotpotQA was built by Yang et al. from Wikipedia. Both samples

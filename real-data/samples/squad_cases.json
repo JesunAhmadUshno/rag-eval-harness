@@ -898,5 +898,3605 @@
   "gold_facts": [
    "not restored by the communist authorities"
   ]
+ },
+ {
+  "id": "squad-573368044776f41900660a2a",
+  "dataset": "squad",
+  "question": "Where is a palm house with subtropic plants from all over the world on display?",
+  "gold_answer": "New Orangery",
+  "gold_facts": [
+   "New Orangery"
+  ]
+ },
+ {
+  "id": "squad-57337f6ad058e614000b5bcc",
+  "dataset": "squad",
+  "question": "What had the number of people living in Warsaw declined to by 1945?",
+  "gold_answer": "420,000",
+  "gold_facts": [
+   "420,000"
+  ]
+ },
+ {
+  "id": "squad-573380e0d058e614000b5bea",
+  "dataset": "squad",
+  "question": "What is the second level of territorial division in Poland?",
+  "gold_answer": "counties or powiats",
+  "gold_facts": [
+   "counties or powiats"
+  ]
+ },
+ {
+  "id": "squad-57338255d058e614000b5c10",
+  "dataset": "squad",
+  "question": "Who has elected the President of Warsaw since 1990?",
+  "gold_answer": "the City council",
+  "gold_facts": [
+   "the City council"
+  ]
+ },
+ {
+  "id": "squad-5733834ed058e614000b5c29",
+  "dataset": "squad",
+  "question": "How many companies were listed on the WSE on August 2009?",
+  "gold_answer": "374",
+  "gold_facts": [
+   "374"
+  ]
+ },
+ {
+  "id": "squad-573166ede6313a140071cef5",
+  "dataset": "squad",
+  "question": "How many people live in the greater metropolitan area?",
+  "gold_answer": "2.666 million residents",
+  "gold_facts": [
+   "2.666 million residents"
+  ]
+ },
+ {
+  "id": "squad-56ddde6b9a695914005b962b",
+  "dataset": "squad",
+  "question": "Who was the Norse leader?",
+  "gold_answer": "Rollo",
+  "gold_facts": [
+   "Rollo"
+  ]
+ },
+ {
+  "id": "squad-56dde1d966d3e219004dad8d",
+  "dataset": "squad",
+  "question": "Who upon arriving gave the original viking settlers a common identity?",
+  "gold_answer": "Rollo",
+  "gold_facts": [
+   "Rollo"
+  ]
+ },
+ {
+  "id": "squad-56de0e25cffd8e1900b4b59b",
+  "dataset": "squad",
+  "question": "In what year was Roger II made king?",
+  "gold_answer": "1130",
+  "gold_facts": [
+   "1130"
+  ]
+ },
+ {
+  "id": "squad-56de10b44396321400ee2594",
+  "dataset": "squad",
+  "question": "Who was the leader when the Franks entered the Euphrates valley?",
+  "gold_answer": "Oursel",
+  "gold_facts": [
+   "Oursel"
+  ]
+ },
+ {
+  "id": "squad-56de1563cffd8e1900b4b5c3",
+  "dataset": "squad",
+  "question": "What was the naval base called?",
+  "gold_answer": "Dyrrachium",
+  "gold_facts": [
+   "Dyrrachium"
+  ]
+ },
+ {
+  "id": "squad-56de16ca4396321400ee25c6",
+  "dataset": "squad",
+  "question": "Who killed Harold II? ",
+  "gold_answer": "William II",
+  "gold_facts": [
+   "William II"
+  ]
+ },
+ {
+  "id": "squad-56de17f9cffd8e1900b4b5e3",
+  "dataset": "squad",
+  "question": "Who was the hostage?",
+  "gold_answer": "Duncan",
+  "gold_facts": [
+   "Duncan"
+  ]
+ },
+ {
+  "id": "squad-56de3ebc4396321400ee26e7",
+  "dataset": "squad",
+  "question": "What was the name of Bohemond's nephew?",
+  "gold_answer": "Tancred",
+  "gold_facts": [
+   "Tancred"
+  ]
+ },
+ {
+  "id": "squad-56de41504396321400ee2714",
+  "dataset": "squad",
+  "question": "Who did Berengaria of Navarre marry?",
+  "gold_answer": "Richard the Lion-Heart",
+  "gold_facts": [
+   "Richard the Lion-Heart"
+  ]
+ },
+ {
+  "id": "squad-56de4a474396321400ee2787",
+  "dataset": "squad",
+  "question": "How many customaries does Norman customary law have?",
+  "gold_answer": "two",
+  "gold_facts": [
+   "two"
+  ]
+ },
+ {
+  "id": "squad-56de4c324396321400ee27ac",
+  "dataset": "squad",
+  "question": "What is Norman art's most well known piece?",
+  "gold_answer": "Bayeux Tapestry",
+  "gold_facts": [
+   "Bayeux Tapestry"
+  ]
+ },
+ {
+  "id": "squad-56df9e2838dc4217001520f8",
+  "dataset": "squad",
+  "question": "What was Nikola Tesla's ethnicity?",
+  "gold_answer": "Serbian",
+  "gold_facts": [
+   "Serbian"
+  ]
+ },
+ {
+  "id": "squad-56df9ee138dc42170015210c",
+  "dataset": "squad",
+  "question": "What \"war\" was Tesla involved in?",
+  "gold_answer": "War of Currents",
+  "gold_facts": [
+   "War of Currents"
+  ]
+ },
+ {
+  "id": "squad-56e0bab7231d4119001ac35c",
+  "dataset": "squad",
+  "question": "When did he first mention wireless communication?",
+  "gold_answer": "1893",
+  "gold_facts": [
+   "1893"
+  ]
+ },
+ {
+  "id": "squad-56e0bb9f7aa994140058e6ce",
+  "dataset": "squad",
+  "question": "When did people once again start to show an interest in Tesla?",
+  "gold_answer": "1990s",
+  "gold_facts": [
+   "1990s"
+  ]
+ },
+ {
+  "id": "squad-56e0bcc0231d4119001ac36f",
+  "dataset": "squad",
+  "question": "Where did Tesla believe his talents came from?",
+  "gold_answer": "his mother's genetics and influence",
+  "gold_facts": [
+   "his mother's genetics and influence"
+  ]
+ },
+ {
+  "id": "squad-56dfa24a38dc421700152143",
+  "dataset": "squad",
+  "question": "What language were classes held in at Tesla's school?",
+  "gold_answer": "German",
+  "gold_facts": [
+   "German"
+  ]
+ },
+ {
+  "id": "squad-56dfa2c54a1a83140091ebf3",
+  "dataset": "squad",
+  "question": "How long was he bedridden with cholera?",
+  "gold_answer": "nine months",
+  "gold_facts": [
+   "nine months"
+  ]
+ },
+ {
+  "id": "squad-56dfa3394a1a83140091ebfd",
+  "dataset": "squad",
+  "question": "Whose works helped Tesla recover from illness?",
+  "gold_answer": "Mark Twain",
+  "gold_facts": [
+   "Mark Twain"
+  ]
+ },
+ {
+  "id": "squad-56dfa3c338dc421700152156",
+  "dataset": "squad",
+  "question": "In what year did Tesla's father die?",
+  "gold_answer": "1879",
+  "gold_facts": [
+   "1879"
+  ]
+ },
+ {
+  "id": "squad-56dfa7887aa994140058dfab",
+  "dataset": "squad",
+  "question": "What did Tesla work as after dropping out? ",
+  "gold_answer": "a draftsman",
+  "gold_facts": [
+   "a draftsman"
+  ]
+ },
+ {
+  "id": "squad-56dfaa047aa994140058dfbf",
+  "dataset": "squad",
+  "question": "Milutin Tesla died at what age?",
+  "gold_answer": "60",
+  "gold_facts": [
+   "60"
+  ]
+ },
+ {
+  "id": "squad-56dfac8e231d4119001abc5f",
+  "dataset": "squad",
+  "question": "Which university did Tesla audit in 1880?",
+  "gold_answer": "Charles-Ferdinand University",
+  "gold_facts": [
+   "Charles-Ferdinand University"
+  ]
+ },
+ {
+  "id": "squad-56e0d402231d4119001ac3fc",
+  "dataset": "squad",
+  "question": "In what year did Tesla go to Budapest?",
+  "gold_answer": "1881",
+  "gold_facts": [
+   "1881"
+  ]
+ },
+ {
+  "id": "squad-56e0d54a7aa994140058e76a",
+  "dataset": "squad",
+  "question": "Where was the  Continental Edison Company located?",
+  "gold_answer": "France",
+  "gold_facts": [
+   "France"
+  ]
+ },
+ {
+  "id": "squad-56dfb5777aa994140058e021",
+  "dataset": "squad",
+  "question": "Who did Tesla partner with in 1886?",
+  "gold_answer": "Robert Lane and Benjamin Vail",
+  "gold_facts": [
+   "Robert Lane and Benjamin Vail"
+  ]
+ },
+ {
+  "id": "squad-56dfb5f5231d4119001abcb5",
+  "dataset": "squad",
+  "question": "What did Tesla's investors do to him?",
+  "gold_answer": "forced Tesla out",
+  "gold_facts": [
+   "forced Tesla out"
+  ]
+ },
+ {
+  "id": "squad-56dfb666231d4119001abcc3",
+  "dataset": "squad",
+  "question": "Where was a lab for Tesla set up?",
+  "gold_answer": "Manhattan",
+  "gold_facts": [
+   "Manhattan"
+  ]
+ },
+ {
+  "id": "squad-56dfb6d17aa994140058e057",
+  "dataset": "squad",
+  "question": "what sort of design was this motor?",
+  "gold_answer": "self-starting",
+  "gold_facts": [
+   "self-starting"
+  ]
+ },
+ {
+  "id": "squad-56e0dbb57aa994140058e779",
+  "dataset": "squad",
+  "question": "Who edited Electrical World magazine?",
+  "gold_answer": "Thomas Commerford Martin",
+  "gold_facts": [
+   "Thomas Commerford Martin"
+  ]
+ },
+ {
+  "id": "squad-56e0dc667aa994140058e784",
+  "dataset": "squad",
+  "question": "When did the deal between Peck, Brown and Westinghouse take place?",
+  "gold_answer": "1888",
+  "gold_facts": [
+   "1888"
+  ]
+ },
+ {
+  "id": "squad-56e05a78231d4119001ac063",
+  "dataset": "squad",
+  "question": "What did the war first start out as being between?",
+  "gold_answer": "lighting systems",
+  "gold_facts": [
+   "lighting systems"
+  ]
+ },
+ {
+  "id": "squad-56e07c86231d4119001ac1cf",
+  "dataset": "squad",
+  "question": "Who did George Westinghouse beat out to light the World's Columbian Exposition?",
+  "gold_answer": "General Electric",
+  "gold_facts": [
+   "General Electric"
+  ]
+ },
+ {
+  "id": "squad-56e0812c231d4119001ac216",
+  "dataset": "squad",
+  "question": "What company was chosen to build an AC distribution system at Niagara Falls?",
+  "gold_answer": "General Electric",
+  "gold_facts": [
+   "General Electric"
+  ]
+ },
+ {
+  "id": "squad-56e0ef0c231d4119001ac462",
+  "dataset": "squad",
+  "question": "Who financed General Electric's attempts to takeover Westinghouse?",
+  "gold_answer": "J. P. Morgan",
+  "gold_facts": [
+   "J. P. Morgan"
+  ]
+ },
+ {
+  "id": "squad-56e0ef90231d4119001ac46b",
+  "dataset": "squad",
+  "question": "What sort of power transmission did Tesla show off at his labs?",
+  "gold_answer": "wireless",
+  "gold_facts": [
+   "wireless"
+  ]
+ },
+ {
+  "id": "squad-56e08b3c231d4119001ac2a7",
+  "dataset": "squad",
+  "question": "When Tesla attempted to photograph Mark Twain, what was the only thing that showed up on the image?",
+  "gold_answer": "the metal locking screw on the camera lens",
+  "gold_facts": [
+   "the metal locking screw on the camera lens"
+  ]
+ },
+ {
+  "id": "squad-56e08d32231d4119001ac2b1",
+  "dataset": "squad",
+  "question": "What did Tesla's device work from the output of?",
+  "gold_answer": "Tesla Coil",
+  "gold_facts": [
+   "Tesla Coil"
+  ]
+ },
+ {
+  "id": "squad-56e0f6aa231d4119001ac4ef",
+  "dataset": "squad",
+  "question": "What did Tesla mistakenly believe X-rays were?",
+  "gold_answer": "longitudinal waves",
+  "gold_facts": [
+   "longitudinal waves"
+  ]
+ },
+ {
+  "id": "squad-56e0fa5b7aa994140058e85b",
+  "dataset": "squad",
+  "question": "How did Tesla know he was being struck by the particle?",
+  "gold_answer": "he could feel a sharp stinging pain where it entered his body",
+  "gold_facts": [
+   "he could feel a sharp stinging pain where it entered his body"
+  ]
+ },
+ {
+  "id": "squad-56e0fc3f7aa994140058e877",
+  "dataset": "squad",
+  "question": "When did Tesla attain his electrical transmitter patent?",
+  "gold_answer": "1900",
+  "gold_facts": [
+   "1900"
+  ]
+ },
+ {
+  "id": "squad-56e0fde0cd28a01900c673eb",
+  "dataset": "squad",
+  "question": "What sort of waves did he claim to observe?",
+  "gold_answer": "stationary",
+  "gold_facts": [
+   "stationary"
+  ]
+ },
+ {
+  "id": "squad-56e0ff5dcd28a01900c673fe",
+  "dataset": "squad",
+  "question": "What did the sparks do to the insulation?",
+  "gold_answer": "destroy",
+  "gold_facts": [
+   "destroy"
+  ]
+ },
+ {
+  "id": "squad-56e1011ecd28a01900c6740b",
+  "dataset": "squad",
+  "question": "When did Tesla depart from Colorado Springs?",
+  "gold_answer": "1900",
+  "gold_facts": [
+   "1900"
+  ]
+ },
+ {
+  "id": "squad-56e10296cd28a01900c67423",
+  "dataset": "squad",
+  "question": "How much correspondence did Tesla send Morgan in the five years following 1901?",
+  "gold_answer": "over 50 letters",
+  "gold_facts": [
+   "over 50 letters"
+  ]
+ },
+ {
+  "id": "squad-56e10412e3433e1400422abc",
+  "dataset": "squad",
+  "question": "What unforeseen problem caused Tesla to hit his experiment with a sledgehammer? ",
+  "gold_answer": "the machine oscillated at the resonance frequency of his own building",
+  "gold_facts": [
+   "the machine oscillated at the resonance frequency of his own building"
+  ]
+ },
+ {
+  "id": "squad-56e1075ae3433e1400422afd",
+  "dataset": "squad",
+  "question": "How much did Tesla receive from the sale of Wardenclyffe?",
+  "gold_answer": "$20,000",
+  "gold_facts": [
+   "$20,000"
+  ]
+ },
+ {
+  "id": "squad-56e10a28cd28a01900c674b1",
+  "dataset": "squad",
+  "question": "What was another possible reason that Tesla and Edison did not get the award?.",
+  "gold_answer": "animosity toward each other",
+  "gold_facts": [
+   "animosity toward each other"
+  ]
+ },
+ {
+  "id": "squad-56e10c61e3433e1400422b38",
+  "dataset": "squad",
+  "question": "For how long did Tesla receive this compensation?",
+  "gold_answer": "for the rest of Tesla's life",
+  "gold_facts": [
+   "for the rest of Tesla's life"
+  ]
+ },
+ {
+  "id": "squad-56e10ddce3433e1400422b4b",
+  "dataset": "squad",
+  "question": "When did he first get out of bed following the accident?",
+  "gold_answer": "early 1938",
+  "gold_facts": [
+   "early 1938"
+  ]
+ },
+ {
+  "id": "squad-56e10f14e3433e1400422b5f",
+  "dataset": "squad",
+  "question": "What was used to accelerate the tungsten pellets?",
+  "gold_answer": "high voltage",
+  "gold_facts": [
+   "high voltage"
+  ]
+ },
+ {
+  "id": "squad-56e110c3cd28a01900c67531",
+  "dataset": "squad",
+  "question": "How old was Tesla when he died?",
+  "gold_answer": "86",
+  "gold_facts": [
+   "86"
+  ]
+ },
+ {
+  "id": "squad-56e111e5e3433e1400422b91",
+  "dataset": "squad",
+  "question": "Who wrote the eulogy?",
+  "gold_answer": "Louis Adamic",
+  "gold_facts": [
+   "Louis Adamic"
+  ]
+ },
+ {
+  "id": "squad-56e11996e3433e1400422bdf",
+  "dataset": "squad",
+  "question": "In how many countries did Tesla hold patents?",
+  "gold_answer": "26",
+  "gold_facts": [
+   "26"
+  ]
+ },
+ {
+  "id": "squad-56e11a73e3433e1400422bf3",
+  "dataset": "squad",
+  "question": "What was he hoping to stimulate with the toe squishing?",
+  "gold_answer": "brain cells",
+  "gold_facts": [
+   "brain cells"
+  ]
+ },
+ {
+  "id": "squad-56e11c24e3433e1400422c19",
+  "dataset": "squad",
+  "question": "How tall was Tesla?",
+  "gold_answer": "6 feet 2 inches",
+  "gold_facts": [
+   "6 feet 2 inches"
+  ]
+ },
+ {
+  "id": "squad-56e11d8ecd28a01900c675f3",
+  "dataset": "squad",
+  "question": "Where was Tesla studying when he started playing cards and billiards?",
+  "gold_answer": "Graz",
+  "gold_facts": [
+   "Graz"
+  ]
+ },
+ {
+  "id": "squad-56e11f05e3433e1400422c32",
+  "dataset": "squad",
+  "question": "What was Julian Hawthorne's relation to Tesla?",
+  "gold_answer": "friend",
+  "gold_facts": [
+   "friend"
+  ]
+ },
+ {
+  "id": "squad-56e120a1e3433e1400422c3a",
+  "dataset": "squad",
+  "question": "What did he believe the ether did?",
+  "gold_answer": "transmitted electrical energy",
+  "gold_facts": [
+   "transmitted electrical energy"
+  ]
+ },
+ {
+  "id": "squad-56e122dacd28a01900c6763a",
+  "dataset": "squad",
+  "question": "What was his belief as to what nature was supposed to be?",
+  "gold_answer": "ruthless",
+  "gold_facts": [
+   "ruthless"
+  ]
+ },
+ {
+  "id": "squad-56e124f1cd28a01900c6764f",
+  "dataset": "squad",
+  "question": "What religion did Tesla grow up in?",
+  "gold_answer": "Orthodox Christian",
+  "gold_facts": [
+   "Orthodox Christian"
+  ]
+ },
+ {
+  "id": "squad-56e1262fcd28a01900c67656",
+  "dataset": "squad",
+  "question": "When was his article published in Century Magazine?",
+  "gold_answer": "1900",
+  "gold_facts": [
+   "1900"
+  ]
+ },
+ {
+  "id": "squad-56e16182e3433e1400422e28",
+  "dataset": "squad",
+  "question": "What branch of theoretical computer science deals with broadly classifying computational problems by difficulty and class of relationship?",
+  "gold_answer": "Computational complexity theory",
+  "gold_facts": [
+   "Computational complexity theory"
+  ]
+ },
+ {
+  "id": "squad-56e17644e3433e1400422f42",
+  "dataset": "squad",
+  "question": "What field of computer science analyzes all possible algorithms in aggregate to determine the resource requirements needed to solve to a given problem?  ",
+  "gold_answer": "computational complexity theory",
+  "gold_facts": [
+   "computational complexity theory"
+  ]
+ },
+ {
+  "id": "squad-56e181d9e3433e1400422fa0",
+  "dataset": "squad",
+  "question": "In a computational problem, what can be described as a string over an alphabet?",
+  "gold_answer": "problem instance",
+  "gold_facts": [
+   "problem instance"
+  ]
+ },
+ {
+  "id": "squad-56e19557e3433e1400422fee",
+  "dataset": "squad",
+  "question": "What kind of graph is an example of an input used in a decision problem?",
+  "gold_answer": "arbitrary graph",
+  "gold_facts": [
+   "arbitrary graph"
+  ]
+ },
+ {
+  "id": "squad-56e1a38de3433e140042305c",
+  "dataset": "squad",
+  "question": "What is a commonly used measurement used to determine the complexity of a computational problem?",
+  "gold_answer": "how much time the best algorithm requires to solve the problem",
+  "gold_facts": [
+   "how much time the best algorithm requires to solve the problem"
+  ]
+ },
+ {
+  "id": "squad-56e1aba0e3433e1400423094",
+  "dataset": "squad",
+  "question": "What is the term for a mathematical model that theoretically represents a general computing machine?",
+  "gold_answer": "A Turing machine",
+  "gold_facts": [
+   "A Turing machine"
+  ]
+ },
+ {
+  "id": "squad-56e1b00ce3433e140042309f",
+  "dataset": "squad",
+  "question": "What are two factors that directly effect how powerful a Turing machine may or may not be?",
+  "gold_answer": "time or space",
+  "gold_facts": [
+   "time or space"
+  ]
+ },
+ {
+  "id": "squad-56e1b62ecd28a01900c67aa3",
+  "dataset": "squad",
+  "question": "The time required to output an answer on a deterministic Turing machine is expressed as what?",
+  "gold_answer": "state transitions",
+  "gold_facts": [
+   "state transitions"
+  ]
+ },
+ {
+  "id": "squad-56e1b8f3e3433e14004230e7",
+  "dataset": "squad",
+  "question": "Case complexity likelihoods provide variable probabilities of what general measure? ",
+  "gold_answer": "complexity measure",
+  "gold_facts": [
+   "complexity measure"
+  ]
+ },
+ {
+  "id": "squad-56e1bc3ae3433e1400423108",
+  "dataset": "squad",
+  "question": "What is the colloquial phrase used to convey the continuum of algorithms with unlimited availability irrespective of time? ",
+  "gold_answer": "all possible algorithms",
+  "gold_facts": [
+   "all possible algorithms"
+  ]
+ },
+ {
+  "id": "squad-56e1c2eee3433e1400423136",
+  "dataset": "squad",
+  "question": "A language solved in quadratic time implies the use of what type of Turing machine?",
+  "gold_answer": "single-tape Turing machines",
+  "gold_facts": [
+   "single-tape Turing machines"
+  ]
+ },
+ {
+  "id": "squad-56e1c4fce3433e1400423152",
+  "dataset": "squad",
+  "question": "IP and AM are most commonly defined by what type of proof system?",
+  "gold_answer": "Interactive",
+  "gold_facts": [
+   "Interactive"
+  ]
+ },
+ {
+  "id": "squad-56e1c9bfe3433e1400423193",
+  "dataset": "squad",
+  "question": "Reduction essentially takes one problem and converts into what?",
+  "gold_answer": "another problem",
+  "gold_facts": [
+   "another problem"
+  ]
+ },
+ {
+  "id": "squad-56e1ce08e3433e14004231a5",
+  "dataset": "squad",
+  "question": "What would create a conflict between a problem X and problem C within the context of reduction? ",
+  "gold_answer": "if every problem in C can be reduced to X",
+  "gold_facts": [
+   "if every problem in C can be reduced to X"
+  ]
+ },
+ {
+  "id": "squad-56e1dc62cd28a01900c67bcd",
+  "dataset": "squad",
+  "question": "What is an example of a problem that rests within the NP complexity class?",
+  "gold_answer": "Boolean satisfiability problem",
+  "gold_facts": [
+   "Boolean satisfiability problem"
+  ]
+ },
+ {
+  "id": "squad-56e1e9dfe3433e14004231fe",
+  "dataset": "squad",
+  "question": "What finite hierarchy implies that the graph isomorphism problem is NP-complete? ",
+  "gold_answer": "polynomial time hierarchy",
+  "gold_facts": [
+   "polynomial time hierarchy"
+  ]
+ },
+ {
+  "id": "squad-56e1ee4de3433e1400423214",
+  "dataset": "squad",
+  "question": "What evidence between and among complexity classes would signify a theoretical watershed for complexity theory?",
+  "gold_answer": "Proving that any of these classes are unequal",
+  "gold_facts": [
+   "Proving that any of these classes are unequal"
+  ]
+ },
+ {
+  "id": "squad-56e1fc57e3433e140042322c",
+  "dataset": "squad",
+  "question": "Problems capable of theoretical solutions but consuming unreasonable time in practical application are known as what?",
+  "gold_answer": "intractable problems",
+  "gold_facts": [
+   "intractable problems"
+  ]
+ },
+ {
+  "id": "squad-56e200e4cd28a01900c67c16",
+  "dataset": "squad",
+  "question": "What theoretical device is attributed to Alan Turing?",
+  "gold_answer": "Turing machines",
+  "gold_facts": [
+   "Turing machines"
+  ]
+ },
+ {
+  "id": "squad-56e2042ecd28a01900c67c20",
+  "dataset": "squad",
+  "question": "In 1962, who was responsible for the authorship of a paper published on real time-computations?",
+  "gold_answer": "Hisao Yamada",
+  "gold_facts": [
+   "Hisao Yamada"
+  ]
+ },
+ {
+  "id": "squad-56e7477700c9c71400d76f26",
+  "dataset": "squad",
+  "question": "What can a teacher use to help students learn?",
+  "gold_answer": "lesson plan",
+  "gold_facts": [
+   "lesson plan"
+  ]
+ },
+ {
+  "id": "squad-56e749dd00c9c71400d76f55",
+  "dataset": "squad",
+  "question": "What would a community member need to teach informally?",
+  "gold_answer": "knowledge or skills",
+  "gold_facts": [
+   "knowledge or skills"
+  ]
+ },
+ {
+  "id": "squad-56e74d1f00c9c71400d76f6e",
+  "dataset": "squad",
+  "question": "What could a teacher help in organizing?",
+  "gold_answer": "school functions",
+  "gold_facts": [
+   "school functions"
+  ]
+ },
+ {
+  "id": "squad-56e74faf00c9c71400d76f95",
+  "dataset": "squad",
+  "question": "What could someone be investigated for?",
+  "gold_answer": "allegations of professional misconduct",
+  "gold_facts": [
+   "allegations of professional misconduct"
+  ]
+ },
+ {
+  "id": "squad-56e751fb00c9c71400d76faa",
+  "dataset": "squad",
+  "question": "What is a typical name for learning that is not inside of the classroom?",
+  "gold_answer": "field trips",
+  "gold_facts": [
+   "field trips"
+  ]
+ },
+ {
+  "id": "squad-56e7542f00c9c71400d76fbe",
+  "dataset": "squad",
+  "question": "What would a teacher do for someone who is timid?",
+  "gold_answer": "encourage",
+  "gold_facts": [
+   "encourage"
+  ]
+ },
+ {
+  "id": "squad-56e7560937bdd419002c3e8d",
+  "dataset": "squad",
+  "question": "In a platoon style teaching, what gives the children security?",
+  "gold_answer": "staying with the same group of peers for all classes",
+  "gold_facts": [
+   "staying with the same group of peers for all classes"
+  ]
+ },
+ {
+  "id": "squad-56e7578a37bdd419002c3eab",
+  "dataset": "squad",
+  "question": "What types of discipline did the teacher have access to?",
+  "gold_answer": "all the normal forms of parental discipline",
+  "gold_facts": [
+   "all the normal forms of parental discipline"
+  ]
+ },
+ {
+  "id": "squad-56e7591b00c9c71400d76fee",
+  "dataset": "squad",
+  "question": "Is corporal punishment increasing or declining in the South?",
+  "gold_answer": "declining",
+  "gold_facts": [
+   "declining"
+  ]
+ },
+ {
+  "id": "squad-56e75a9037bdd419002c3ecb",
+  "dataset": "squad",
+  "question": "If a detention asks the student to write, what do they write?",
+  "gold_answer": "lines or a punishment essay",
+  "gold_facts": [
+   "lines or a punishment essay"
+  ]
+ },
+ {
+  "id": "squad-56e75e4500c9c71400d7702c",
+  "dataset": "squad",
+  "question": "What country has higher scores on standardized tests than the U.S.?",
+  "gold_answer": "Japan",
+  "gold_facts": [
+   "Japan"
+  ]
+ },
+ {
+  "id": "squad-56e7611500c9c71400d77055",
+  "dataset": "squad",
+  "question": "In addition to schools, where else is popularly based authority effective?",
+  "gold_answer": "governments",
+  "gold_facts": [
+   "governments"
+  ]
+ },
+ {
+  "id": "squad-56e762fe00c9c71400d77074",
+  "dataset": "squad",
+  "question": "What is dramatic gesturing an example of?",
+  "gold_answer": "nonverbal expressions of enthusiasm",
+  "gold_facts": [
+   "nonverbal expressions of enthusiasm"
+  ]
+ },
+ {
+  "id": "squad-56e764e200c9c71400d77091",
+  "dataset": "squad",
+  "question": "What should a teacher guide a student in?",
+  "gold_answer": "aligning his personal goals with his academic goals.",
+  "gold_facts": [
+   "aligning his personal goals with his academic goals."
+  ]
+ },
+ {
+  "id": "squad-56e7667e37bdd419002c3f4d",
+  "dataset": "squad",
+  "question": "What is important for a teacher to enjoy?",
+  "gold_answer": "teaching",
+  "gold_facts": [
+   "teaching"
+  ]
+ },
+ {
+  "id": "squad-56e768ce37bdd419002c3f67",
+  "dataset": "squad",
+  "question": "Where has there been very well-known cases of teacher misconduct?",
+  "gold_answer": "United States",
+  "gold_facts": [
+   "United States"
+  ]
+ },
+ {
+  "id": "squad-56e76abf37bdd419002c3f78",
+  "dataset": "squad",
+  "question": "What can be the result of a change in an organization?",
+  "gold_answer": "stress",
+  "gold_facts": [
+   "stress"
+  ]
+ },
+ {
+  "id": "squad-56e76c6a00c9c71400d77111",
+  "dataset": "squad",
+  "question": "What might offering bonuses help reduce?",
+  "gold_answer": "occupational stress among teachers",
+  "gold_facts": [
+   "occupational stress among teachers"
+  ]
+ },
+ {
+  "id": "squad-56e76de800c9c71400d77125",
+  "dataset": "squad",
+  "question": "What is tertiary education?",
+  "gold_answer": "universities and/or TAFE colleges",
+  "gold_facts": [
+   "universities and/or TAFE colleges"
+  ]
+ },
+ {
+  "id": "squad-56e7714a00c9c71400d77137",
+  "dataset": "squad",
+  "question": "What does teaching on an island result in?",
+  "gold_answer": "Extra pay",
+  "gold_facts": [
+   "Extra pay"
+  ]
+ },
+ {
+  "id": "squad-56e772bf37bdd419002c3fbe",
+  "dataset": "squad",
+  "question": "How are existing teachers and non-teachers vetted?",
+  "gold_answer": "on a phased basis",
+  "gold_facts": [
+   "on a phased basis"
+  ]
+ },
+ {
+  "id": "squad-56e7752337bdd419002c3fd8",
+  "dataset": "squad",
+  "question": "What type of opportunities would be expected from these counties?",
+  "gold_answer": "Excellent job opportunities",
+  "gold_facts": [
+   "Excellent job opportunities"
+  ]
+ },
+ {
+  "id": "squad-56e7770037bdd419002c3fe2",
+  "dataset": "squad",
+  "question": "What would a Probationer need to do to earn more money, after 6 years?",
+  "gold_answer": "earn Chartered Teacher Status",
+  "gold_facts": [
+   "earn Chartered Teacher Status"
+  ]
+ },
+ {
+  "id": "squad-56e7788200c9c71400d77183",
+  "dataset": "squad",
+  "question": "What is the NASUWT?",
+  "gold_answer": "trade unions",
+  "gold_facts": [
+   "trade unions"
+  ]
+ },
+ {
+  "id": "squad-56e77a8700c9c71400d7718d",
+  "dataset": "squad",
+  "question": "In a report on K-12 teachers, which teachers had the lowest median salary?",
+  "gold_answer": "elementary school teachers",
+  "gold_facts": [
+   "elementary school teachers"
+  ]
+ },
+ {
+  "id": "squad-56e77c6737bdd419002c4021",
+  "dataset": "squad",
+  "question": "Who do Priesthood representatives defer to, at times?",
+  "gold_answer": "the father of the house",
+  "gold_facts": [
+   "the father of the house"
+  ]
+ },
+ {
+  "id": "squad-56e77e4a00c9c71400d771b0",
+  "dataset": "squad",
+  "question": "Who teaches the proper way of living in Islam?",
+  "gold_answer": "ulemas",
+  "gold_facts": [
+   "ulemas"
+  ]
+ },
+ {
+  "id": "squad-56f7c8aba6d7ea1400e1727a",
+  "dataset": "squad",
+  "question": "Since he didn't believe that salvation was acquired through good deeds, how was it achieved?",
+  "gold_answer": "gift of God's grace",
+  "gold_facts": [
+   "gift of God's grace"
+  ]
+ },
+ {
+  "id": "squad-56f7cdc2a6d7ea1400e1728e",
+  "dataset": "squad",
+  "question": "When was Martin Luther born?",
+  "gold_answer": "10 November 1483",
+  "gold_facts": [
+   "10 November 1483"
+  ]
+ },
+ {
+  "id": "squad-56f7eba8a6d7ea1400e172cd",
+  "dataset": "squad",
+  "question": "What educational study did Luther start to pursue and immediately  drop?",
+  "gold_answer": "law",
+  "gold_facts": [
+   "law"
+  ]
+ },
+ {
+  "id": "squad-56f7ef96aef2371900625c74",
+  "dataset": "squad",
+  "question": "To what did Martin Luther devote all his attention ?",
+  "gold_answer": "Augustinian order",
+  "gold_facts": [
+   "Augustinian order"
+  ]
+ },
+ {
+  "id": "squad-56f7f2e0aef2371900625cb0",
+  "dataset": "squad",
+  "question": "When did Martin Luther receive his Doctor of Theology?",
+  "gold_answer": "19 October 1512",
+  "gold_facts": [
+   "19 October 1512"
+  ]
+ },
+ {
+  "id": "squad-56f7ffadaef2371900625d5e",
+  "dataset": "squad",
+  "question": "When did Martin Luther protest the sale of indulgences to his bishop?",
+  "gold_answer": "31 October 1517",
+  "gold_facts": [
+   "31 October 1517"
+  ]
+ },
+ {
+  "id": "squad-56f802c6a6d7ea1400e17378",
+  "dataset": "squad",
+  "question": "What were these indulgences supposed to grant the giver?",
+  "gold_answer": "salvation",
+  "gold_facts": [
+   "salvation"
+  ]
+ },
+ {
+  "id": "squad-56f80604a6d7ea1400e17389",
+  "dataset": "squad",
+  "question": "On whose comments is the posting on the door based?",
+  "gold_answer": "Philipp Melanchthon",
+  "gold_facts": [
+   "Philipp Melanchthon"
+  ]
+ },
+ {
+  "id": "squad-56f8094aa6d7ea1400e17393",
+  "dataset": "squad",
+  "question": "What part of Luther's career was one of his most productive?",
+  "gold_answer": "early part",
+  "gold_facts": [
+   "early part"
+  ]
+ },
+ {
+  "id": "squad-56f80ccfaef2371900625d85",
+  "dataset": "squad",
+  "question": "What did Luther consider faith to be?",
+  "gold_answer": "gift from God",
+  "gold_facts": [
+   "gift from God"
+  ]
+ },
+ {
+  "id": "squad-56f80fdfaef2371900625d98",
+  "dataset": "squad",
+  "question": "How much of the indulgences went to Rome?",
+  "gold_answer": "one half",
+  "gold_facts": [
+   "one half"
+  ]
+ },
+ {
+  "id": "squad-56f81393aef2371900625dac",
+  "dataset": "squad",
+  "question": "What scripture did Luther use to back up his opinion that churchmen were not infallible?",
+  "gold_answer": "Matthew 16:18",
+  "gold_facts": [
+   "Matthew 16:18"
+  ]
+ },
+ {
+  "id": "squad-56f8225ea6d7ea1400e173f4",
+  "dataset": "squad",
+  "question": "Who presided over the assembly?",
+  "gold_answer": "Emperor Charles V",
+  "gold_facts": [
+   "Emperor Charles V"
+  ]
+ },
+ {
+  "id": "squad-56f82549a6d7ea1400e17418",
+  "dataset": "squad",
+  "question": "What did Michael Mullet call Luther's speech?",
+  "gold_answer": "epoch-making oratory",
+  "gold_facts": [
+   "epoch-making oratory"
+  ]
+ },
+ {
+  "id": "squad-56f82989aef2371900625e6b",
+  "dataset": "squad",
+  "question": "What was planned for Luther by Frederick III after the meeting?",
+  "gold_answer": "Luther's disappearance",
+  "gold_facts": [
+   "Luther's disappearance"
+  ]
+ },
+ {
+  "id": "squad-56f84485aef2371900625f71",
+  "dataset": "squad",
+  "question": "When did Luther broaden his attacks to include core Church doctrines?",
+  "gold_answer": "summer of 1521",
+  "gold_facts": [
+   "summer of 1521"
+  ]
+ },
+ {
+  "id": "squad-56f84760aef2371900625f81",
+  "dataset": "squad",
+  "question": "Who supported Andreas Karistadt in reform at Wittenberg?",
+  "gold_answer": "Gabriel Zwilling",
+  "gold_facts": [
+   "Gabriel Zwilling"
+  ]
+ },
+ {
+  "id": "squad-56f84a60aef2371900625f9d",
+  "dataset": "squad",
+  "question": "How quick was the effect of Luther's preaching?",
+  "gold_answer": "immediate",
+  "gold_facts": [
+   "immediate"
+  ]
+ },
+ {
+  "id": "squad-56f84d33aef2371900625fb1",
+  "dataset": "squad",
+  "question": "What was Nicholas Storch ?",
+  "gold_answer": "Zwickau prophet",
+  "gold_facts": [
+   "Zwickau prophet"
+  ]
+ },
+ {
+  "id": "squad-56f8507fa6d7ea1400e1754b",
+  "dataset": "squad",
+  "question": "How many ways did Luther justify his opposition to revolt?",
+  "gold_answer": "on three grounds",
+  "gold_facts": [
+   "on three grounds"
+  ]
+ },
+ {
+  "id": "squad-56f852fba6d7ea1400e1756d",
+  "dataset": "squad",
+  "question": "Who did Martin Luther marry?",
+  "gold_answer": "Katharina von Bora",
+  "gold_facts": [
+   "Katharina von Bora"
+  ]
+ },
+ {
+  "id": "squad-56f855caaef2371900625ff3",
+  "dataset": "squad",
+  "question": "What was Luther's marriage seen as by others?",
+  "gold_answer": "seal of approval",
+  "gold_facts": [
+   "seal of approval"
+  ]
+ },
+ {
+  "id": "squad-56f8599aa6d7ea1400e175af",
+  "dataset": "squad",
+  "question": "In organizing a new church, what did Luther find to be unworkable for congregations?",
+  "gold_answer": "choosing their own ministers",
+  "gold_facts": [
+   "choosing their own ministers"
+  ]
+ },
+ {
+  "id": "squad-56f85cf0aef2371900626019",
+  "dataset": "squad",
+  "question": "When did Luther write  a German mass?",
+  "gold_answer": "early 1526",
+  "gold_facts": [
+   "early 1526"
+  ]
+ },
+ {
+  "id": "squad-56f86680a6d7ea1400e175cd",
+  "dataset": "squad",
+  "question": "What did Luther devise to teach  Christianity to the congregation?",
+  "gold_answer": "catechism",
+  "gold_facts": [
+   "catechism"
+  ]
+ },
+ {
+  "id": "squad-56f86966aef2371900626053",
+  "dataset": "squad",
+  "question": "Which work of Luther's is effective in teaching children?",
+  "gold_answer": "Small Catechism",
+  "gold_facts": [
+   "Small Catechism"
+  ]
+ },
+ {
+  "id": "squad-56f86d30a6d7ea1400e17605",
+  "dataset": "squad",
+  "question": "Where was the language Luther used in his translations spoken?",
+  "gold_answer": "Saxon chancellery",
+  "gold_facts": [
+   "Saxon chancellery"
+  ]
+ },
+ {
+  "id": "squad-56f87000aef2371900626071",
+  "dataset": "squad",
+  "question": "In what type of work was Luther prolific?",
+  "gold_answer": "authoring hymns",
+  "gold_facts": [
+   "authoring hymns"
+  ]
+ },
+ {
+  "id": "squad-56f87392aef2371900626099",
+  "dataset": "squad",
+  "question": "When did Luther write Wir glauben all an einen Gott?",
+  "gold_answer": "1524",
+  "gold_facts": [
+   "1524"
+  ]
+ },
+ {
+  "id": "squad-56f87760aef23719006260cc",
+  "dataset": "squad",
+  "question": "When did Luther write the hymn From Depths of Woe I cry to You?",
+  "gold_answer": "1523",
+  "gold_facts": [
+   "1523"
+  ]
+ },
+ {
+  "id": "squad-56f87e95aef237190062610a",
+  "dataset": "squad",
+  "question": "What does Luther's hymn Christ unser Herr zum jordan kam concern?",
+  "gold_answer": "baptism",
+  "gold_facts": [
+   "baptism"
+  ]
+ },
+ {
+  "id": "squad-56f881e3a6d7ea1400e176f3",
+  "dataset": "squad",
+  "question": "What composer used Luther's hymns in his works?",
+  "gold_answer": "Johann Sebastian Bach",
+  "gold_facts": [
+   "Johann Sebastian Bach"
+  ]
+ },
+ {
+  "id": "squad-56f884cba6d7ea1400e17707",
+  "dataset": "squad",
+  "question": "Who noticed that Luther's view of the soul after death differed from later theologians?",
+  "gold_answer": "Franz Pieper",
+  "gold_facts": [
+   "Franz Pieper"
+  ]
+ },
+ {
+  "id": "squad-56f88c37aef2371900626177",
+  "dataset": "squad",
+  "question": "Who was Philip I?",
+  "gold_answer": "Landgrave of Hesse",
+  "gold_facts": [
+   "Landgrave of Hesse"
+  ]
+ },
+ {
+  "id": "squad-56f8907faef23719006261b3",
+  "dataset": "squad",
+  "question": "What paved the way for the Augsburg Confession?",
+  "gold_answer": "Marburg Colloquy",
+  "gold_facts": [
+   "Marburg Colloquy"
+  ]
+ },
+ {
+  "id": "squad-56f897059b226e1400dd0c5e",
+  "dataset": "squad",
+  "question": "What did Luther gradually see as hopeless in the Reformation?",
+  "gold_answer": "Jewish conversion to Christianity",
+  "gold_facts": [
+   "Jewish conversion to Christianity"
+  ]
+ },
+ {
+  "id": "squad-56f89a959b226e1400dd0c9e",
+  "dataset": "squad",
+  "question": "What type of writings did the reading of the Qur'an bring out in Luther?",
+  "gold_answer": "critical pamphlets on Islam",
+  "gold_facts": [
+   "critical pamphlets on Islam"
+  ]
+ },
+ {
+  "id": "squad-56f8a4e99e9bad19000a0252",
+  "dataset": "squad",
+  "question": "What is the use of the law by the Holy Spirit?",
+  "gold_answer": "work sorrow over sin",
+  "gold_facts": [
+   "work sorrow over sin"
+  ]
+ },
+ {
+  "id": "squad-56f8aa749b226e1400dd0da8",
+  "dataset": "squad",
+  "question": "Besides baptism, what shows the future of heaven to Christians?",
+  "gold_answer": "Ten Commandments",
+  "gold_facts": [
+   "Ten Commandments"
+  ]
+ },
+ {
+  "id": "squad-56f8ae099e9bad19000a02ee",
+  "dataset": "squad",
+  "question": "What did Jews refuse to accept that caused Luther to call them blasphemers and liars?",
+  "gold_answer": "divinity of Jesus",
+  "gold_facts": [
+   "divinity of Jesus"
+  ]
+ },
+ {
+  "id": "squad-56f8b2499b226e1400dd0e3e",
+  "dataset": "squad",
+  "question": "What did Josel ask the city of Strasbourg to forbid the sale of?",
+  "gold_answer": "Luther's anti-Jewish works",
+  "gold_facts": [
+   "Luther's anti-Jewish works"
+  ]
+ },
+ {
+  "id": "squad-56f8b7189e9bad19000a038c",
+  "dataset": "squad",
+  "question": "Who agreed with the burning of synagogues?",
+  "gold_answer": "Bishop Martin Sasse",
+  "gold_facts": [
+   "Bishop Martin Sasse"
+  ]
+ },
+ {
+  "id": "squad-56f8bbb09e9bad19000a03de",
+  "dataset": "squad",
+  "question": "Who aide the Reich in Germany in antisemitism?",
+  "gold_answer": "Lutheran clergy and theologians",
+  "gold_facts": [
+   "Lutheran clergy and theologians"
+  ]
+ },
+ {
+  "id": "squad-56f8c0cd9b226e1400dd0f38",
+  "dataset": "squad",
+  "question": "When were the elections that produced a higher vote by Protestant Nazi sympathizers than by Catholics?",
+  "gold_answer": "1928-1933",
+  "gold_facts": [
+   "1928-1933"
+  ]
+ },
+ {
+  "id": "squad-56f8c43d9b226e1400dd0f65",
+  "dataset": "squad",
+  "question": "How many times did Luther preach in Halle in 1545 and 1546?",
+  "gold_answer": "three times",
+  "gold_facts": [
+   "three times"
+  ]
+ },
+ {
+  "id": "squad-56f8c7029e9bad19000a04a4",
+  "dataset": "squad",
+  "question": "For whom was Luther concerned about in Mansfeld?",
+  "gold_answer": "his siblings' families",
+  "gold_facts": [
+   "his siblings' families"
+  ]
+ },
+ {
+  "id": "squad-56f8c9719e9bad19000a04e4",
+  "dataset": "squad",
+  "question": "Who performed the funeral for Martin Luther?",
+  "gold_answer": "Johannes Bugenhagen and Philipp Melanchthon",
+  "gold_facts": [
+   "Johannes Bugenhagen and Philipp Melanchthon"
+  ]
+ },
+ {
+  "id": "squad-56f8ce779b226e1400dd103e",
+  "dataset": "squad",
+  "question": "On what other calendar is Luther commemorated?",
+  "gold_answer": "Episcopal (United States) Calendar of Saints.",
+  "gold_facts": [
+   "Episcopal (United States) Calendar of Saints."
+  ]
+ },
+ {
+  "id": "squad-5705e33f52bb89140068964d",
+  "dataset": "squad",
+  "question": "How many megaregions are there in the United States?",
+  "gold_answer": "11",
+  "gold_facts": [
+   "11"
+  ]
+ },
+ {
+  "id": "squad-5705e4fe75f01819005e7705",
+  "dataset": "squad",
+  "question": "What is the name of the desert on the border of Arizona?",
+  "gold_answer": "Colorado Desert",
+  "gold_facts": [
+   "Colorado Desert"
+  ]
+ },
+ {
+  "id": "squad-5705e99452bb89140068968a",
+  "dataset": "squad",
+  "question": "What are Los Angeles, Orange, San Diego, San Bernardino and Riverside?",
+  "gold_answer": "counties",
+  "gold_facts": [
+   "counties"
+  ]
+ },
+ {
+  "id": "squad-5705ec1675f01819005e7770",
+  "dataset": "squad",
+  "question": "What famous snowbaorder lives in southern California?",
+  "gold_answer": "Shaun White",
+  "gold_facts": [
+   "Shaun White"
+  ]
+ },
+ {
+  "id": "squad-5705edcd52bb8914006896cd",
+  "dataset": "squad",
+  "question": "Other than Point Conception, what landmark is used in the other definition of southern California?",
+  "gold_answer": "Tehachapi Mountains",
+  "gold_facts": [
+   "Tehachapi Mountains"
+  ]
+ },
+ {
+  "id": "squad-5705f09e75f01819005e77a7",
+  "dataset": "squad",
+  "question": "What was the percentage of people that voted in favor of the Pico Act of 1859?",
+  "gold_answer": "75",
+  "gold_facts": [
+   "75"
+  ]
+ },
+ {
+  "id": "squad-5705f36452bb89140068971b",
+  "dataset": "squad",
+  "question": "Which mountain range influenced the split of the regions?",
+  "gold_answer": "Tehachapis",
+  "gold_facts": [
+   "Tehachapis"
+  ]
+ },
+ {
+  "id": "squad-5705fb7f52bb891400689753",
+  "dataset": "squad",
+  "question": "Other than L.A. which other county do many people commute to?",
+  "gold_answer": "Orange",
+  "gold_facts": [
+   "Orange"
+  ]
+ },
+ {
+  "id": "squad-5705fd8475f01819005e7843",
+  "dataset": "squad",
+  "question": "The region spans which mountains other than the Transverse ranges?",
+  "gold_answer": "Peninsular",
+  "gold_facts": [
+   "Peninsular"
+  ]
+ },
+ {
+  "id": "squad-5705ffde52bb891400689787",
+  "dataset": "squad",
+  "question": "Which organization released a California Earthquake forecast?",
+  "gold_answer": "USGS",
+  "gold_facts": [
+   "USGS"
+  ]
+ },
+ {
+  "id": "squad-5706074552bb8914006897d4",
+  "dataset": "squad",
+  "question": "What is the name associated with the eight areas that make up a part of southern California?",
+  "gold_answer": "Metropolitan Statistical Areas",
+  "gold_facts": [
+   "Metropolitan Statistical Areas"
+  ]
+ },
+ {
+  "id": "squad-5706094b52bb8914006897de",
+  "dataset": "squad",
+  "question": "What resource is the economy of southern California depedent on?",
+  "gold_answer": "petroleum",
+  "gold_facts": [
+   "petroleum"
+  ]
+ },
+ {
+  "id": "squad-57060a6e52bb8914006897f8",
+  "dataset": "squad",
+  "question": "What type of district is southern California home to many of?",
+  "gold_answer": "business",
+  "gold_facts": [
+   "business"
+  ]
+ },
+ {
+  "id": "squad-57060eaf75f01819005e7910",
+  "dataset": "squad",
+  "question": "Which county is developing its business center?",
+  "gold_answer": "Orange",
+  "gold_facts": [
+   "Orange"
+  ]
+ },
+ {
+  "id": "squad-570610b275f01819005e792b",
+  "dataset": "squad",
+  "question": "What is the metric they use to determine how busy airports are?",
+  "gold_answer": "passenger volume",
+  "gold_facts": [
+   "passenger volume"
+  ]
+ },
+ {
+  "id": "squad-570611c475f01819005e793e",
+  "dataset": "squad",
+  "question": "The Port of Long Beach belongs to which region of California?",
+  "gold_answer": "Southern",
+  "gold_facts": [
+   "Southern"
+  ]
+ },
+ {
+  "id": "squad-5706143575f01819005e7954",
+  "dataset": "squad",
+  "question": "What is the lone MLS team that belongs to southern California?",
+  "gold_answer": "LA Galaxy",
+  "gold_facts": [
+   "LA Galaxy"
+  ]
+ },
+ {
+  "id": "squad-570614ff52bb89140068988e",
+  "dataset": "squad",
+  "question": "The two listed teams play for which NCAA group?",
+  "gold_answer": "Division I",
+  "gold_facts": [
+   "Division I"
+  ]
+ },
+ {
+  "id": "squad-57094a79efce8f15003a7dc5",
+  "dataset": "squad",
+  "question": "How many of the six total packages available to broadcasters was Setanta awarded?",
+  "gold_answer": "two",
+  "gold_facts": [
+   "two"
+  ]
+ },
+ {
+  "id": "squad-57094ca7efce8f15003a7dd8",
+  "dataset": "squad",
+  "question": "WHat allows customers to get Sky+ functions if they do not subscribe to BSkyB's channels?",
+  "gold_answer": "monthly fee",
+  "gold_facts": [
+   "monthly fee"
+  ]
+ },
+ {
+  "id": "squad-570953a7efce8f15003a7e00",
+  "dataset": "squad",
+  "question": "What did Virgin Media claim BSkyB did that resulted Virgin not carrying the channels anymore?",
+  "gold_answer": "substantially increased the asking price",
+  "gold_facts": [
+   "substantially increased the asking price"
+  ]
+ },
+ {
+  "id": "squad-570961aa200fba1400367f17",
+  "dataset": "squad",
+  "question": "When did BSkyB end their analogue service?",
+  "gold_answer": "27 September 2001",
+  "gold_facts": [
+   "27 September 2001"
+  ]
+ },
+ {
+  "id": "squad-57096505ed30961900e84085",
+  "dataset": "squad",
+  "question": "When is Sky going to introduce UHD broadcasts?",
+  "gold_answer": "2016",
+  "gold_facts": [
+   "2016"
+  ]
+ },
+ {
+  "id": "squad-570967c4ed30961900e840bd",
+  "dataset": "squad",
+  "question": "How many television and radio channels could the new digital service carry?",
+  "gold_answer": "hundreds",
+  "gold_facts": [
+   "hundreds"
+  ]
+ },
+ {
+  "id": "squad-57096b66200fba1400367faa",
+  "dataset": "squad",
+  "question": "What were NTL's services rebranded as?",
+  "gold_answer": "Virgin Media",
+  "gold_facts": [
+   "Virgin Media"
+  ]
+ },
+ {
+  "id": "squad-57096e1ced30961900e84105",
+  "dataset": "squad",
+  "question": "Who was given the highlights of most of the matches?",
+  "gold_answer": "BBC",
+  "gold_facts": [
+   "BBC"
+  ]
+ },
+ {
+  "id": "squad-57097051ed30961900e84135",
+  "dataset": "squad",
+  "question": "Who did BSkyB compete with initially?",
+  "gold_answer": "ONdigital",
+  "gold_facts": [
+   "ONdigital"
+  ]
+ },
+ {
+  "id": "squad-57097b50200fba1400368050",
+  "dataset": "squad",
+  "question": "What was the target percentage of households BSkyB wanted to reach?",
+  "gold_answer": "36%",
+  "gold_facts": [
+   "36%"
+  ]
+ },
+ {
+  "id": "squad-57097d63ed30961900e841ff",
+  "dataset": "squad",
+  "question": "What company agreed to terminate high court proceedings with Virgin Media?",
+  "gold_answer": "BSkyB",
+  "gold_facts": [
+   "BSkyB"
+  ]
+ },
+ {
+  "id": "squad-570d2556fed7b91900d45c4a",
+  "dataset": "squad",
+  "question": "How many miners died in the typhoid outbreak of 1854?",
+  "gold_answer": "over 1,000",
+  "gold_facts": [
+   "over 1,000"
+  ]
+ },
+ {
+  "id": "squad-570d28bdb3d812140066d4a6",
+  "dataset": "squad",
+  "question": "What party rules in Melbourne's inner regions?",
+  "gold_answer": "The Greens",
+  "gold_facts": [
+   "The Greens"
+  ]
+ },
+ {
+  "id": "squad-570d2af0fed7b91900d45c96",
+  "dataset": "squad",
+  "question": "What city is the capital of Victoria?",
+  "gold_answer": "Melbourne",
+  "gold_facts": [
+   "Melbourne"
+  ]
+ },
+ {
+  "id": "squad-570d2d68fed7b91900d45cbe",
+  "dataset": "squad",
+  "question": "How much does Victoria produce in Australian pears?",
+  "gold_answer": "90%",
+  "gold_facts": [
+   "90%"
+  ]
+ },
+ {
+  "id": "squad-570d30fdfed7b91900d45ce6",
+  "dataset": "squad",
+  "question": "What is Victoria's highest monthly temperature?",
+  "gold_answer": "48.8 \u00b0C",
+  "gold_facts": [
+   "48.8 \u00b0C"
+  ]
+ },
+ {
+  "id": "squad-570d3468b3d812140066d546",
+  "dataset": "squad",
+  "question": "When will Ford's manufacturing plants close?",
+  "gold_answer": "October 2016",
+  "gold_facts": [
+   "October 2016"
+  ]
+ },
+ {
+  "id": "squad-570d391fb3d812140066d578",
+  "dataset": "squad",
+  "question": "What is the temperature in the highest portion of the mountain range in winter?",
+  "gold_answer": "below 0 \u00b0C",
+  "gold_facts": [
+   "below 0 \u00b0C"
+  ]
+ },
+ {
+  "id": "squad-570d418dfed7b91900d45dc0",
+  "dataset": "squad",
+  "question": "What is the upper house of the Parliament of Victoria called?",
+  "gold_answer": "Legislative Council",
+  "gold_facts": [
+   "Legislative Council"
+  ]
+ },
+ {
+  "id": "squad-570d44abb3d812140066d600",
+  "dataset": "squad",
+  "question": "How many full time teachers does Victoria have?",
+  "gold_answer": "63,519",
+  "gold_facts": [
+   "63,519"
+  ]
+ },
+ {
+  "id": "squad-570d47b8b3d812140066d630",
+  "dataset": "squad",
+  "question": "Where were the narrow gauge rail lines built in Victoria?",
+  "gold_answer": "mountainous areas",
+  "gold_facts": [
+   "mountainous areas"
+  ]
+ },
+ {
+  "id": "squad-570d4c3bfed7b91900d45e35",
+  "dataset": "squad",
+  "question": "The passage of what act gave Victoria its own government?",
+  "gold_answer": "Colony of Victoria Act",
+  "gold_facts": [
+   "Colony of Victoria Act"
+  ]
+ },
+ {
+  "id": "squad-570d50a5fed7b91900d45e81",
+  "dataset": "squad",
+  "question": "How much percentage of Victoria's land is taken up by farms?",
+  "gold_answer": "60%",
+  "gold_facts": [
+   "60%"
+  ]
+ },
+ {
+  "id": "squad-57105da9a58dae1900cd69a2",
+  "dataset": "squad",
+  "question": "What did this agreement do?",
+  "gold_answer": "granted the Huguenots substantial religious, political and military autonomy",
+  "gold_facts": [
+   "granted the Huguenots substantial religious, political and military autonomy"
+  ]
+ },
+ {
+  "id": "squad-57106644b654c5140001f8e9",
+  "dataset": "squad",
+  "question": "Jean De Rely's illustrated French-language scriptures were first published in what city?",
+  "gold_answer": "Paris",
+  "gold_facts": [
+   "Paris"
+  ]
+ },
+ {
+  "id": "squad-571077ecb654c5140001f90d",
+  "dataset": "squad",
+  "question": "The number of new Huguenot colonists declined after what year?",
+  "gold_answer": "1700",
+  "gold_facts": [
+   "1700"
+  ]
+ },
+ {
+  "id": "squad-57107a3ea58dae1900cd69de",
+  "dataset": "squad",
+  "question": "What southern city did the Huguenots settle near?",
+  "gold_answer": "Charleston, South Carolina",
+  "gold_facts": [
+   "Charleston, South Carolina"
+  ]
+ },
+ {
+  "id": "squad-57107e6ca58dae1900cd69f2",
+  "dataset": "squad",
+  "question": "What group specifically opposed the Huguenots?",
+  "gold_answer": "Catholic Church in France",
+  "gold_facts": [
+   "Catholic Church in France"
+  ]
+ },
+ {
+  "id": "squad-57108198b654c5140001f937",
+  "dataset": "squad",
+  "question": "How many protestants live in France today?",
+  "gold_answer": "one million",
+  "gold_facts": [
+   "one million"
+  ]
+ },
+ {
+  "id": "squad-57108d69b654c5140001f983",
+  "dataset": "squad",
+  "question": "What country initially received the largest number of Huguenot refugees?",
+  "gold_answer": "the Dutch Republic",
+  "gold_facts": [
+   "the Dutch Republic"
+  ]
+ },
+ {
+  "id": "squad-571090abb654c5140001f995",
+  "dataset": "squad",
+  "question": "Where did Huguenots and Walloons settle in England?",
+  "gold_answer": "Canterbury",
+  "gold_facts": [
+   "Canterbury"
+  ]
+ },
+ {
+  "id": "squad-57109275b654c5140001f99f",
+  "dataset": "squad",
+  "question": "What is the common term for the loss of key members of French society to Huguenot emigration?",
+  "gold_answer": "brain drain",
+  "gold_facts": [
+   "brain drain"
+  ]
+ },
+ {
+  "id": "squad-571094b7a58dae1900cd6a66",
+  "dataset": "squad",
+  "question": "What was required of Huguenot children after the Edict was revoked?",
+  "gold_answer": "education of children as Catholics",
+  "gold_facts": [
+   "education of children as Catholics"
+  ]
+ },
+ {
+  "id": "squad-5710968aa58dae1900cd6a86",
+  "dataset": "squad",
+  "question": "Families with French names in South Africa speak what language today?",
+  "gold_answer": "Afrikaans",
+  "gold_facts": [
+   "Afrikaans"
+  ]
+ },
+ {
+  "id": "squad-571098f8a58dae1900cd6ab3",
+  "dataset": "squad",
+  "question": "What style of lace is erroneously believed by some to have Huguenot influence?",
+  "gold_answer": "'Bucks Point'",
+  "gold_facts": [
+   "'Bucks Point'"
+  ]
+ },
+ {
+  "id": "squad-5710e8c8a58dae1900cd6b28",
+  "dataset": "squad",
+  "question": "What did the 18th century Huguenot group call themselves?",
+  "gold_answer": "Camisards",
+  "gold_facts": [
+   "Camisards"
+  ]
+ },
+ {
+  "id": "squad-5710eb6fb654c5140001fa19",
+  "dataset": "squad",
+  "question": "Which Spanish officer established the settlement at St. Augustine?",
+  "gold_answer": "Pedro Men\u00e9ndez de Avil\u00e9s",
+  "gold_facts": [
+   "Pedro Men\u00e9ndez de Avil\u00e9s"
+  ]
+ },
+ {
+  "id": "squad-5710ed7bb654c5140001fa2d",
+  "dataset": "squad",
+  "question": "What Dutch document condemned the Spanish Inquisition?",
+  "gold_answer": "\"Apologie\"",
+  "gold_facts": [
+   "\"Apologie\""
+  ]
+ },
+ {
+  "id": "squad-5710f2e2a58dae1900cd6b74",
+  "dataset": "squad",
+  "question": "Which Irish cities had large Huguenot enclaves?",
+  "gold_answer": "Dublin, Cork, Portarlington, Lisburn, Waterford and Youghal",
+  "gold_facts": [
+   "Dublin, Cork, Portarlington, Lisburn, Waterford and Youghal"
+  ]
+ },
+ {
+  "id": "squad-5711119cb654c5140001fae6",
+  "dataset": "squad",
+  "question": "What area in modern-day Canada received Huguenot immigrants?",
+  "gold_answer": "Quebec",
+  "gold_facts": [
+   "Quebec"
+  ]
+ },
+ {
+  "id": "squad-57111380a58dae1900cd6bd8",
+  "dataset": "squad",
+  "question": "When did this leader publish a French language Bible?",
+  "gold_answer": "1530",
+  "gold_facts": [
+   "1530"
+  ]
+ },
+ {
+  "id": "squad-571114cfb654c5140001fb0b",
+  "dataset": "squad",
+  "question": "What was the king's first approach to the Huguenots?",
+  "gold_answer": "he sent missionaries, backed by a fund to financially reward converts",
+  "gold_facts": [
+   "he sent missionaries, backed by a fund to financially reward converts"
+  ]
+ },
+ {
+  "id": "squad-57111713a58dae1900cd6c02",
+  "dataset": "squad",
+  "question": "Who was one prominent Huguenot-descended arms manufacturer?",
+  "gold_answer": "E.I. du Pont",
+  "gold_facts": [
+   "E.I. du Pont"
+  ]
+ },
+ {
+  "id": "squad-57111992b654c5140001fb45",
+  "dataset": "squad",
+  "question": "What is the present-day location of this church?",
+  "gold_answer": "Soho Square",
+  "gold_facts": [
+   "Soho Square"
+  ]
+ },
+ {
+  "id": "squad-57111b95a58dae1900cd6c52",
+  "dataset": "squad",
+  "question": "What German general and fighter pilot was of Huguenot ancestry?",
+  "gold_answer": "Adolf Galland",
+  "gold_facts": [
+   "Adolf Galland"
+  ]
+ },
+ {
+  "id": "squad-571126dfa58dae1900cd6cb4",
+  "dataset": "squad",
+  "question": "About what year was the atmospheric engine invented?",
+  "gold_answer": "1712",
+  "gold_facts": [
+   "1712"
+  ]
+ },
+ {
+  "id": "squad-571135b8a58dae1900cd6d10",
+  "dataset": "squad",
+  "question": "In what decade were injectors widely used in steam engines?",
+  "gold_answer": "1850s",
+  "gold_facts": [
+   "1850s"
+  ]
+ },
+ {
+  "id": "squad-571136b8a58dae1900cd6d24",
+  "dataset": "squad",
+  "question": "How is lap provided by overlapping the admission side port?",
+  "gold_answer": "lengthening rubbing surfaces of the valve",
+  "gold_facts": [
+   "lengthening rubbing surfaces of the valve"
+  ]
+ },
+ {
+  "id": "squad-57113be3a58dae1900cd6d2c",
+  "dataset": "squad",
+  "question": "What was the steam engine an important component of?",
+  "gold_answer": "Industrial Revolution",
+  "gold_facts": [
+   "Industrial Revolution"
+  ]
+ },
+ {
+  "id": "squad-57113f83b654c5140001fc2c",
+  "dataset": "squad",
+  "question": "What product was notably shipped in vessels equipped with double and triple expansion engines?",
+  "gold_answer": "coal",
+  "gold_facts": [
+   "coal"
+  ]
+ },
+ {
+  "id": "squad-57114667a58dae1900cd6d80",
+  "dataset": "squad",
+  "question": "What instrument is used to examine steam engine performance?",
+  "gold_answer": "steam engine indicator",
+  "gold_facts": [
+   "steam engine indicator"
+  ]
+ },
+ {
+  "id": "squad-5711488ab654c5140001fc3f",
+  "dataset": "squad",
+  "question": "How many crank rotations are there in an engine cycle?",
+  "gold_answer": "one",
+  "gold_facts": [
+   "one"
+  ]
+ },
+ {
+  "id": "squad-57114dfb50c2381900b54a53",
+  "dataset": "squad",
+  "question": "What happens to the working fluid in a closed loop system?",
+  "gold_answer": "recycled continuously",
+  "gold_facts": [
+   "recycled continuously"
+  ]
+ },
+ {
+  "id": "squad-57114f0050c2381900b54a66",
+  "dataset": "squad",
+  "question": "Along with road vehicles, locomotives and ships, on what vehicles were steam engines used during the Industrial Revolution?",
+  "gold_answer": "steamboats",
+  "gold_facts": [
+   "steamboats"
+  ]
+ },
+ {
+  "id": "squad-5711541350c2381900b54a70",
+  "dataset": "squad",
+  "question": "What nationality was Arthur Woolf?",
+  "gold_answer": "British",
+  "gold_facts": [
+   "British"
+  ]
+ },
+ {
+  "id": "squad-571155ae2419e31400955593",
+  "dataset": "squad",
+  "question": "In what decade did the Rankine cycle create 90% of electric power?",
+  "gold_answer": "1990s",
+  "gold_facts": [
+   "1990s"
+  ]
+ },
+ {
+  "id": "squad-57115ac550c2381900b54a79",
+  "dataset": "squad",
+  "question": "What type of steam engine produces most electricity in the world today?",
+  "gold_answer": "turbine",
+  "gold_facts": [
+   "turbine"
+  ]
+ },
+ {
+  "id": "squad-57115b8b50c2381900b54a8c",
+  "dataset": "squad",
+  "question": "High pressure steam engines were small enough that they could be used in what application?",
+  "gold_answer": "transport",
+  "gold_facts": [
+   "transport"
+  ]
+ },
+ {
+  "id": "squad-57115c7450c2381900b54aa0",
+  "dataset": "squad",
+  "question": "An evaporative cooling tower is also referred to as what kind of cooling tower?",
+  "gold_answer": "wet",
+  "gold_facts": [
+   "wet"
+  ]
+ },
+ {
+  "id": "squad-57115e532419e314009555b2",
+  "dataset": "squad",
+  "question": "After what year did compounding cease to be used in Britain?",
+  "gold_answer": "1930",
+  "gold_facts": [
+   "1930"
+  ]
+ },
+ {
+  "id": "squad-57115f652419e314009555bd",
+  "dataset": "squad",
+  "question": "In what year did Newcomen's engine pump in a mine?",
+  "gold_answer": "1712",
+  "gold_facts": [
+   "1712"
+  ]
+ },
+ {
+  "id": "squad-5711607f2419e314009555d1",
+  "dataset": "squad",
+  "question": "Along with fuel sources, what concern has contributed to the development of the Advanced Steam movement?",
+  "gold_answer": "pollution",
+  "gold_facts": [
+   "pollution"
+  ]
+ },
+ {
+  "id": "squad-5711623e50c2381900b54aba",
+  "dataset": "squad",
+  "question": "What is restrained with a lever in the top of a boiler?",
+  "gold_answer": "plug valve",
+  "gold_facts": [
+   "plug valve"
+  ]
+ },
+ {
+  "id": "squad-571163172419e314009555e8",
+  "dataset": "squad",
+  "question": "Who made experimental measurements on a model steam engine?",
+  "gold_answer": "Watt",
+  "gold_facts": [
+   "Watt"
+  ]
+ },
+ {
+  "id": "squad-5711651050c2381900b54acd",
+  "dataset": "squad",
+  "question": "What components raise steam temperature above its saturated vapor point?",
+  "gold_answer": "superheaters",
+  "gold_facts": [
+   "superheaters"
+  ]
+ },
+ {
+  "id": "squad-571166352419e314009555f3",
+  "dataset": "squad",
+  "question": "In a nuclear power plant, what is the steam turbine connected to?",
+  "gold_answer": "electrical generator",
+  "gold_facts": [
+   "electrical generator"
+  ]
+ },
+ {
+  "id": "squad-571a484210f8ca1400304fc0",
+  "dataset": "squad",
+  "question": "How many atoms combine to form dioxygen?",
+  "gold_answer": "two atoms",
+  "gold_facts": [
+   "two atoms"
+  ]
+ },
+ {
+  "id": "squad-571c3a685efbb31900334db4",
+  "dataset": "squad",
+  "question": "What type of compounds does oxygen most commonly form?",
+  "gold_answer": "oxides",
+  "gold_facts": [
+   "oxides"
+  ]
+ },
+ {
+  "id": "squad-571c3c47dd7acb1400e4c0a0",
+  "dataset": "squad",
+  "question": "What form of oxygen is composed of three oxygen atoms?",
+  "gold_answer": "ozone",
+  "gold_facts": [
+   "ozone"
+  ]
+ },
+ {
+  "id": "squad-571a4d1a4faf5e1900b8a958",
+  "dataset": "squad",
+  "question": "\"An Account of Further Discoveries in Air\" was published by who in 1775?",
+  "gold_answer": "Joseph Priestley",
+  "gold_facts": [
+   "Joseph Priestley"
+  ]
+ },
+ {
+  "id": "squad-571a4ead10f8ca1400304fde",
+  "dataset": "squad",
+  "question": "Pneumatica was written by what Greek writer?",
+  "gold_answer": "Philo of Byzantium",
+  "gold_facts": [
+   "Philo of Byzantium"
+  ]
+ },
+ {
+  "id": "squad-571a50df4faf5e1900b8a962",
+  "dataset": "squad",
+  "question": "Peroxides, nitrates and dichromates are examples of what type of compounds?",
+  "gold_answer": "compounds of oxygen with a high oxidative",
+  "gold_facts": [
+   "compounds of oxygen with a high oxidative"
+  ]
+ },
+ {
+  "id": "squad-571a52cb4faf5e1900b8a96b",
+  "dataset": "squad",
+  "question": "To reduce the chances of combustion ___ is required for safely handeling pure O.",
+  "gold_answer": "special training",
+  "gold_facts": [
+   "special training"
+  ]
+ },
+ {
+  "id": "squad-571ce7f25efbb31900334e40",
+  "dataset": "squad",
+  "question": "What part of the Earth is composed of mostly of silicates of iron and magnesium?",
+  "gold_answer": "Earth's mantle",
+  "gold_facts": [
+   "Earth's mantle"
+  ]
+ },
+ {
+  "id": "squad-571c8198dd7acb1400e4c0d0",
+  "dataset": "squad",
+  "question": "What distinct quality of combustion was  absent from philogiston theory? ",
+  "gold_answer": "Air",
+  "gold_facts": [
+   "Air"
+  ]
+ },
+ {
+  "id": "squad-571c8539dd7acb1400e4c0e4",
+  "dataset": "squad",
+  "question": "What gave Priestley the claim to being the first discovered of oxygen?",
+  "gold_answer": "work was published first",
+  "gold_facts": [
+   "work was published first"
+  ]
+ },
+ {
+  "id": "squad-571c8eb9dd7acb1400e4c0f8",
+  "dataset": "squad",
+  "question": "What did Lavoisier perceive the air had lost as much as the tin had gained",
+  "gold_answer": "weight",
+  "gold_facts": [
+   "weight"
+  ]
+ },
+ {
+  "id": "squad-571c91c8dd7acb1400e4c10c",
+  "dataset": "squad",
+  "question": "What part the composition of the Earth's atmosphere is comprised of oxygen?",
+  "gold_answer": "major",
+  "gold_facts": [
+   "major"
+  ]
+ },
+ {
+  "id": "squad-571c96095efbb31900334dbf",
+  "dataset": "squad",
+  "question": "In what type of water does oxygen dissolve more slowly?",
+  "gold_answer": "seawater",
+  "gold_facts": [
+   "seawater"
+  ]
+ },
+ {
+  "id": "squad-571caac55efbb31900334dc9",
+  "dataset": "squad",
+  "question": "What minor amount of liquid oxygen was produced by early French experimenters?",
+  "gold_answer": "few drops",
+  "gold_facts": [
+   "few drops"
+  ]
+ },
+ {
+  "id": "squad-571cb010dd7acb1400e4c12b",
+  "dataset": "squad",
+  "question": "By what process is singlet oxygen made in the tropophere?",
+  "gold_answer": "photolysis of ozone",
+  "gold_facts": [
+   "photolysis of ozone"
+  ]
+ },
+ {
+  "id": "squad-571cbe35dd7acb1400e4c13f",
+  "dataset": "squad",
+  "question": "On what scale would scientists show measurements of vegetation?",
+  "gold_answer": "global",
+  "gold_facts": [
+   "global"
+  ]
+ },
+ {
+  "id": "squad-571cc5c45efbb31900334ddd",
+  "dataset": "squad",
+  "question": "To what type of organisms is oxygen toxic?",
+  "gold_answer": "anaerobic",
+  "gold_facts": [
+   "anaerobic"
+  ]
+ },
+ {
+  "id": "squad-571cc8815efbb31900334df2",
+  "dataset": "squad",
+  "question": "Pollution of water by nitrates and phosphates will encourage the growth of what?",
+  "gold_answer": "algae",
+  "gold_facts": [
+   "algae"
+  ]
+ },
+ {
+  "id": "squad-571ccc00dd7acb1400e4c15d",
+  "dataset": "squad",
+  "question": "What process is responsible for the planet's oxygen content?",
+  "gold_answer": "photosynthesis",
+  "gold_facts": [
+   "photosynthesis"
+  ]
+ },
+ {
+  "id": "squad-571ccfbadd7acb1400e4c167",
+  "dataset": "squad",
+  "question": "What is the source of oxygen production through electrocatalytic means?",
+  "gold_answer": "oxides and oxoacids",
+  "gold_facts": [
+   "oxides and oxoacids"
+  ]
+ },
+ {
+  "id": "squad-571cd3b55efbb31900334e06",
+  "dataset": "squad",
+  "question": "What occurs after a dive in which a diver decompresses too quickly?",
+  "gold_answer": "Decompression sickness",
+  "gold_facts": [
+   "Decompression sickness"
+  ]
+ },
+ {
+  "id": "squad-571cd703dd7acb1400e4c186",
+  "dataset": "squad",
+  "question": "What does the film of oxide on metals delay?",
+  "gold_answer": "corrosion",
+  "gold_facts": [
+   "corrosion"
+  ]
+ },
+ {
+  "id": "squad-571cdcb85efbb31900334e0c",
+  "dataset": "squad",
+  "question": "What type of compounds such as acetone,contain oxygen?",
+  "gold_answer": "organic solvents",
+  "gold_facts": [
+   "organic solvents"
+  ]
+ },
+ {
+  "id": "squad-571ce3745efbb31900334e20",
+  "dataset": "squad",
+  "question": "What health condition can deep sea diving cause?",
+  "gold_answer": "Oxygen toxicity",
+  "gold_facts": [
+   "Oxygen toxicity"
+  ]
+ },
+ {
+  "id": "squad-571ce6655efbb31900334e34",
+  "dataset": "squad",
+  "question": "When can oxygen gas produce a toxic condition?",
+  "gold_answer": "at elevated partial pressures",
+  "gold_facts": [
+   "at elevated partial pressures"
+  ]
+ },
+ {
+  "id": "squad-5725b5a689a1e219009abd28",
+  "dataset": "squad",
+  "question": "Why did the European nations and Japan separated themselves from United States during the crisis?",
+  "gold_answer": "to avoid being targeted by the boycott",
+  "gold_facts": [
+   "to avoid being targeted by the boycott"
+  ]
+ },
+ {
+  "id": "squad-5725b92e38643c19005acbd4",
+  "dataset": "squad",
+  "question": "When did OPEC start to readjust oil prices?",
+  "gold_answer": "After 1971",
+  "gold_facts": [
+   "After 1971"
+  ]
+ },
+ {
+  "id": "squad-5725bcb6271a42140099d0ed",
+  "dataset": "squad",
+  "question": "Why did the oil ministers agree to a cut in oil production?",
+  "gold_answer": "until their economic and political objectives were met",
+  "gold_facts": [
+   "until their economic and political objectives were met"
+  ]
+ },
+ {
+  "id": "squad-57261f9f271a42140099d4ab",
+  "dataset": "squad",
+  "question": "Scholars stated that there was already an existing settlement between 2 parties prior to which date?",
+  "gold_answer": "1973",
+  "gold_facts": [
+   "1973"
+  ]
+ },
+ {
+  "id": "squad-5726487b5951b619008f6ee0",
+  "dataset": "squad",
+  "question": "Harold WInston's supported which country's during its six day war?",
+  "gold_answer": "Israel",
+  "gold_facts": [
+   "Israel"
+  ]
+ },
+ {
+  "id": "squad-57264cac708984140094c1b7",
+  "dataset": "squad",
+  "question": "How was scarcity managed in many countries?",
+  "gold_answer": "rationing",
+  "gold_facts": [
+   "rationing"
+  ]
+ },
+ {
+  "id": "squad-572650325951b619008f6fa9",
+  "dataset": "squad",
+  "question": "What was the catalyst that created greater interest in renewable resources?",
+  "gold_answer": "energy crisis",
+  "gold_facts": [
+   "energy crisis"
+  ]
+ },
+ {
+  "id": "squad-57265360dd62a815002e819d",
+  "dataset": "squad",
+  "question": "When did Japan release a statement to tell Israelis to withdraw from the Palestine?",
+  "gold_answer": "November 22",
+  "gold_facts": [
+   "November 22"
+  ]
+ },
+ {
+  "id": "squad-5726581fdd62a815002e823d",
+  "dataset": "squad",
+  "question": "Which country's imports became the de facto mass market leaders?",
+  "gold_answer": "Japan",
+  "gold_facts": [
+   "Japan"
+  ]
+ },
+ {
+  "id": "squad-57265bdfdd62a815002e829f",
+  "dataset": "squad",
+  "question": "How many passengers can the Ford Fiesta accommodate?",
+  "gold_answer": "at least four passengers",
+  "gold_facts": [
+   "at least four passengers"
+  ]
+ },
+ {
+  "id": "squad-57265e11708984140094c3be",
+  "dataset": "squad",
+  "question": "In 1979, during the oil crisis, what was the highest price of oil?",
+  "gold_answer": "nearly $40 per barrel",
+  "gold_facts": [
+   "nearly $40 per barrel"
+  ]
+ },
+ {
+  "id": "squad-5725b64d89a1e219009abd40",
+  "dataset": "squad",
+  "question": "In what year did the Apollo 1 cabin fire occur?",
+  "gold_answer": "1967",
+  "gold_facts": [
+   "1967"
+  ]
+ },
+ {
+  "id": "squad-5725b888ec44d21400f3d454",
+  "dataset": "squad",
+  "question": "How many people could Apollo be projected to hold?",
+  "gold_answer": "three",
+  "gold_facts": [
+   "three"
+  ]
+ },
+ {
+  "id": "squad-5725bb34271a42140099d0c9",
+  "dataset": "squad",
+  "question": "What was President Kennedy put off by regarding the space program?",
+  "gold_answer": "massive financial commitment",
+  "gold_facts": [
+   "massive financial commitment"
+  ]
+ },
+ {
+  "id": "squad-5725bd4b38643c19005acc34",
+  "dataset": "squad",
+  "question": "What was the general consensus Johnson came to regarding America's progress on going to space and reaching a position of leadership?",
+  "gold_answer": "neither making maximum effort nor achieving results necessary",
+  "gold_facts": [
+   "neither making maximum effort nor achieving results necessary"
+  ]
+ },
+ {
+  "id": "squad-5725c01389a1e219009abdd7",
+  "dataset": "squad",
+  "question": "How many launch pads were originally planned?",
+  "gold_answer": "three",
+  "gold_facts": [
+   "three"
+  ]
+ },
+ {
+  "id": "squad-5725c2a038643c19005acc6d",
+  "dataset": "squad",
+  "question": "Who did Mueller recruit to be a manager for NASA projects on a loaned situation?",
+  "gold_answer": "General Samuel C. Phillips",
+  "gold_facts": [
+   "General Samuel C. Phillips"
+  ]
+ },
+ {
+  "id": "squad-5725c604271a42140099d189",
+  "dataset": "squad",
+  "question": "Which NASA location came around last to the idea of the LOR?",
+  "gold_answer": "Marshall Space Flight Center",
+  "gold_facts": [
+   "Marshall Space Flight Center"
+  ]
+ },
+ {
+  "id": "squad-5725c948ec44d21400f3d578",
+  "dataset": "squad",
+  "question": "What Apollo mission was this LOR method used and needed?",
+  "gold_answer": "Apollo 13",
+  "gold_facts": [
+   "Apollo 13"
+  ]
+ },
+ {
+  "id": "squad-5725cb4a89a1e219009abecc",
+  "dataset": "squad",
+  "question": "How much did the CM weigh in kgs?",
+  "gold_answer": "5,560 kg",
+  "gold_facts": [
+   "5,560 kg"
+  ]
+ },
+ {
+  "id": "squad-5725ceb989a1e219009abf0a",
+  "dataset": "squad",
+  "question": "How many astronauts was the LM intended to take from orbit of the moon to the surface of the moon?",
+  "gold_answer": "two",
+  "gold_facts": [
+   "two"
+  ]
+ },
+ {
+  "id": "squad-5725d0e3271a42140099d238",
+  "dataset": "squad",
+  "question": "What did Pegasus satellites measure to propose the safety of the environment in space and on the moon?",
+  "gold_answer": "frequency and severity of micrometeorite impacts",
+  "gold_facts": [
+   "frequency and severity of micrometeorite impacts"
+  ]
+ },
+ {
+  "id": "squad-5725d51589a1e219009abf6f",
+  "dataset": "squad",
+  "question": "How many Apollo missions were manned by the previous Mercury and Gemini veterans?",
+  "gold_answer": "All missions",
+  "gold_facts": [
+   "All missions"
+  ]
+ },
+ {
+  "id": "squad-5725d6cb38643c19005acde8",
+  "dataset": "squad",
+  "question": "How high in miles did the first block, AS-201, reach when launched?",
+  "gold_answer": "265.7 nautical miles",
+  "gold_facts": [
+   "265.7 nautical miles"
+  ]
+ },
+ {
+  "id": "squad-5725d8a3271a42140099d291",
+  "dataset": "squad",
+  "question": "What year did Slayton select the first Apollo crew?",
+  "gold_answer": "1966",
+  "gold_facts": [
+   "1966"
+  ]
+ },
+ {
+  "id": "squad-5725da63ec44d21400f3d6ae",
+  "dataset": "squad",
+  "question": "Who appointed Samuel Phillips to man the tiger team to find answers?",
+  "gold_answer": "George Mueller",
+  "gold_facts": [
+   "George Mueller"
+  ]
+ },
+ {
+  "id": "squad-5725dd1689a1e219009abfe2",
+  "dataset": "squad",
+  "question": "Who kept tabs on the accident review board that NASA created?",
+  "gold_answer": "both houses of Congress",
+  "gold_facts": [
+   "both houses of Congress"
+  ]
+ },
+ {
+  "id": "squad-5725df1838643c19005ace16",
+  "dataset": "squad",
+  "question": "What had to happen to each mission before they would continue on to the next mission?",
+  "gold_answer": "successful",
+  "gold_facts": [
+   "successful"
+  ]
+ },
+ {
+  "id": "squad-5725e152271a42140099d2d1",
+  "dataset": "squad",
+  "question": "What was the nickname for the test where, during abort mode, the ascent engine was started and fired?",
+  "gold_answer": "\"fire-in-the-hole\"",
+  "gold_facts": [
+   "\"fire-in-the-hole\""
+  ]
+ },
+ {
+  "id": "squad-5725e36f89a1e219009ac03c",
+  "dataset": "squad",
+  "question": "What day did the Apollo 11 crew return to Earth?",
+  "gold_answer": "July 24",
+  "gold_facts": [
+   "July 24"
+  ]
+ },
+ {
+  "id": "squad-5725e6f6ec44d21400f3d729",
+  "dataset": "squad",
+  "question": "What happened to the Apollo 13 crew to force them to use the LM as a \"life boat\" as it had been designed?",
+  "gold_answer": "liquid oxygen tank exploded",
+  "gold_facts": [
+   "liquid oxygen tank exploded"
+  ]
+ },
+ {
+  "id": "squad-5725ea6889a1e219009ac09f",
+  "dataset": "squad",
+  "question": "How old were some of the oldest rock samples found on the moon?",
+  "gold_answer": "4.6 billion years",
+  "gold_facts": [
+   "4.6 billion years"
+  ]
+ },
+ {
+  "id": "squad-5725ee6438643c19005aceb4",
+  "dataset": "squad",
+  "question": "What did the acronym AAP stand for?",
+  "gold_answer": "Apollo Applications Program",
+  "gold_facts": [
+   "Apollo Applications Program"
+  ]
+ },
+ {
+  "id": "squad-5725f16f89a1e219009ac0cd",
+  "dataset": "squad",
+  "question": "From what Bible book did the crew of Apollo 8 read from during this stream of images?",
+  "gold_answer": "Book of Genesis",
+  "gold_facts": [
+   "Book of Genesis"
+  ]
+ },
+ {
+  "id": "squad-5725f39638643c19005acef9",
+  "dataset": "squad",
+  "question": "What types of recordings at Johnson Space Center were used to help restore the original tapes?",
+  "gold_answer": "kinescope recordings",
+  "gold_facts": [
+   "kinescope recordings"
+  ]
+ },
+ {
+  "id": "squad-5725c28a271a42140099d14f",
+  "dataset": "squad",
+  "question": "What are the three sources of European Union law?",
+  "gold_answer": "primary law, secondary law and supplementary law",
+  "gold_facts": [
+   "primary law, secondary law and supplementary law"
+  ]
+ },
+ {
+  "id": "squad-5725bbec271a42140099d0d5",
+  "dataset": "squad",
+  "question": "What is one of the supplementary sources of European Union law? ",
+  "gold_answer": "international law",
+  "gold_facts": [
+   "international law"
+  ]
+ },
+ {
+  "id": "squad-5725c743ec44d21400f3d54a",
+  "dataset": "squad",
+  "question": "Who has the power to initiate legislation within the European Union?",
+  "gold_answer": "The European Commission",
+  "gold_facts": [
+   "The European Commission"
+  ]
+ },
+ {
+  "id": "squad-57268d2ddd62a815002e894f",
+  "dataset": "squad",
+  "question": "What are some examples of territories where a member state is responsible for external relations?",
+  "gold_answer": "Gibraltar and the \u00c5land islands",
+  "gold_facts": [
+   "Gibraltar and the \u00c5land islands"
+  ]
+ },
+ {
+  "id": "squad-57268e2bf1498d1400e8e3b2",
+  "dataset": "squad",
+  "question": " When was the Single European Act made?",
+  "gold_answer": "1986",
+  "gold_facts": [
+   "1986"
+  ]
+ },
+ {
+  "id": "squad-57268f2bf1498d1400e8e3c6",
+  "dataset": "squad",
+  "question": "Which caused the reform to never come into force?",
+  "gold_answer": "the referendum in France and the referendum in the Netherlands",
+  "gold_facts": [
+   "the referendum in France and the referendum in the Netherlands"
+  ]
+ },
+ {
+  "id": "squad-572691545951b619008f76e4",
+  "dataset": "squad",
+  "question": "Which country refused to content to changes in the Treaty of Lisbon 2007?",
+  "gold_answer": "Ireland",
+  "gold_facts": [
+   "Ireland"
+  ]
+ },
+ {
+  "id": "squad-5726926a5951b619008f770c",
+  "dataset": "squad",
+  "question": "The corruption found by the Committee of Independent Experts resulted to the creation of what office?",
+  "gold_answer": "the European Anti-fraud Office",
+  "gold_facts": [
+   "the European Anti-fraud Office"
+  ]
+ },
+ {
+  "id": "squad-5726938af1498d1400e8e449",
+  "dataset": "squad",
+  "question": "How often do Parliament elections take place?",
+  "gold_answer": "every five years",
+  "gold_facts": [
+   "every five years"
+  ]
+ },
+ {
+  "id": "squad-57269424dd62a815002e8a21",
+  "dataset": "squad",
+  "question": "What is defined as the majority vote?",
+  "gold_answer": "at least 55 per cent of the Council members (not votes) representing 65 per cent of the population of the EU",
+  "gold_facts": [
+   "at least 55 per cent of the Council members (not votes) representing 65 per cent of the population of the EU"
+  ]
+ },
+ {
+  "id": "squad-572658435951b619008f7025",
+  "dataset": "squad",
+  "question": "Which branch of the EU has had the most influence on the development of EU law?",
+  "gold_answer": "judicial branch",
+  "gold_facts": [
+   "judicial branch"
+  ]
+ },
+ {
+  "id": "squad-57265e455951b619008f70bb",
+  "dataset": "squad",
+  "question": "If there is a conflict between EU law and national law, which law take precedence?",
+  "gold_answer": "EU law",
+  "gold_facts": [
+   "EU law"
+  ]
+ },
+ {
+  "id": "squad-572699db5951b619008f779c",
+  "dataset": "squad",
+  "question": "In what cases can the EU not override German law?",
+  "gold_answer": "if the EU does not comply with its basic constitutional rights and principles",
+  "gold_facts": [
+   "if the EU does not comply with its basic constitutional rights and principles"
+  ]
+ },
+ {
+  "id": "squad-57269cc3dd62a815002e8b13",
+  "dataset": "squad",
+  "question": "How many paid holiday days does the Working Time directive require workers to have each year?",
+  "gold_answer": "4 weeks",
+  "gold_facts": [
+   "4 weeks"
+  ]
+ },
+ {
+  "id": "squad-57269f3ef1498d1400e8e536",
+  "dataset": "squad",
+  "question": "What did the Italian government fail to do in Francovich v Italy?",
+  "gold_answer": "failed to set up an insurance fund for employees to claim unpaid wages if their employers had gone insolvent",
+  "gold_facts": [
+   "failed to set up an insurance fund for employees to claim unpaid wages if their employers had gone insolvent"
+  ]
+ },
+ {
+  "id": "squad-5726a14c708984140094cc54",
+  "dataset": "squad",
+  "question": "In what does the doctrine of legitimate expectations have roots?",
+  "gold_answer": "the principles of legal certainty and good faith",
+  "gold_facts": [
+   "the principles of legal certainty and good faith"
+  ]
+ },
+ {
+  "id": "squad-5726a34bf1498d1400e8e5a0",
+  "dataset": "squad",
+  "question": "After the Lisbon treaty, the Charter and the Convention now co-exist under what?",
+  "gold_answer": "European Union law",
+  "gold_facts": [
+   "European Union law"
+  ]
+ },
+ {
+  "id": "squad-5726a46cdd62a815002e8bd3",
+  "dataset": "squad",
+  "question": "What year was the Maastricht treaty signed?",
+  "gold_answer": "1992",
+  "gold_facts": [
+   "1992"
+  ]
+ },
+ {
+  "id": "squad-5726a638dd62a815002e8bfa",
+  "dataset": "squad",
+  "question": "When were competition rules included in the Treaty of Rome?",
+  "gold_answer": "1957",
+  "gold_facts": [
+   "1957"
+  ]
+ },
+ {
+  "id": "squad-5726b718dd62a815002e8dbe",
+  "dataset": "squad",
+  "question": "What helps the process of free movement of goods?",
+  "gold_answer": "a customs union, and the principle of non-discrimination",
+  "gold_facts": [
+   "a customs union, and the principle of non-discrimination"
+  ]
+ },
+ {
+  "id": "squad-5726ba2c708984140094cf59",
+  "dataset": "squad",
+  "question": "Which two importers claimed that under a French competition law, they were prevented from selling Picon beer under wholesale price?",
+  "gold_answer": "Keck and Mithouard",
+  "gold_facts": [
+   "Keck and Mithouard"
+  ]
+ },
+ {
+  "id": "squad-5726bc1add62a815002e8ea7",
+  "dataset": "squad",
+  "question": "Which Belgian footballer claimed that he should be allowed to transfer from one football club to another when his contract was fulfilled?",
+  "gold_answer": "Jean-Marc Bosman",
+  "gold_facts": [
+   "Jean-Marc Bosman"
+  ]
+ },
+ {
+  "id": "squad-5726c002708984140094d075",
+  "dataset": "squad",
+  "question": "In which case did the Court of Justice state that refusal to admit a lawyer to the Belgian bar because he did not have Belgian heritage wasn't able to be justified?",
+  "gold_answer": "Reyners v Belgium",
+  "gold_facts": [
+   "Reyners v Belgium"
+  ]
+ },
+ {
+  "id": "squad-5726c3da708984140094d0dc",
+  "dataset": "squad",
+  "question": "What did the Dutch health authorities regard as unnecessary in Geraets-Smits v Stichting Ziekenfonds?",
+  "gold_answer": "the treatment",
+  "gold_facts": [
+   "the treatment"
+  ]
+ },
+ {
+  "id": "squad-5725b81b271a42140099d09b",
+  "dataset": "squad",
+  "question": "What percentage does the Amazon represents in rainforests on the planet?",
+  "gold_answer": "The Amazon represents over half of the planet's remaining rainforests",
+  "gold_facts": [
+   "The Amazon represents over half of the planet's remaining rainforests"
+  ]
+ },
+ {
+  "id": "squad-5729e2316aef0514001550c8",
+  "dataset": "squad",
+  "question": "What is the estimate for the amount of tree species in the amazon tropical rain forest?",
+  "gold_answer": "16,000 species",
+  "gold_facts": [
+   "16,000 species"
+  ]
+ },
+ {
+  "id": "squad-57283adcff5b5019007d9f98",
+  "dataset": "squad",
+  "question": "What did the Amazon rainforest do during the Middle Miocene?",
+  "gold_answer": "It expanded",
+  "gold_facts": [
+   "It expanded"
+  ]
+ },
+ {
+  "id": "squad-5725c071271a42140099d12b",
+  "dataset": "squad",
+  "question": "Where did it join in the direction of its flow?",
+  "gold_answer": "joining the easterly flow toward the Atlantic.",
+  "gold_facts": [
+   "joining the easterly flow toward the Atlantic."
+  ]
+ },
+ {
+  "id": "squad-5729e6313f37b319004785ad",
+  "dataset": "squad",
+  "question": "What is the lake known as which was created by the rise of the Andes Mountains?",
+  "gold_answer": "Solim\u00f5es Basin",
+  "gold_facts": [
+   "Solim\u00f5es Basin"
+  ]
+ },
+ {
+  "id": "squad-572a0bfaaf94a219006aa779",
+  "dataset": "squad",
+  "question": "Many changes in the vegetation of the amazon rainforest took place since the  Last Glacial Maximum, which was how many years ago?",
+  "gold_answer": "21,000",
+  "gold_facts": [
+   "21,000"
+  ]
+ },
+ {
+  "id": "squad-5728455bff5b5019007da078",
+  "dataset": "squad",
+  "question": "What tool has measured the amount of dust that travels from the Sahara to the Amazon?",
+  "gold_answer": "NASA's CALIPSO satellite",
+  "gold_facts": [
+   "NASA's CALIPSO satellite"
+  ]
+ },
+ {
+  "id": "squad-5725c95f38643c19005accf3",
+  "dataset": "squad",
+  "question": "What is the name of the book written by Archeologist Betty Meggers?",
+  "gold_answer": "Man and Culture in a Counterfeit Paradise",
+  "gold_facts": [
+   "Man and Culture in a Counterfeit Paradise"
+  ]
+ },
+ {
+  "id": "squad-5729eb34af94a219006aa6ca",
+  "dataset": "squad",
+  "question": "Which book discussed the theory about low populations in the Amazon rainforest?",
+  "gold_answer": "Amazonia: Man and Culture in a Counterfeit Paradise",
+  "gold_facts": [
+   "Amazonia: Man and Culture in a Counterfeit Paradise"
+  ]
+ },
+ {
+  "id": "squad-5729edd56aef051400155113",
+  "dataset": "squad",
+  "question": "In what year did the first European travel the entire length of the Amazon River?",
+  "gold_answer": "1542",
+  "gold_facts": [
+   "1542"
+  ]
+ },
+ {
+  "id": "squad-5729ef266aef05140015511d",
+  "dataset": "squad",
+  "question": "The development of Terra Preta allowed for what to happen in the Amazon Forest?",
+  "gold_answer": "agriculture and silviculture",
+  "gold_facts": [
+   "agriculture and silviculture"
+  ]
+ },
+ {
+  "id": "squad-5729f0db6aef051400155127",
+  "dataset": "squad",
+  "question": "How many species of bird and mammals are there in the Amazon region?",
+  "gold_answer": "2,000",
+  "gold_facts": [
+   "2,000"
+  ]
+ },
+ {
+  "id": "squad-5729f2646aef051400155131",
+  "dataset": "squad",
+  "question": "How many tree species were found in one square kilometer of Ecuadorian rainforest in 2001?",
+  "gold_answer": "1,100",
+  "gold_facts": [
+   "1,100"
+  ]
+ },
+ {
+  "id": "squad-5729fd56af94a219006aa730",
+  "dataset": "squad",
+  "question": "Acessing the Amazon rainforest was restricted before what era?",
+  "gold_answer": "the early 1960s",
+  "gold_facts": [
+   "the early 1960s"
+  ]
+ },
+ {
+  "id": "squad-572a005f1d046914007796b8",
+  "dataset": "squad",
+  "question": "What did creating highways in the Amazon rainforest lead to?",
+  "gold_answer": "increased settlement and deforestation",
+  "gold_facts": [
+   "increased settlement and deforestation"
+  ]
+ },
+ {
+  "id": "squad-572a03a06aef0514001551ab",
+  "dataset": "squad",
+  "question": "A complete loss of rainforest cover may be caused by what type of emissions?",
+  "gold_answer": "greenhouse gas emissions",
+  "gold_facts": [
+   "greenhouse gas emissions"
+  ]
+ },
+ {
+  "id": "squad-572a07c11d046914007796d6",
+  "dataset": "squad",
+  "question": "What tribe uses GPS devices to map lands?",
+  "gold_answer": "Trio Tribe",
+  "gold_facts": [
+   "Trio Tribe"
+  ]
+ },
+ {
+  "id": "squad-572a0b101d046914007796eb",
+  "dataset": "squad",
+  "question": "What organization argued that drought, among other effects, could cause the Amazon forest to reach a \"tipping point?\"",
+  "gold_answer": "Brazilian National Institute of Amazonian Research",
+  "gold_facts": [
+   "Brazilian National Institute of Amazonian Research"
+  ]
+ },
+ {
+  "id": "squad-5725b9db38643c19005acbe2",
+  "dataset": "squad",
+  "question": "Where do Ctenophora live?",
+  "gold_answer": "marine waters worldwide.",
+  "gold_facts": [
+   "marine waters worldwide."
+  ]
+ },
+ {
+  "id": "squad-57263eaa38643c19005ad374",
+  "dataset": "squad",
+  "question": "What does ctenophora mean in Greek?",
+  "gold_answer": "\u03ba\u03c4\u03b5\u03af\u03c2 kteis 'comb' and \u03c6\u03ad\u03c1\u03c9 pher\u014d 'carry'",
+  "gold_facts": [
+   "\u03ba\u03c4\u03b5\u03af\u03c2 kteis 'comb' and \u03c6\u03ad\u03c1\u03c9 pher\u014d 'carry'"
+  ]
+ },
+ {
+  "id": "squad-5726400589a1e219009ac5ee",
+  "dataset": "squad",
+  "question": "How much do ctenophore eat in a day?",
+  "gold_answer": "ten times their own weight",
+  "gold_facts": [
+   "ten times their own weight"
+  ]
+ },
+ {
+  "id": "squad-5725c57a89a1e219009abe60",
+  "dataset": "squad",
+  "question": "What type of hermaphrodite produces egg and sperm at different times?",
+  "gold_answer": "sequential",
+  "gold_facts": [
+   "sequential"
+  ]
+ },
+ {
+  "id": "squad-5725bdbe38643c19005acc3b",
+  "dataset": "squad",
+  "question": "What promoted the growrth of Mnemiposis in the Black Sea?",
+  "gold_answer": "over-fishing and long-term environmental changes",
+  "gold_facts": [
+   "over-fishing and long-term environmental changes"
+  ]
+ },
+ {
+  "id": "squad-5725c91e38643c19005acceb",
+  "dataset": "squad",
+  "question": "When did the Cretaceous-Paleogene extinction happen?",
+  "gold_answer": "66 million years ago",
+  "gold_facts": [
+   "66 million years ago"
+  ]
+ },
+ {
+  "id": "squad-5725cb33271a42140099d1dd",
+  "dataset": "squad",
+  "question": "Ctenophora are less complex than which other phylum?",
+  "gold_answer": "bilaterians",
+  "gold_facts": [
+   "bilaterians"
+  ]
+ },
+ {
+  "id": "squad-572647d0708984140094c14d",
+  "dataset": "squad",
+  "question": "Which group has two layers of cells with a middle layer of mesoglea?",
+  "gold_answer": "sponges and cnidarians, ctenophores",
+  "gold_facts": [
+   "sponges and cnidarians, ctenophores"
+  ]
+ },
+ {
+  "id": "squad-57264b1ddd62a815002e80a0",
+  "dataset": "squad",
+  "question": "The inside of a ctenophore is lined with what?",
+  "gold_answer": "epithelium",
+  "gold_facts": [
+   "epithelium"
+  ]
+ },
+ {
+  "id": "squad-57264e66dd62a815002e811a",
+  "dataset": "squad",
+  "question": "How do ctenophores control buoyancy?",
+  "gold_answer": "osmotic pressure",
+  "gold_facts": [
+   "osmotic pressure"
+  ]
+ },
+ {
+  "id": "squad-57265746dd62a815002e8219",
+  "dataset": "squad",
+  "question": "What does the pleurobrachia have on opposite sides of its body?",
+  "gold_answer": "a pair of long, slender tentacles",
+  "gold_facts": [
+   "a pair of long, slender tentacles"
+  ]
+ },
+ {
+  "id": "squad-572659ea5951b619008f7052",
+  "dataset": "squad",
+  "question": "Where are the rows of combs located?",
+  "gold_answer": "from near the mouth to the opposite end",
+  "gold_facts": [
+   "from near the mouth to the opposite end"
+  ]
+ },
+ {
+  "id": "squad-57265c10f1498d1400e8dd38",
+  "dataset": "squad",
+  "question": "The movements of the lobates combs are controlled by what?",
+  "gold_answer": "nerves",
+  "gold_facts": [
+   "nerves"
+  ]
+ },
+ {
+  "id": "squad-57265e97708984140094c3c5",
+  "dataset": "squad",
+  "question": "How do cestids swim?",
+  "gold_answer": "by undulating their bodies as well as by the beating of their comb-rows.",
+  "gold_facts": [
+   "by undulating their bodies as well as by the beating of their comb-rows."
+  ]
+ },
+ {
+  "id": "squad-572683075951b619008f7517",
+  "dataset": "squad",
+  "question": "Is fertilization  internal or exeternal in most species?",
+  "gold_answer": "external",
+  "gold_facts": [
+   "external"
+  ]
+ },
+ {
+  "id": "squad-5726887e708984140094c917",
+  "dataset": "squad",
+  "question": "Are ctenophores predators, vegetarian or parasitic?",
+  "gold_answer": "Almost all ctenophores are predators",
+  "gold_facts": [
+   "Almost all ctenophores are predators"
+  ]
+ },
+ {
+  "id": "squad-57268c01dd62a815002e8912",
+  "dataset": "squad",
+  "question": "What is blamed for causing the sharp drop in fish catches in the Black Sea and the Sea of Azov?",
+  "gold_answer": "ctenophore Mnemiopsis leidyi",
+  "gold_facts": [
+   "ctenophore Mnemiopsis leidyi"
+  ]
+ },
+ {
+  "id": "squad-57268f05dd62a815002e8990",
+  "dataset": "squad",
+  "question": "How old were the fossils found in China?",
+  "gold_answer": "515 million years",
+  "gold_facts": [
+   "515 million years"
+  ]
+ },
+ {
+  "id": "squad-572691bedd62a815002e89df",
+  "dataset": "squad",
+  "question": "Who did a morphologically analysis in 1985 that concluded cydippids are not monophyletic?",
+  "gold_answer": "Richard Harbison",
+  "gold_facts": [
+   "Richard Harbison"
+  ]
+ },
+ {
+  "id": "squad-5725cfd0271a42140099d229",
+  "dataset": "squad",
+  "question": "What entity sparked the growth of Fresno Station?",
+  "gold_answer": "store",
+  "gold_facts": [
+   "store"
+  ]
+ },
+ {
+  "id": "squad-5725d34aec44d21400f3d63d",
+  "dataset": "squad",
+  "question": "What present-day company did BankAmericard turn into?",
+  "gold_answer": "Visa Inc.",
+  "gold_facts": [
+   "Visa Inc."
+  ]
+ },
+ {
+  "id": "squad-5725d662ec44d21400f3d68b",
+  "dataset": "squad",
+  "question": "Which park hosts the largest Civil War reenactment on the west coast?",
+  "gold_answer": "Kearney Park",
+  "gold_facts": [
+   "Kearney Park"
+  ]
+ },
+ {
+  "id": "squad-5725db98ec44d21400f3d6c5",
+  "dataset": "squad",
+  "question": "Where is the neighborhood of Sunnyside located in Fresno?",
+  "gold_answer": "Fresno's far southeast side",
+  "gold_facts": [
+   "Fresno's far southeast side"
+  ]
+ },
+ {
+  "id": "squad-5725e1c4271a42140099d2d7",
+  "dataset": "squad",
+  "question": "During what period did the Tower Theatre re-open?",
+  "gold_answer": "late 1970s",
+  "gold_facts": [
+   "late 1970s"
+  ]
+ },
+ {
+  "id": "squad-5725e748ec44d21400f3d733",
+  "dataset": "squad",
+  "question": "What type of homes is Fresno known for?",
+  "gold_answer": "early twentieth century homes",
+  "gold_facts": [
+   "early twentieth century homes"
+  ]
+ },
+ {
+  "id": "squad-5725edfe38643c19005acea0",
+  "dataset": "squad",
+  "question": "In which direction does the west side of Fresno neighborhood lie to the 99 freeway?",
+  "gold_answer": "southwest",
+  "gold_facts": [
+   "southwest"
+  ]
+ },
+ {
+  "id": "squad-5725f190ec44d21400f3d770",
+  "dataset": "squad",
+  "question": "On which corner is the shopping center located?",
+  "gold_answer": "Fresno and B streets",
+  "gold_facts": [
+   "Fresno and B streets"
+  ]
+ },
+ {
+  "id": "squad-5725f46289a1e219009ac0fb",
+  "dataset": "squad",
+  "question": "Who created the nation's first aviation community?",
+  "gold_answer": "William Smilie",
+  "gold_facts": [
+   "William Smilie"
+  ]
+ },
+ {
+  "id": "squad-5725f6e138643c19005acf1a",
+  "dataset": "squad",
+  "question": "On what date was the record low temperature in Fresno?",
+  "gold_answer": "January 6, 1913",
+  "gold_facts": [
+   "January 6, 1913"
+  ]
+ },
+ {
+  "id": "squad-5725f8f5ec44d21400f3d7b2",
+  "dataset": "squad",
+  "question": "What was the percentage of a female householder with no husband present?",
+  "gold_answer": "19.3%",
+  "gold_facts": [
+   "19.3%"
+  ]
+ },
+ {
+  "id": "squad-5725fb8138643c19005acf40",
+  "dataset": "squad",
+  "question": "What was the very first television station to broadcast in Fresno?",
+  "gold_answer": "KMJ-TV",
+  "gold_facts": [
+   "KMJ-TV"
+  ]
+ },
+ {
+  "id": "squad-5725fe63ec44d21400f3d7df",
+  "dataset": "squad",
+  "question": "Which State Route has been in discussion to upgrade to interstate standards?",
+  "gold_answer": "99",
+  "gold_facts": [
+   "99"
+  ]
+ },
+ {
+  "id": "squad-5725d34089a1e219009abf53",
+  "dataset": "squad",
+  "question": "What is Donald Davies credited with ",
+  "gold_answer": "Davies is credited with coining the modern name packet switching and inspiring numerous packet switching networks in Europe",
+  "gold_facts": [
+   "Davies is credited with coining the modern name packet switching and inspiring numerous packet switching networks in Europe"
+  ]
+ },
+ {
+  "id": "squad-572634a789a1e219009ac56f",
+  "dataset": "squad",
+  "question": "How is packet switching characterized ",
+  "gold_answer": "by a fee per unit of information transmitted, such as characters, packets, or messages",
+  "gold_facts": [
+   "by a fee per unit of information transmitted, such as characters, packets, or messages"
+  ]
+ },
+ {
+  "id": "squad-5726249538643c19005ad082",
+  "dataset": "squad",
+  "question": "How are Air force messages delivered ",
+  "gold_answer": "delivery of these messages by store and forward switching",
+  "gold_facts": [
+   "delivery of these messages by store and forward switching"
+  ]
+ },
+ {
+  "id": "squad-5726378238643c19005ad314",
+  "dataset": "squad",
+  "question": "What did Davies call the System ",
+  "gold_answer": "packet switching",
+  "gold_facts": [
+   "packet switching"
+  ]
+ },
+ {
+  "id": "squad-57263b1638643c19005ad333",
+  "dataset": "squad",
+  "question": "WHat do x.25 and Frame Relay both require",
+  "gold_answer": "connection-oriented operations. But X.25 does it at the network layer of the OSI Model. Frame Relay does it at level two, the data link layer",
+  "gold_facts": [
+   "connection-oriented operations. But X.25 does it at the network layer of the OSI Model. Frame Relay does it at level two, the data link layer"
+  ]
+ },
+ {
+  "id": "squad-57263cfcec44d21400f3dc8f",
+  "dataset": "squad",
+  "question": "What did the Apple system assign automatically ",
+  "gold_answer": "automatically assigned addresses, updated the distributed namespace, and configured any required inter-network routing",
+  "gold_facts": [
+   "automatically assigned addresses, updated the distributed namespace, and configured any required inter-network routing"
+  ]
+ },
+ {
+  "id": "squad-57263fd138643c19005ad37b",
+  "dataset": "squad",
+  "question": "What was Warner Sinback",
+  "gold_answer": "a data network based on this voice-phone network was designed to connect GE's four computer sales and service centers",
+  "gold_facts": [
+   "a data network based on this voice-phone network was designed to connect GE's four computer sales and service centers"
+  ]
+ },
+ {
+  "id": "squad-57264228ec44d21400f3dcf8",
+  "dataset": "squad",
+  "question": "Telnet Used what  Interface technology",
+  "gold_answer": "host interface to X.25 and the terminal interface to X.29",
+  "gold_facts": [
+   "host interface to X.25 and the terminal interface to X.29"
+  ]
+ },
+ {
+  "id": "squad-5726446a89cfff1900a8404d",
+  "dataset": "squad",
+  "question": "What was AUSTPAC",
+  "gold_answer": "AUSTPAC was an Australian public X.25 network operated by Telstra",
+  "gold_facts": [
+   "AUSTPAC was an Australian public X.25 network operated by Telstra"
+  ]
+ },
+ {
+  "id": "squad-5726472bdd62a815002e8042",
+  "dataset": "squad",
+  "question": " what is Internet2",
+  "gold_answer": "a not-for-profit United States computer networking consortium led by members from the research and education communities, industry, and government",
+  "gold_facts": [
+   "a not-for-profit United States computer networking consortium led by members from the research and education communities, industry, and government"
+  ]
+ },
+ {
+  "id": "squad-572648d1708984140094c15f",
+  "dataset": "squad",
+  "question": "Who operated the vBSN network ",
+  "gold_answer": "The network was engineered and operated by MCI Telecommunications under a cooperative agreement with the NSF",
+  "gold_facts": [
+   "The network was engineered and operated by MCI Telecommunications under a cooperative agreement with the NSF"
+  ]
+ },
+ {
+  "id": "squad-572647935951b619008f6ecb",
+  "dataset": "squad",
+  "question": "Where do scientists think all of the plagues originated from?",
+  "gold_answer": "China",
+  "gold_facts": [
+   "China"
+  ]
+ },
+ {
+  "id": "squad-572648ed5951b619008f6f05",
+  "dataset": "squad",
+  "question": "What types of European groups were able to avoid the plague?",
+  "gold_answer": "parts of Europe that had smaller trade relations with their neighbours",
+  "gold_facts": [
+   "parts of Europe that had smaller trade relations with their neighbours"
+  ]
+ },
+ {
+  "id": "squad-57264a74708984140094c18e",
+  "dataset": "squad",
+  "question": "When did the name black death officially take root in England?",
+  "gold_answer": "1823",
+  "gold_facts": [
+   "1823"
+  ]
+ },
+ {
+  "id": "squad-57264c42dd62a815002e80ca",
+  "dataset": "squad",
+  "question": "What was the bubonic plague mechanism reliant on?",
+  "gold_answer": "two populations of rodents",
+  "gold_facts": [
+   "two populations of rodents"
+  ]
+ },
+ {
+  "id": "squad-57264d58f1498d1400e8db7e",
+  "dataset": "squad",
+  "question": "What skin-related symptom appears from the pneumonic plague?",
+  "gold_answer": "purple skin patches",
+  "gold_facts": [
+   "purple skin patches"
+  ]
+ },
+ {
+  "id": "squad-57264f18f1498d1400e8dbb2",
+  "dataset": "squad",
+  "question": "When did the y. pestis reach England?",
+  "gold_answer": "spring of 1349",
+  "gold_facts": [
+   "spring of 1349"
+  ]
+ },
+ {
+  "id": "squad-5726516a708984140094c223",
+  "dataset": "squad",
+  "question": "What is as important as identifying plague symptoms?",
+  "gold_answer": "epidemiological account of the plague",
+  "gold_facts": [
+   "epidemiological account of the plague"
+  ]
+ },
+ {
+  "id": "squad-5726534d708984140094c26d",
+  "dataset": "squad",
+  "question": "What does Graham Twigg propose about the spread of disease?",
+  "gold_answer": "a form of anthrax",
+  "gold_facts": [
+   "a form of anthrax"
+  ]
  }
 ]

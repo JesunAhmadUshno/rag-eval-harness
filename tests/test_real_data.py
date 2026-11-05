@@ -26,8 +26,10 @@ def load(*parts):
 
 class TestSamples(unittest.TestCase):
     def test_sample_sizes(self):
-        self.assertEqual(len(load("samples", "squad_cases.json")), 100)
-        self.assertEqual(len(load("samples", "hotpot_cases.json")), 60)
+        # v1.2 sizes: SQuAD every 10th of the first 5,000 validation
+        # rows; HotpotQA the first 200 validation rows.
+        self.assertEqual(len(load("samples", "squad_cases.json")), 500)
+        self.assertEqual(len(load("samples", "hotpot_cases.json")), 200)
 
     def test_cases_have_gold(self):
         for name in ("squad_cases.json", "hotpot_cases.json"):
@@ -45,18 +47,39 @@ class TestSamples(unittest.TestCase):
                 self.assertTrue(doc["sentences"])
 
 
+VARIANTS = (
+    "without_rerank",
+    "with_rerank",
+    "span_without_rerank",
+    "span_with_rerank",
+)
+
+
 class TestResultsFile(unittest.TestCase):
     def test_results_structure(self):
         payload = load("results_real.json")
         self.assertIn("real", payload["data_kind"])
         self.assertEqual(payload["model_judge"]["status"], "ran")
         for key in ("squad", "hotpotqa"):
-            for variant in ("without_rerank", "with_rerank"):
+            for variant in VARIANTS:
                 run = payload["datasets"][key][variant]
                 self.assertEqual(run["n"], len(run["results"]))
                 self.assertGreaterEqual(run["pass_rate"], 0.0)
                 self.assertLessEqual(run["pass_rate"], 1.0)
                 self.assertIn("model_summary", run)
+                self.assertIn("top1_contains_gold", run)
+
+    def test_span_variants_use_span_mode(self):
+        payload = load("results_real.json")
+        for key in ("squad", "hotpotqa"):
+            for variant in VARIANTS:
+                run = payload["datasets"][key][variant]
+                expected = "span" if variant.startswith("span") else "sentence"
+                self.assertEqual(run["answer_mode"], expected)
+                for result in run["results"][:10]:
+                    self.assertIn(
+                        result["system_answer"], result["source_sentence"]
+                    )
 
 
 class TestRunnerOnSubset(unittest.TestCase):

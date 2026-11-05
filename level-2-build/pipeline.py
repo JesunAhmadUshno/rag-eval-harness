@@ -45,6 +45,11 @@ class BM25Index:
             for sentence in doc["sentences"]:
                 self.passages.append((doc["id"], sentence))
         self.doc_tokens = [content_tokens(text) for _, text in self.passages]
+        # Term counts per passage, computed once. _score used to rebuild
+        # a Counter for every (query, passage) pair, which made large
+        # corpora needlessly slow. The counts are identical either way,
+        # so scores do not change; a unit test pins that.
+        self.doc_tf = [Counter(tokens) for tokens in self.doc_tokens]
         self.avgdl = (
             sum(len(t) for t in self.doc_tokens) / len(self.doc_tokens)
             if self.doc_tokens
@@ -64,7 +69,7 @@ class BM25Index:
         tokens = self.doc_tokens[idx]
         if not tokens:
             return 0.0
-        tf = Counter(tokens)
+        tf = self.doc_tf[idx]
         dl = len(tokens)
         score = 0.0
         for term in set(query_tokens):

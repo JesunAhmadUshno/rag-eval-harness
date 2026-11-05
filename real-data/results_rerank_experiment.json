@@ -1,0 +1,191 @@
+{
+ "generated": "2026-11-04",
+ "data_kind": "real public datasets (see DATASETS.md); not synthetic",
+ "method": "BM25 pools of 5 and 10 from the project pipeline; rerank variants as documented in this file's docstring; sentence answer step; Level 1 lexical metrics.",
+ "datasets": {
+  "squad": {
+   "variants": {
+    "bm25": {
+     "n": 500,
+     "mean_context_recall": 0.828,
+     "top1_contains_gold": 315,
+     "top1_contains_gold_rate": 0.63,
+     "passed": 24,
+     "pass_rate": 0.048,
+     "mean_answer_relevance": 0.1602
+    },
+    "current": {
+     "n": 500,
+     "mean_context_recall": 0.828,
+     "top1_contains_gold": 319,
+     "top1_contains_gold_rate": 0.638,
+     "passed": 22,
+     "pass_rate": 0.044,
+     "mean_answer_relevance": 0.1569
+    },
+    "current_pool10": {
+     "n": 500,
+     "mean_context_recall": 0.81,
+     "top1_contains_gold": 321,
+     "top1_contains_gold_rate": 0.642,
+     "passed": 22,
+     "pass_rate": 0.044,
+     "mean_answer_relevance": 0.157
+    },
+    "hybrid_0.3": {
+     "n": 500,
+     "mean_context_recall": 0.828,
+     "top1_contains_gold": 330,
+     "top1_contains_gold_rate": 0.66,
+     "passed": 22,
+     "pass_rate": 0.044,
+     "mean_answer_relevance": 0.1611
+    },
+    "hybrid_pool10_0.3": {
+     "n": 500,
+     "mean_context_recall": 0.83,
+     "top1_contains_gold": 333,
+     "top1_contains_gold_rate": 0.666,
+     "passed": 22,
+     "pass_rate": 0.044,
+     "mean_answer_relevance": 0.1618
+    },
+    "hybrid_0.5": {
+     "n": 500,
+     "mean_context_recall": 0.828,
+     "top1_contains_gold": 330,
+     "top1_contains_gold_rate": 0.66,
+     "passed": 23,
+     "pass_rate": 0.046,
+     "mean_answer_relevance": 0.1628
+    },
+    "hybrid_pool10_0.5": {
+     "n": 500,
+     "mean_context_recall": 0.83,
+     "top1_contains_gold": 332,
+     "top1_contains_gold_rate": 0.664,
+     "passed": 23,
+     "pass_rate": 0.046,
+     "mean_answer_relevance": 0.1633
+    },
+    "hybrid_0.7": {
+     "n": 500,
+     "mean_context_recall": 0.828,
+     "top1_contains_gold": 322,
+     "top1_contains_gold_rate": 0.644,
+     "passed": 22,
+     "pass_rate": 0.044,
+     "mean_answer_relevance": 0.1592
+    },
+    "hybrid_pool10_0.7": {
+     "n": 500,
+     "mean_context_recall": 0.828,
+     "top1_contains_gold": 322,
+     "top1_contains_gold_rate": 0.644,
+     "passed": 22,
+     "pass_rate": 0.044,
+     "mean_answer_relevance": 0.1592
+    }
+   },
+   "reranker_diagnostics": {
+    "top1_changed": 97,
+    "top1_helped_gold": 26,
+    "top1_hurt_gold": 22,
+    "mean_promoted_passage_tokens": 19.92,
+    "mean_demoted_passage_tokens": 17.14
+   }
+  },
+  "hotpotqa": {
+   "variants": {
+    "bm25": {
+     "n": 200,
+     "mean_context_recall": 0.5184,
+     "top1_contains_gold": 39,
+     "top1_contains_gold_rate": 0.195,
+     "passed": 1,
+     "pass_rate": 0.005,
+     "mean_answer_relevance": 0.0705
+    },
+    "current": {
+     "n": 200,
+     "mean_context_recall": 0.5184,
+     "top1_contains_gold": 47,
+     "top1_contains_gold_rate": 0.235,
+     "passed": 1,
+     "pass_rate": 0.005,
+     "mean_answer_relevance": 0.0725
+    },
+    "current_pool10": {
+     "n": 200,
+     "mean_context_recall": 0.5113,
+     "top1_contains_gold": 46,
+     "top1_contains_gold_rate": 0.23,
+     "passed": 1,
+     "pass_rate": 0.005,
+     "mean_answer_relevance": 0.0715
+    },
+    "hybrid_0.3": {
+     "n": 200,
+     "mean_context_recall": 0.5184,
+     "top1_contains_gold": 42,
+     "top1_contains_gold_rate": 0.21,
+     "passed": 1,
+     "pass_rate": 0.005,
+     "mean_answer_relevance": 0.0681
+    },
+    "hybrid_pool10_0.3": {
+     "n": 200,
+     "mean_context_recall": 0.5292,
+     "top1_contains_gold": 42,
+     "top1_contains_gold_rate": 0.21,
+     "passed": 1,
+     "pass_rate": 0.005,
+     "mean_answer_relevance": 0.0662
+    },
+    "hybrid_0.5": {
+     "n": 200,
+     "mean_context_recall": 0.5184,
+     "top1_contains_gold": 39,
+     "top1_contains_gold_rate": 0.195,
+     "passed": 1,
+     "pass_rate": 0.005,
+     "mean_answer_relevance": 0.0684
+    },
+    "hybrid_pool10_0.5": {
+     "n": 200,
+     "mean_context_recall": 0.5334,
+     "top1_contains_gold": 39,
+     "top1_contains_gold_rate": 0.195,
+     "passed": 1,
+     "pass_rate": 0.005,
+     "mean_answer_relevance": 0.0684
+    },
+    "hybrid_0.7": {
+     "n": 200,
+     "mean_context_recall": 0.5184,
+     "top1_contains_gold": 41,
+     "top1_contains_gold_rate": 0.205,
+     "passed": 1,
+     "pass_rate": 0.005,
+     "mean_answer_relevance": 0.0713
+    },
+    "hybrid_pool10_0.7": {
+     "n": 200,
+     "mean_context_recall": 0.5213,
+     "top1_contains_gold": 41,
+     "top1_contains_gold_rate": 0.205,
+     "passed": 1,
+     "pass_rate": 0.005,
+     "mean_answer_relevance": 0.0713
+    }
+   },
+   "reranker_diagnostics": {
+    "top1_changed": 63,
+    "top1_helped_gold": 14,
+    "top1_hurt_gold": 6,
+    "mean_promoted_passage_tokens": 19.22,
+    "mean_demoted_passage_tokens": 15.17
+   }
+  }
+ }
+}
