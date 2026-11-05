@@ -17,8 +17,8 @@ sys.path.insert(0, os.path.join(ROOT, "level-1-learn"))
 sys.path.insert(0, HERE)
 
 from pipeline import RagPipeline  # noqa: E402
-from reranker import rerank  # noqa: E402
 from rag_eval import score_case  # noqa: E402
+from reranker import rerank  # noqa: E402
 
 
 class DeepRagPipeline(RagPipeline):
