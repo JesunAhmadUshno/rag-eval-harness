@@ -2,6 +2,8 @@
 
 An evaluation harness for RAG systems, the public version of a real pipeline that went from a 72.7 percent pass rate to 95 percent or more (self-reported, to be proven in public here).
 
+Live dashboard: https://jesunahmadushno.github.io/rag-eval-harness/
+
 Status: v1.2 SPAN AND SCALE DONE 2026-11-04 (ROADMAP-V3-BATCH).
 v1.1 plus: span extraction for the answer step
 (level-3-deep/span_extract.py), real samples raised to 500 SQuAD and
@@ -9,7 +11,7 @@ v1.1 plus: span extraction for the answer step
 (none shipped; the negative result is recorded), an embedding judge
 calibration check against gold-derived proxy labels, and a per-case
 drill down in the results lab. Tests: 65 in total, regression gate
-passing at a 0.900 threshold. Project grade at v1.2: 9,050 of 10,000,
+passing at a 0.900 threshold. Project grade at v1.2: 9,050 of 10,000 (self-assessed),
 up from 8,000 at v1.1, deductions named in DOSSIER.md.
 Project: P06. Fleet node: BlackBoxV2. Wave: Wave 1.
 
@@ -51,15 +53,44 @@ posted externally by this set.
 
 ## Dashboard
 
-The results lab is a React app in web/, deployed to GitHub Pages:
-https://jesunahmadushno.github.io/rag-eval-harness/
-It carries an interactive results lab with a per-case drill down for
-the real runs (filterable by dataset, answer mode, verdict, and
-failure label), a live in-browser run of the lexical evaluator (a
-JavaScript port verified score-for-score against the Python code on
-20 cases), the dataset record, the references, full documentation,
-and the prototype history. Synthetic and real results are labelled
-and never mixed, there and here.
+Live dashboard: https://jesunahmadushno.github.io/rag-eval-harness/
+
+The dashboard is a React app in site/, built and deployed to GitHub
+Pages by .github/workflows/pages.yml. Every number on it is read from
+the result files in this repo at build time or computed in the browser
+from them. What runs live: a BM25 and stemmed-reranker playground over
+the Deep corpus (a JavaScript port of level-2-build/pipeline.py and
+level-3-deep/reranker.py, with the ablation switches), the Level 1
+lexical scorer, a judge threshold calibrator over the recorded
+per-case embedding scores, and Wilson intervals plus exact paired
+tests on the recorded real runs. A per-case browser replays the 700
+recorded real questions in all four variants. `npm run build` runs
+site/src/rag.check.mjs first and fails unless the browser code
+reproduces results_deep.json (23 and 32 of 32), the Learn golden set
+(5 of 8), calibration.json, results_ablation.json and
+results_paired_stats.json. The earlier results lab in web/ stays as
+source; everything it showed is on the new page. Synthetic and real
+results are labelled and never mixed, there and here.
+
+## Statistics and ablation (added in the research review)
+
+- real-data/paired_stats.py writes real-data/results_paired_stats.json:
+  Wilson 95% intervals for every pass rate, exact McNemar tests for
+  with vs without rerank and sentence vs span, an exact sign test on
+  the reranker diagnostics, a 2-D judge threshold sweep, a bootstrap
+  interval on kappa and a 2-fold threshold fit. Headline: SQuAD judge
+  passes 274 vs 281 is McNemar p 0.34; top-1 helped 26 vs hurt 22 is
+  sign test p 0.67. None of the 12 rerank tests survives a Bonferroni
+  correction; span vs sentence answers does (SQuAD p < 0.0001).
+- level-3-deep/ablation.py writes level-3-deep/results_ablation.json:
+  the plural -s stem rule does all the synthetic work (without it,
+  24 of 32), and the F1 sort key is not needed (coverage then BM25
+  also reaches 32 of 32, and puts gold on top in 331 SQuAD cases
+  against 319 for the shipped key).
+- The 32 of 32 Deep result is in-distribution: the 12 d-cases in the
+  b11 class were written after the b11 failure was seen.
+- Full grade against a research rubric, with the fixed gaps and the
+  compute or data each open gap needs: docs/research-review.md.
 
 ## Novelty
 
