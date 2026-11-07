@@ -1,8 +1,8 @@
 # rag-eval-harness
 
 SUPERSEDED 2026-11-04: the live dashboard is now the React app in
-web/, deployed to https://jesunahmadushno.github.io/rag-eval-harness/
-through the Pages workflow. This page is kept as the v1.0 text record.
+site/, deployed to https://jesunahmadushno.github.io/rag-eval-harness/
+through the Pages workflow (web/ holds the earlier results lab). This page is kept as the v1.0 text record.
 
 A dependency-free evaluation harness for retrieval-augmented generation, built in three levels with measured results at each level.
 
