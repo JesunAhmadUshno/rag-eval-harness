@@ -1,0 +1,182 @@
+{
+ "generated_by": "level-3-deep/ablation.py",
+ "variants": {
+  "bm25_only": "no rerank",
+  "shipped": {
+   "rules": [
+    "ies",
+    "sses",
+    "ing",
+    "ed",
+    "s"
+   ],
+   "key": "coverage_f1_bm25"
+  },
+  "no_stemming": {
+   "rules": [],
+   "key": "coverage_f1_bm25"
+  },
+  "drop_rule_ies": {
+   "rules": [
+    "sses",
+    "ing",
+    "ed",
+    "s"
+   ],
+   "key": "coverage_f1_bm25"
+  },
+  "drop_rule_sses": {
+   "rules": [
+    "ies",
+    "ing",
+    "ed",
+    "s"
+   ],
+   "key": "coverage_f1_bm25"
+  },
+  "drop_rule_ing": {
+   "rules": [
+    "ies",
+    "sses",
+    "ed",
+    "s"
+   ],
+   "key": "coverage_f1_bm25"
+  },
+  "drop_rule_ed": {
+   "rules": [
+    "ies",
+    "sses",
+    "ing",
+    "s"
+   ],
+   "key": "coverage_f1_bm25"
+  },
+  "drop_rule_s": {
+   "rules": [
+    "ies",
+    "sses",
+    "ing",
+    "ed"
+   ],
+   "key": "coverage_f1_bm25"
+  },
+  "key_coverage_bm25": {
+   "rules": [
+    "ies",
+    "sses",
+    "ing",
+    "ed",
+    "s"
+   ],
+   "key": "coverage_bm25"
+  },
+  "key_f1_bm25": {
+   "rules": [
+    "ies",
+    "sses",
+    "ing",
+    "ed",
+    "s"
+   ],
+   "key": "f1_bm25"
+  },
+  "key_f1_coverage_bm25": {
+   "rules": [
+    "ies",
+    "sses",
+    "ing",
+    "ed",
+    "s"
+   ],
+   "key": "f1_coverage_bm25"
+  }
+ },
+ "synthetic_deep": {
+  "bm25_only": {
+   "n": 32,
+   "passed": 23,
+   "b11_passed": 5
+  },
+  "shipped": {
+   "n": 32,
+   "passed": 32,
+   "b11_passed": 13
+  },
+  "no_stemming": {
+   "n": 32,
+   "passed": 24,
+   "b11_passed": 5
+  },
+  "drop_rule_ies": {
+   "n": 32,
+   "passed": 32,
+   "b11_passed": 13
+  },
+  "drop_rule_sses": {
+   "n": 32,
+   "passed": 32,
+   "b11_passed": 13
+  },
+  "drop_rule_ing": {
+   "n": 32,
+   "passed": 31,
+   "b11_passed": 13
+  },
+  "drop_rule_ed": {
+   "n": 32,
+   "passed": 32,
+   "b11_passed": 13
+  },
+  "drop_rule_s": {
+   "n": 32,
+   "passed": 24,
+   "b11_passed": 5
+  },
+  "key_coverage_bm25": {
+   "n": 32,
+   "passed": 32,
+   "b11_passed": 13
+  },
+  "key_f1_bm25": {
+   "n": 32,
+   "passed": 30,
+   "b11_passed": 11
+  },
+  "key_f1_coverage_bm25": {
+   "n": 32,
+   "passed": 30,
+   "b11_passed": 11
+  }
+ },
+ "real_top1_contains_gold": {
+  "squad": {
+   "n": 500,
+   "bm25_only": 315,
+   "shipped": 319,
+   "no_stemming": 312,
+   "drop_rule_ies": 318,
+   "drop_rule_sses": 319,
+   "drop_rule_ing": 320,
+   "drop_rule_ed": 317,
+   "drop_rule_s": 314,
+   "key_coverage_bm25": 331,
+   "key_f1_bm25": 260,
+   "key_f1_coverage_bm25": 260
+  },
+  "hotpotqa": {
+   "n": 200,
+   "bm25_only": 39,
+   "shipped": 47,
+   "no_stemming": 44,
+   "drop_rule_ies": 47,
+   "drop_rule_sses": 47,
+   "drop_rule_ing": 47,
+   "drop_rule_ed": 47,
+   "drop_rule_s": 44,
+   "key_coverage_bm25": 46,
+   "key_f1_bm25": 31,
+   "key_f1_coverage_bm25": 32
+  }
+ }
+}
