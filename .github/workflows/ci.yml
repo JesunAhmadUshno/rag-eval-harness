@@ -36,7 +36,11 @@ jobs:
         run: python level-3-deep/run_deep.py
       - name: level 3 regression gate
         run: python level-3-deep/regression_gate.py
+      - name: reranker ablation is reproducible
+        run: python level-3-deep/ablation.py && git diff --exit-code level-3-deep/results_ablation.json
       - name: model judge tests (fake embedder, no download)
         run: python -m unittest discover -s tests -p "test_model*.py" -v
       - name: real data tests (committed samples, no network)
         run: python -m unittest discover -s tests -p "test_real*.py" -v
+      - name: paired statistics are reproducible
+        run: python real-data/paired_stats.py && git diff --exit-code real-data/results_paired_stats.json
