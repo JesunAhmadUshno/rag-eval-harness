@@ -17,7 +17,6 @@ the seed failure taxonomy: hallucination, retrieval_miss,
 wrong_or_incomplete_answer.
 """
 
-import math
 import re
 
 STOPWORDS = frozenset(
@@ -126,9 +125,9 @@ def score_all(cases):
         "n": n,
         "passed": passed,
         "pass_rate": passed / n if n else 0.0,
-        "mean_faithfulness": math.fsum(r["faithfulness"] for r in results) / n if n else 0.0,
-        "mean_context_recall": math.fsum(r["context_recall"] for r in results) / n if n else 0.0,
-        "mean_answer_relevance": math.fsum(r["answer_relevance"] for r in results) / n if n else 0.0,
+        "mean_faithfulness": sum(r["faithfulness"] for r in results) / n if n else 0.0,
+        "mean_context_recall": sum(r["context_recall"] for r in results) / n if n else 0.0,
+        "mean_answer_relevance": sum(r["answer_relevance"] for r in results) / n if n else 0.0,
         "label_counts": label_counts,
         "results": results,
     }
