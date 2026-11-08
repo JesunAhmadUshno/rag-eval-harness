@@ -20,8 +20,7 @@ reranker guarded by a CI regression gate. It runs on the Python 3.12
 standard library only, with no model, no API, and no credential.
 
 Status: v1.0, 2026-11-04. Learn, Build, and compressed Deep are done.
-Grades on the house 10,000 scale: Learn 8,700, Build 8,700, Deep
-(compressed) 7,900. Total tests: 39, all passing at v1.0.
+Total tests: 39, all passing at v1.0.
 
 ## Results
 
@@ -42,7 +41,7 @@ pipeline, and the reranking mechanism, not production quality.
   is real; the semantic judgment is not.
 - Agent scoring is proven on toy demo agents only.
 - Compressed Deep is not the full v2 Deep scope. The remainder is the
-  v1.1 backlog in the repo ROADMAP.md.
+  v1.1 backlog in the repo REPORT.md.
 
 ## Links
 

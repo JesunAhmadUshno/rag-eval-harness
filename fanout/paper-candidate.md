@@ -92,9 +92,6 @@ before and after means recorded in level-3-deep/README.md. The headline
 Deep claim used in the fan-out set is the pass counts, the b11 class
 (5 of 13 to 13 of 13), the judge line, and the gate result.
 
-Grades on the house 10,000 scale (not paper results): Learn 8,700,
-Build 8,700, Deep (compressed) 7,900.
-
 ## Venue class note
 
 Per the publications pipeline tracker, this candidate is classed as:
@@ -114,7 +111,7 @@ remain Jesun's call under the free-only rule.
 - Agent results are from toy demo agents that prove the protocol.
 - Compressed Deep only. The v1.1 backlog (LLM judge, generative answer
   step, real agent, larger real corpus, learned reranking) is future
-  work, named in ROADMAP.md in the repo.
+  work, named in REPORT.md in the repo.
 
 ## Submission gate
 

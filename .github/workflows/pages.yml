@@ -17,6 +17,7 @@ on:
       - "web/src/metrics.js"
       - "tests/**"
       - "README.md"
+      - "REPORT.md"
       - ".github/workflows/pages.yml"
   workflow_dispatch:
 

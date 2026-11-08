@@ -4,7 +4,7 @@ Status: DONE 2026-11-04 (ROADMAP-V3-BATCH, Sprint 1), as a COMPRESSED
 Deep under the December Compression Protocol. Compressed means: the
 single hardest capability in the SPEC Deep scope was built, tested,
 and benchmarked in full, and the rest of the v2 Deep scope is named
-as the v1.1 backlog in ROADMAP.md at the repo root. It is not the
+as the v1.1 backlog in REPORT.md at the repo root. It is not the
 full v2 Deep scope, and this README does not claim it is.
 Spec for this level: DEEP-SPEC.md in this folder.
 
@@ -110,7 +110,7 @@ RAG failures, without rerank run, 9 of 32 cases:
   Expected at this level: the answer step is extractive, so the
   answer is a retrieved passage by construction and cannot drift
   from the context. The generative step that makes hallucination
-  possible is v1.1 backlog (ROADMAP.md item 2).
+  possible is v1.1 backlog (REPORT.md item 2).
 
 RAG failures, with rerank run: 0 of 32 cases.
 
@@ -129,7 +129,7 @@ Known failure modes of the reranker itself:
 - It can only reorder the top 5 BM25 passages. A gold passage
   ranked below 5 by BM25 stays unreachable; recall at the passage
   level is the ceiling, and on a larger corpus that ceiling will
-  bind. ROADMAP.md item 4 is where that gets measured.
+  bind. REPORT.md item 4 is where that gets measured.
 - The stemmer is rule based and small. It conflates some distinct
   words and misses irregular forms. On this set it caused no
   regression; that is a measured fact about this set, not a
@@ -137,13 +137,13 @@ Known failure modes of the reranker itself:
 - Coverage-first ordering can prefer a longer passage that merely
   mentions every query term over a shorter one that answers. The
   F1 tiebreak limits this, and the Deep set contains no such case;
-  a larger corpus is expected to produce some (ROADMAP.md item 5
+  a larger corpus is expected to produce some (REPORT.md item 5
   compares a learned reranker on the same discipline).
 
 ## Limits, stated plainly
 
 - Compressed Deep, by the protocol named above. The full v2 Deep
-  scope is not done; its remainder is ROADMAP.md (LLM judge,
+  scope is not done; its remainder is REPORT.md (LLM judge,
   generative answer step, real P07 agent, larger real corpus,
   learned reranking, workshop paper submission, which is Jesun's
   tap).

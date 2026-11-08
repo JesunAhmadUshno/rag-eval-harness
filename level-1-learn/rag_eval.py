@@ -9,7 +9,7 @@ Three lexical metrics, each in the open so a reader can check them by hand:
   The share of answer content tokens that appear in the context.
 - answer_relevance: how close the answer is to the gold answer.
   The token F1 between the answer and the gold answer. This is a lexical
-  proxy: it misses paraphrases. An LLM judge is Build level work (SPEC.md).
+  proxy: it misses paraphrases. An LLM judge is Build level work (PROPOSAL.md).
 
 A case passes when faithfulness >= 0.80, context_recall >= 0.80, and
 answer_relevance >= 0.50. Every failed case gets one or more labels from

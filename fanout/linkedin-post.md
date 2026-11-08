@@ -36,8 +36,6 @@ synthetic cases proves the mechanism and the gate, not production
 quality. The rest of the Deep scope is named as the v1.1 backlog in
 the repo, not claimed as done.
 
-Grades, house scale: Learn 8,700, Build 8,700, Deep 7,900 of 10,000.
-
 If you eval RAG systems: which failure class costs you the most time,
 retrieval, grounding, or ranking?
 

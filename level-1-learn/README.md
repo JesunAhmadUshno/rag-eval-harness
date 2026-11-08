@@ -72,12 +72,12 @@ to fail, and the harness named each failure correctly.
 
 - Lexical metrics miss paraphrase. A correct answer in different words
   scores low on relevance and can score low on faithfulness. The LLM
-  judge that handles meaning is Build level work in SPEC.md, next to
+  judge that handles meaning is Build level work in PROPOSAL.md, next to
   human labels.
 - The golden set is 8 synthetic cases. It proves the scoring logic, not
   a real pipeline. Real question sets arrive at Build level.
-- The agent scoring track in SPEC.md (score an agent on success rate,
-  steps, and cost per task) waits for the P07 agent to exist, as SPEC.md
+- The agent scoring track in PROPOSAL.md (score an agent on success rate,
+  steps, and cost per task) waits for the P07 agent to exist, as PROPOSAL.md
   itself states. Nothing about agents is claimed at this level.
 
 ## Next

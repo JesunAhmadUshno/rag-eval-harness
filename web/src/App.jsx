@@ -749,7 +749,7 @@ python -m unittest discover -s tests # 65 tests`}</pre>
           v1.2 rerank experiment; an LLM judge with a human agreement
           study (needs a credential decision); real agent evaluation
           once the agent project exists. Full text:{' '}
-          <code>ROADMAP.md</code> in the repo. The regression gate
+          <code>REPORT.md</code> in the repo. The regression gate
           (pass rate at or above 0.900 on the Deep baseline) must stay
           green through every change.
         </p>
