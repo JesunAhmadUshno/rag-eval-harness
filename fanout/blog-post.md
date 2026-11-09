@@ -25,7 +25,7 @@ Repository: https://github.com/JesunAhmadUshno/rag-eval-harness
 
 Past: public eval tools in the Ragas class and one-off notebook scoring
 already exist. The history of the problem and the prior art are recorded
-in DOSSIER.md and NOVELTY.md in the repo. The novelty claim there stays
+in REPORT.md and REPORT.md in the repo. The novelty claim there stays
 marked PROPOSED. This post makes no novelty claim beyond the measured
 work below.
 
@@ -36,10 +36,9 @@ scoring. Compressed Deep built the single hardest Deep capability in
 the spec, a stemmed-overlap reranker that fixes the b11 class of
 failure (right document retrieved, wrong passage on top), plus the CI
 regression gate, the expanded failure taxonomy, and the quality
-dashboard. Grades on the house 10,000 scale: Learn 8,700, Build 8,700,
-Deep (compressed) 7,900.
+dashboard.
 
-Future: the rest of the v2 Deep scope is named in ROADMAP.md in the repo
+Future: the rest of the v2 Deep scope is named in REPORT.md in the repo
 as the v1.1 backlog. It includes an LLM judge behind the existing
 budget interface, a generative answer step, evaluation of a real agent
 once P07 exists, a larger real corpus, and a comparison against a
@@ -131,7 +130,7 @@ No case that passed without reranking regressed with it, on this set.
 - The agent scoring is proven on toy demo agents only. They prove the
   protocol and the taxonomy, not a real agent.
 - Compressed Deep is not the full v2 Deep scope. The remainder is the
-  named v1.1 backlog in ROADMAP.md.
+  named v1.1 backlog in REPORT.md.
 - The runs executed on the Muse VM, not the assigned BlackBoxV2 node.
 
 ## Where to go next

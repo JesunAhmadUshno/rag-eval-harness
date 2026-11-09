@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "rag-eval-harness: a transparent standard-library harness for evaluating retrieval-augmented generation, with a reranker transfer test on SQuAD and HotpotQA"
+authors:
+  - family-names: Ushno
+    given-names: Jesun Ahmad
+repository-code: "https://github.com/JesunAhmadUshno/rag-eval-harness"
+license: Apache-2.0
+version: "1.2"
+date-released: 2026-11-05

@@ -8,7 +8,7 @@ ranking fix for the b11 class of failure (right document retrieved,
 wrong passage on top), proven on an expanded golden set, with the CI
 regression gate, failure taxonomy, and quality dashboard the SPEC
 names. The rest of the v2 Deep scope is the v1.1 backlog in the repo
-root ROADMAP.md, named there, not silently dropped.
+root REPORT.md, named there, not silently dropped.
 
 ## What Deep adds
 1. reranker.py: stemmed query-passage overlap reranking over the

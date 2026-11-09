@@ -1,7 +1,7 @@
 # Build Spec: rag-eval-harness Level 2
 
 ## Objective
-Close Build per SPEC.md acceptance: the system runs end to end, tests
+Close Build per PROPOSAL.md acceptance: the system runs end to end, tests
 pass, and one benchmark table with method is in the README. Build adds
 three capabilities on top of the Learn lexical evaluator:
 1. A real end-to-end RAG pipeline (retrieve, then answer) over a local

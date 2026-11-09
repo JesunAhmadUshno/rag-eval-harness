@@ -13,6 +13,7 @@ the Deep golden set, the regression gate, and every v1.0 and v1.1
 number keep the exact behaviour they were measured with.
 """
 
+import math
 import os
 import sys
 
@@ -77,8 +78,8 @@ def evaluate_cases(corpus, cases, use_rerank):
         "n": n,
         "passed": passed,
         "pass_rate": passed / n if n else 0.0,
-        "mean_faithfulness": sum(r["faithfulness"] for r in results) / n if n else 0.0,
-        "mean_context_recall": sum(r["context_recall"] for r in results) / n if n else 0.0,
-        "mean_answer_relevance": sum(r["answer_relevance"] for r in results) / n if n else 0.0,
+        "mean_faithfulness": math.fsum(r["faithfulness"] for r in results) / n if n else 0.0,
+        "mean_context_recall": math.fsum(r["context_recall"] for r in results) / n if n else 0.0,
+        "mean_answer_relevance": math.fsum(r["answer_relevance"] for r in results) / n if n else 0.0,
         "results": results,
     }

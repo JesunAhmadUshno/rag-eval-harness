@@ -1,10 +1,8 @@
 # Publicity log: rag-eval-harness (P06)
 
-Every finished level produces a written fan-out set. Each piece is graded on the 1,000-point publicity rubric (accuracy 300, research 200, gap fit 200, clarity 150, reach format 150), ship line 900. Channels list a link or a named held reason. The loop prepares drafts; it never posts to social.
+Every finished level produces a written fan-out set. Channels list a link or a named held reason. The loop prepares drafts; it never posts to social.
 
 ## v1.0 fan-out set (2026-11-04)
-
-Overall fan-out grade: 9,000 of 10,000 (batch ledger, 2026-11-04). Per-piece grades were not recorded in that cycle; that gap is named here, not reconstructed.
 
 | Channel | Piece | Outcome |
 | --- | --- | --- |
@@ -27,34 +25,31 @@ Pack per files/github-actions-polish-standard-2026-11-04.md of the batch: CI mat
 
 ## v1.1 research upgrade (2026-11-04)
 
-Project grade: 8,000 of 10,000 (deductions named in DOSSIER.md).
 Jev claim_check on the five public claims: model jev-1.13.0, 1,607
 input tokens, all five REVIEW, none blocked (spec and results in the
 goal hidden_files, jev-p06-v11-claim-*.json).
 
-| Channel | Piece | Publicity grade (of 1,000) | Outcome |
-| --- | --- | --- | --- |
-| GitHub Pages | React results lab (web/), replacing the single-page docs | 960 (accuracy 290, research 195, gap fit 190, clarity 145, reach format 140) | Live after the v1.1 PR merges and the Pages workflow deploys; verified by HTTP check in the batch ledger |
-| Repo | Real data record (real-data/README.md, DATASETS.md) | 955 | In the v1.1 PR |
-| Repo | Model metrics record (model-metrics/README.md) | 940 | In the v1.1 PR |
-| GitHub release | v1.1 | n/a | Tagged after merge if CI and CodeQL are green |
-| LinkedIn, X, Facebook, Instagram, Threads, video | Social fan-out for v1.1 | n/a | HELD: standing platform gates; the loop prepares drafts only and does not post |
+| Channel | Piece | Outcome |
+| --- | --- | --- |
+| GitHub Pages | React results lab (web/), replacing the single-page docs | Live after the v1.1 PR merges and the Pages workflow deploys; verified by HTTP check in the batch ledger |
+| Repo | Real data record (real-data/README.md, DATASETS.md) | In the v1.1 PR |
+| Repo | Model metrics record (model-metrics/README.md) | In the v1.1 PR |
+| GitHub release | v1.1 | Tagged after merge if CI and CodeQL are green |
+| LinkedIn, X, Facebook, Instagram, Threads, video | Social fan-out for v1.1 | HELD: standing platform gates; the loop prepares drafts only and does not post |
 
 ## v1.2 span and scale (2026-11-04)
 
-Project grade: 9,050 of 10,000 (up from 8,000 at v1.1; the deduction
-movement is itemized in DOSSIER.md).
 Jev claim_check on the five v1.2 public claims: model jev-1.13.0,
 2,084 input tokens, all five REVIEW (0.19 to 0.72), none blocked
 (spec and results in the goal hidden_files, jev-p06-v12-claim-*.json).
 
-| Channel | Piece | Publicity grade (of 1,000) | Outcome |
-| --- | --- | --- | --- |
-| Repo | Real data record (real-data/README.md, DATASETS.md, rerank experiment) | 970 (accuracy 295, research 195, gap fit 195, clarity 145, reach format 140) | In the v1.2 PR |
-| GitHub Pages | React results lab (web/), v1.2 update with per-case drill down | 965 (accuracy 290, research 195, gap fit 195, clarity 145, reach format 140) | Live after the v1.2 PR merges and the Pages workflow deploys; verified by HTTP check in the batch ledger |
-| Repo | Model metrics record (model-metrics/README.md, calibration) | 955 (accuracy 295, research 190, gap fit 190, clarity 145, reach format 135) | In the v1.2 PR |
-| GitHub release | v1.2 | n/a | Tagged after merge if CI and CodeQL are green |
-| LinkedIn, X, Facebook, Instagram, Threads, video | Social fan-out for v1.2 | n/a | HELD: standing platform gates; drafts only, nothing posted |
+| Channel | Piece | Outcome |
+| --- | --- | --- |
+| Repo | Real data record (real-data/README.md, DATASETS.md, rerank experiment) | In the v1.2 PR |
+| GitHub Pages | React results lab (web/), v1.2 update with per-case drill down | Live after the v1.2 PR merges and the Pages workflow deploys; verified by HTTP check in the batch ledger |
+| Repo | Model metrics record (model-metrics/README.md, calibration) | In the v1.2 PR |
+| GitHub release | v1.2 | Tagged after merge if CI and CodeQL are green |
+| LinkedIn, X, Facebook, Instagram, Threads, video | Social fan-out for v1.2 | HELD: standing platform gates; drafts only, nothing posted |
 
 ## Fan-out completion: release notes file (2026-11-05)
 
@@ -65,8 +60,5 @@ v0.5, v1.0, v1.1, and v1.2 with their measured results and release
 links. Every number reuses a figure already Jev-gated in its own
 level cycle, so no new claim gate ran.
 
-- Publicity grade for the release notes piece: 955 of 1,000
-  (accuracy 290, research 190, gap fit 195, clarity 145, reach
-  format 135), above the 900 ship line.
 - Social channels: HELD, as in every section above. The loop
   prepares drafts and never posts.

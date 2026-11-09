@@ -13,7 +13,6 @@ https://github.com/JesunAhmadUshno/rag-eval-harness/releases
   design: 3 cases were built to fail and each was named correctly).
   Mean faithfulness 0.953, mean context recall 0.938, mean answer
   relevance 0.808.
-- Level grade: 8,700 of 10,000.
 - Release: https://github.com/JesunAhmadUshno/rag-eval-harness/releases/tag/v0.1
 
 ## v0.5, Build (2026-11-04)
@@ -24,7 +23,6 @@ https://github.com/JesunAhmadUshno/rag-eval-harness/releases
 - Measured result: 19 of 20 cases passed (pass rate 0.950). The one
   failure, b11-storytime-when, was kept as the first Deep fix target.
   Judge pass: 10 calls under a cap of 10, 10 of 10 judged passed.
-- Level grade: 8,700 of 10,000.
 - Release: https://github.com/JesunAhmadUshno/rag-eval-harness/releases/tag/v0.5
 
 ## v1.0, Deep, compressed (2026-11-04)
@@ -32,12 +30,11 @@ https://github.com/JesunAhmadUshno/rag-eval-harness/releases
 - What shipped: a stemmed query-passage overlap reranker over the
   top-5 BM25 passages, a 32-case Deep golden set, a regression gate
   with a 0.900 pass threshold, a failure taxonomy, and a quality
-  dashboard. The rest of the v2 Deep scope is named in ROADMAP.md
+  dashboard. The rest of the v2 Deep scope is named in REPORT.md
   as the v1.1 backlog.
 - Measured result: pass rate 23 of 32 (0.719) without the reranker
   and 32 of 32 (1.000) with it, with no previously passing case
   regressed.
-- Level grade: 7,900 of 10,000.
 - Release: https://github.com/JesunAhmadUshno/rag-eval-harness/releases/tag/v1.0
 
 ## v1.1, research upgrade (2026-11-05)
@@ -51,7 +48,6 @@ https://github.com/JesunAhmadUshno/rag-eval-harness/releases
   SQuAD lexical pass 1 of 100, context recall 0.830, embedding
   judge pass 49 of 100. The synthetic reranker fix does not
   transfer to real data; that finding is published, not buried.
-- Upgrade grade: 8,000 of 10,000.
 - Release: https://github.com/JesunAhmadUshno/rag-eval-harness/releases/tag/v1.1
 
 ## v1.2, span and scale (2026-11-05)
@@ -66,7 +62,6 @@ https://github.com/JesunAhmadUshno/rag-eval-harness/releases
   span answers. The reranker experiment shipped no change: the
   hybrid variant helped SQuAD and hurt HotpotQA, and the negative
   result is published with diagnostics.
-- Project grade: 9,050 of 10,000, up from 8,000 at v1.1.
 - Release: https://github.com/JesunAhmadUshno/rag-eval-harness/releases/tag/v1.2
 
 ## Held channels
@@ -74,5 +69,5 @@ https://github.com/JesunAhmadUshno/rag-eval-harness/releases
 - Social posts for every release above: HELD under the standing
   platform rules. The loop prepares drafts and never posts; Threads
   needs Jesun's one tap per post.
-- The v1.3 backlog lives in ROADMAP.md: dense retrieval first,
+- The v1.3 backlog lives in REPORT.md: dense retrieval first,
   then the generative answer step, then learned reranking.

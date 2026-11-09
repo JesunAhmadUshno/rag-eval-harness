@@ -4,6 +4,8 @@ on:
     branches: [main]
   pull_request:
     branches: [main]
+permissions:
+  contents: read
 jobs:
   check:
     runs-on: ubuntu-latest
@@ -20,27 +22,13 @@ jobs:
         run: python -m pip install ruff
       - name: Lint (ruff, scope in ruff.toml)
         run: ruff check .
-      - name: scaffold smoke test
-        run: python tests/test_smoke.py
-      - name: level 1 learn tests
-        run: python -m unittest discover -s tests -p "test_learn*.py" -v
+      - name: All tests (layout, no public grade, learn, build, deep, model judge with a fake embedder, real data)
+        run: python -m unittest discover -s tests -p "test_*.py" -v
       - name: level 1 golden set run
         run: python level-1-learn/run_eval.py
-      - name: level 2 build tests
-        run: python -m unittest discover -s tests -p "test_build*.py" -v
       - name: level 2 build run
         run: python level-2-build/run_build.py
-      - name: level 3 deep tests
-        run: python -m unittest discover -s tests -p "test_deep*.py" -v
-      - name: level 3 deep run
-        run: python level-3-deep/run_deep.py
-      - name: level 3 regression gate
-        run: python level-3-deep/regression_gate.py
-      - name: reranker ablation is reproducible
-        run: python level-3-deep/ablation.py && git diff --exit-code level-3-deep/results_ablation.json
-      - name: model judge tests (fake embedder, no download)
-        run: python -m unittest discover -s tests -p "test_model*.py" -v
-      - name: real data tests (committed samples, no network)
-        run: python -m unittest discover -s tests -p "test_real*.py" -v
-      - name: paired statistics are reproducible
-        run: python real-data/paired_stats.py && git diff --exit-code real-data/results_paired_stats.json
+      - name: Results regenerate unchanged from the evidence (Deep run, regression gate, ablation, transfer test, paired statistics, calibration)
+        run: sh reproduce.sh
+        env:
+          PYTHON: python

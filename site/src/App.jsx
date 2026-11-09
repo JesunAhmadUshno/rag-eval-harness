@@ -6,6 +6,7 @@ import corpusDeep from '../../level-3-deep/corpus_deep.json';
 import ablation from '../../level-3-deep/results_ablation.json';
 import rerankExp from '../../real-data/results_rerank_experiment.json';
 import readme from '../../README.md?raw';
+import report from '../../REPORT.md?raw';
 import data from './generated/cases.json';
 import { mcnemar, wilson, binomTwoSided } from './rag.js';
 import { MenuBar, Dock, useReveal, Seg, Kind, Live, Recorded, REPO, blob, pct, f3, pfmt } from './ui.jsx';
@@ -15,10 +16,9 @@ const DS = { squad: 'SQuAD', hotpotqa: 'HotpotQA' };
 const VARIANTS = [['without_rerank', 'sentence'], ['with_rerank', 'sentence + rerank'], ['span_without_rerank', 'span'], ['span_with_rerank', 'span + rerank']];
 const sum = (ds, v) => data.datasets[ds].variants[v].summary;
 const flags = (ds, v, f) => data.datasets[ds].variants[v].rows.map((r) => !!r[f]);
-// The origin claim and self-grade are quoted from README.md so the page never retypes them.
-const origin = readme.match(/from a ([\d.]+) percent pass rate to ([\d.]+) percent/);
-const grade = readme.match(/Project grade at v[\d.]+: ([\d,]*\d) of ([\d,]*\d)/);
-const version = (readme.match(/Status: (v[\d.]+)/) || [])[1];
+// The origin claim is quoted from REPORT.md and the verdict from README.md so the page never retypes them.
+const origin = report.match(/from a ([\d.]+) percent pass rate to\s+([\d.]+) percent/);
+const verdict = (readme.match(/^\*\*Verdict\.\*\* ([^.]+)/m) || [])[1];
 const dCases = goldenDeep.filter((c) => c.id.startsWith('d')).length;
 
 export default function App() {
@@ -63,7 +63,7 @@ function Hero() {
   return (
     <header className="card hero window" id="top" data-title="rag-eval-harness — README">
       <div className="head">
-        <p className="eyebrow">Research lab · stdlib Python{version ? ` · ${version}` : ''}</p>
+        <p className="eyebrow">Research lab · stdlib Python{verdict ? ` · Verdict: ${verdict}` : ''}</p>
         <span className="pill info">● {data.testCount} tests · gate {baseline.threshold.toFixed(3)}</span>
       </div>
       <h1>A reranker fixed every synthetic failure, then <em>barely moved real data</em>.</h1>
@@ -82,8 +82,8 @@ function Hero() {
         ))}
       </div>
       <p className="hint claim">
-        Self-reported, unverified: the README says the project is the public version of a private pipeline that went from {origin ? `${origin[1]}% to ${origin[2]}%` : 'a lower to a higher pass rate'}.
-        Nothing in this repo proves that. The project self-grade{grade ? ` (${grade[1]} of ${grade[2]})` : ''} is self-assessed too. The {deep.with.passed}/{deep.n} is synthetic and in-distribution: {dCases} of the b11 cases were written after the failure was seen.
+        Self-reported, unverified: REPORT.md says the project began as the public version of a private pipeline that went from {origin ? `${origin[1]}% to ${origin[2]}%` : 'a lower to a higher pass rate'}.
+        Nothing in this repo proves that. The {deep.with.passed}/{deep.n} is synthetic and in-distribution: {dCases} of the b11 cases were written after the failure was seen.
       </p>
     </header>
   );
@@ -359,7 +359,7 @@ function Limits() {
     <section id="limits" className="card window reveal" data-title="LIMITS.md">
       <p className="eyebrow">Threats to validity</p>
       <h2>What this harness <em>cannot</em> tell you yet.</h2>
-      <p className="sub">Drawn from the deductions in <a href={blob('DOSSIER.md')}>DOSSIER.md</a> and the gaps graded in <a href={blob('docs/research-review.md')}>docs/research-review.md</a>, which also names the compute or data each open gap needs.</p>
+      <p className="sub">Drawn from the threats, the open weaknesses and the research review in <a href={blob('REPORT.md')}>REPORT.md</a>, which also names the compute or data each open gap needs.</p>
       <div className="grid2" style={{ marginTop: 16 }}>
         {items.map(([t, d]) => (
           <div className="tile" key={t}>
@@ -395,8 +395,8 @@ function Reproduce() {
     [`All ${data.testCount} tests`, 'python -m pytest'],
   ];
   const docs = [
-    ['SPEC.md', 'Spec', 'Scope and acceptance criteria'], ['DOSSIER.md', 'Dossier', 'History, grade and deductions'], ['docs/research-review.md', 'Research review', 'Rubric grade, fixed and open gaps'],
-    ['real-data/DATASETS.md', 'Datasets', 'Sources, licences, sampling'], ['model-metrics/README.md', 'Model judge', 'Embedding judge and calibration'], ['NOVELTY.md', 'Novelty', 'Claims and their status'],
+    ['PROPOSAL.md', 'Proposal', 'Question, hypotheses, scope (draft, not locked)'], ['REPORT.md', 'Report', 'Results, misses, threats, research review, history'], ['CHANGELOG.md', 'Changelog', 'Releases and changes'],
+    ['real-data/DATASETS.md', 'Datasets', 'Sources, licences, sampling'], ['model-metrics/README.md', 'Model judge', 'Embedding judge and calibration'], ['docs/decisions', 'Decisions', 'Hard-to-reverse choices'],
   ];
   return (
     <section id="reproduce" className="card window reveal" data-title="Terminal — reproduce">

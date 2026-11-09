@@ -29,10 +29,9 @@ export function MenuBar() {
     <div className="menubar" role="banner">
       <span className="apple" aria-hidden="true">◆</span>
       <a className="app" href="#top">RAG Eval Harness</a>
-      <a className="m" href={blob('SPEC.md')}>Spec</a>
-      <a className="m" href={blob('DOSSIER.md')}>Dossier</a>
-      <a className="m" href={blob('docs/research-review.md')}>Research review</a>
-      <a className="m" href={blob('ROADMAP.md')}>Roadmap</a>
+      <a className="m" href={blob('PROPOSAL.md')}>Proposal</a>
+      <a className="m" href={blob('REPORT.md')}>Report</a>
+      <a className="m" href={blob('CHANGELOG.md')}>Changelog</a>
       <span className="spacer" />
       <span className="status"><i /> Regression gate in CI</span>
       <a href={REPO}>GitHub ↗</a>

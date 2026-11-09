@@ -106,7 +106,7 @@ Read your results:
 Read level-3-deep/README.md and level-3-deep/DEEP-SPEC.md. This is a
 compressed Deep: the reranking fix, the regression gate, the failure
 taxonomy, and the quality dashboard. The rest of the v2 Deep scope is
-the v1.1 backlog in ROADMAP.md at the repo root.
+the v1.1 backlog in REPORT.md at the repo root.
 
 Run the Deep set, with and without reranking compared in one run:
 
