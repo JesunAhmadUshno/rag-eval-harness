@@ -42,6 +42,12 @@ export default function App() {
       <footer>
         Data: SQuAD and HotpotQA samples (CC BY-SA 4.0) and synthetic sets written for this project. Code: Apache-2.0. Every number on this page is read from the repo’s result files at build time
         or computed in your browser from them; <code>npm run build</code> fails if the browser code stops reproducing the Python results.
+        <p className="support">
+          <a href="https://github.com/sponsors/JesunAhmadUshno">Sponsor this work</a>
+          <a href="https://github.com/sponsors/JesunAhmadUshno">Donate</a>
+          <a href="https://buymeacoffee.com/jesun">Buy Me a Coffee</a>
+          <a href="https://calendly.com/jesunahmadushno/30min">Work with me</a>
+        </p>
       </footer>
     </div>
   );
