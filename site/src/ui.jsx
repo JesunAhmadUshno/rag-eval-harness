@@ -7,7 +7,7 @@ export const f3 = (x) => x.toFixed(3);
 export const pfmt = (p) => (p < 0.0001 ? '< 0.0001' : p.toFixed(4));
 
 export const SECTIONS = [
-  ['top', 'Overview', '◎'], ['playground', 'BM25 playground', '⌕'], ['scorer', 'Live scorer', '✎'], ['deep', 'Deep results', '▥'],
+  ['top', 'Overview', '◎'], ['pipeline', 'Pipeline', '→'], ['playground', 'BM25 playground', '⌕'], ['scorer', 'Live scorer', '✎'], ['deep', 'Deep results', '▥'],
   ['real', 'Real runs', '▤'], ['calibration', 'Judge calibration', '◐'], ['rerank', 'Rerank experiment', '⇅'],
   ['cases', 'Case browser', '☰'], ['taxonomy', 'Failure taxonomy', '⚑'], ['limits', 'Limits', '⚠'], ['reproduce', 'Reproduce', '❯_'],
 ];
