@@ -28,6 +28,7 @@ export default function App() {
       <MenuBar />
       <div className="glow" aria-hidden="true" />
       <Hero />
+      <Pipeline />
       <Playground />
       <Scorer />
       <DeepResults />
@@ -42,6 +43,12 @@ export default function App() {
       <footer>
         Data: SQuAD and HotpotQA samples (CC BY-SA 4.0) and synthetic sets written for this project. Code: Apache-2.0. Every number on this page is read from the repo’s result files at build time
         or computed in your browser from them; <code>npm run build</code> fails if the browser code stops reproducing the Python results.
+        <p className="support">
+          <a href="https://github.com/sponsors/JesunAhmadUshno">Sponsor this work</a>
+          <a href="https://github.com/sponsors/JesunAhmadUshno">Donate</a>
+          <a href="https://buymeacoffee.com/jesun">Buy Me a Coffee</a>
+          <a href="https://calendly.com/jesunahmadushno/30min">Work with me</a>
+        </p>
       </footer>
     </div>
   );
@@ -86,6 +93,79 @@ function Hero() {
         Nothing in this repo proves that. The {deep.with.passed}/{deep.n} is synthetic and in-distribution: {dCases} of the b11 cases were written after the failure was seen.
       </p>
     </header>
+  );
+}
+
+function Pipeline() {
+  const groups = [
+    ['Data', [`Deep golden set · ${deep.n} cases`, `Library corpus · ${corpusDeep.length} documents`, `Real samples · ${sum('squad', 'without_rerank').n} SQuAD, ${sum('hotpotqa', 'without_rerank').n} HotpotQA`]],
+    ['Pipeline', ['BM25 retrieval', 'Stemmed reranker · optional', 'Answer · sentence or span']],
+    ['Scoring', ['Pass, faithfulness, recall, relevance', `Budgeted judge · ${deep.judge.calls_made} calls made`, `Failure taxonomy · gate ${baseline.threshold.toFixed(3)}`]],
+  ];
+  const steps = [
+    ['Question', `${deep.n} Deep cases`],
+    ['Retrieve', `BM25 · ${corpusDeep.length} docs`],
+    ['Rerank', 'stemmed · optional'],
+    ['Answer', 'sentence or span'],
+    ['Score', '4 metrics + judge'],
+    ['Label and gate', `CI floor ${baseline.threshold.toFixed(3)}`],
+  ];
+  return (
+    <section id="pipeline" className="card window reveal" data-title="pipeline.svg · system and flow">
+      <div className="head">
+        <div>
+          <p className="eyebrow">System and flow · <Kind /></p>
+          <h2>One pipeline, <em>scored end to end</em>.</h2>
+          <p className="sub">
+            The structure is the whole harness: two kinds of data go in, one pipeline runs, and every run leaves metrics, failure labels and a gate verdict.
+            The flow is the order a single case travels. Both diagrams are drawn from the same committed result files as the rest of this page.
+          </p>
+        </div>
+        <Recorded />
+      </div>
+      <h3>System structure</h3>
+      <svg className="chart" viewBox="0 0 920 196" role="img" aria-label="System structure: data feeds the pipeline, the pipeline feeds scoring" style={{ marginTop: 10 }}>
+        {groups.map(([title, items], gi) => (
+          <g key={title} transform={`translate(${gi * 320} 0)`}>
+            <rect x={0} y={8} width={280} height={180} rx="16" fill="var(--primary-pale)" />
+            <text x={16} y={34} style={{ fill: 'var(--text)', fontSize: 13, fontWeight: 700 }}>{title}</text>
+            {items.map((t, i) => (
+              <g key={t} transform={`translate(0 ${i * 48})`}>
+                <rect x={16} y={46} width={248} height={38} rx="10" fill="var(--surface-strong)" stroke="var(--border)" />
+                <text x={28} y={69} style={{ fill: 'var(--text)', fontSize: 12 }}>{t}</text>
+              </g>
+            ))}
+            {gi < 2 && (
+              <g>
+                <line x1={284} x2={312} y1={98} y2={98} stroke="var(--muted)" strokeWidth="2" />
+                <polygon points="312,98 302,92 302,104" fill="var(--muted)" />
+              </g>
+            )}
+          </g>
+        ))}
+      </svg>
+      <h3 style={{ marginTop: 22 }}>Evaluation flow, one case</h3>
+      <svg className="chart" viewBox="0 0 920 118" role="img" aria-label="Evaluation flow: question, retrieve, rerank, answer, score, label and gate" style={{ marginTop: 10 }}>
+        {steps.map(([label, cap], i) => (
+          <g key={label} transform={`translate(${i * 156} 0)`}>
+            <rect x={0} y={8} width={136} height={54} rx="12" fill="var(--surface-strong)" stroke="var(--border)" />
+            <text x={12} y={29} style={{ fill: 'var(--primary)', fontSize: 11, fontWeight: 700 }}>{i + 1}</text>
+            <text x={12} y={49} style={{ fill: 'var(--text)', fontSize: 13, fontWeight: 700 }}>{label}</text>
+            <text x={68} y={86} textAnchor="middle">{cap}</text>
+            {i < steps.length - 1 && (
+              <g>
+                <line x1={138} x2={150} y1={35} y2={35} stroke="var(--muted)" strokeWidth="2" />
+                <polygon points="154,35 145,29 145,41" fill="var(--muted)" />
+              </g>
+            )}
+          </g>
+        ))}
+      </svg>
+      <p className="hint" style={{ marginTop: 10 }}>
+        With the reranker on, the Deep run passes {deep.with.passed} of {deep.n} cases; the regression gate in CI fails any run under {baseline.threshold.toFixed(3)} (<a href={blob('level-3-deep/baseline.json')}>baseline.json</a>).
+        The playground below runs this same flow live in your browser.
+      </p>
+    </section>
   );
 }
 
